@@ -274,7 +274,7 @@ During move-out periods, our streets get cluttered with perfectly
             <li><strong className={`${direg.className} mt-4 text-accent text-2xl text-center justify-content max-w-5xl`}> &#8212; &nbsp;Expanded &nbsp; </strong> the development team by onboarding two new developers.</li>
             <li><strong className={`${direg.className} mt-4 text-accent text-2xl text-center justify-content max-w-5xl`}> &#8212; &nbsp;Transitioned &nbsp;</strong> the application from a web-based platform to a mobile-centric environment.</li>
             <li><strong className={`${direg.className} mt-4 text-accent text-2xl text-center justify-content max-w-5xl`}> &#8212; &nbsp;Implemented &nbsp;</strong> an overhaul of the app's UI/UX to enhance usability and optimize engagement.</li>
-            <li><strong className={`${direg.className} mt-4 text-accent text-2xl text-center justify-content max-w-5xl`}> &#8212; &nbsp;Exploring &nbsp;</strong> a more efficient way to facilitate & simplify the acquisition & disposal of items.</li>
+            <li><strong className={`${direg.className} mt-4 text-accent text-2xl text-center justify-content max-w-5xl`}> &#8212; &nbsp;Explored &nbsp;</strong> a more efficient way to facilitate & simplify the acquisition & disposal of items.</li>
 
             </div>
  </h2>
