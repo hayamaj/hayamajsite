@@ -1,7 +1,7 @@
 import type { Metadata } from "next";
 import "./globals.css";
 import localFont from 'next/font/local'
-import Navigation from './navigation'
+import Navigation from './Navigation'
 
 {     /*fonts*/     }
 const dilight = localFont({

@@ -1,6 +1,6 @@
 "use client";
 import { useState, useEffect, useRef } from 'react';
-import Navigation from '../navigation'; // Import the Navigation component
+import Navigation from '../Navigation'; // Import the Navigation component
 import localFont from 'next/font/local'
 import Link from 'next/link';
 {     /*fonts*/     }
