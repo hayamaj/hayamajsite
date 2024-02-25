@@ -83,7 +83,7 @@ const proxnovabold = localFont({
 })
 
 
-export default function painting() {
+export default function Painting() {
   const [isSidebarOpen, setIsSidebarOpen] = useState(false);
   const [videoEnded, setVideoEnded] = useState(false);
   const videoRef = useRef(null);
