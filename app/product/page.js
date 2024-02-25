@@ -3,6 +3,7 @@ import { useState, useEffect, useRef } from 'react';
 import Navigation from '../Nav'; // Import the Navigation component
 import localFont from 'next/font/local'
 import Link from 'next/link';
+import Image from 'next/image';
 {     /*fonts*/     }
 const dilight = localFont({
   src: [
