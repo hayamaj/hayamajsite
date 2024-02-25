@@ -124,35 +124,48 @@ export default function Home() {
     </div>
 
     <div className="text-center mt-24 mb-8">
-          <h1 className={`${didot.className} text-2xl`}>About Me</h1>
+    <h1 className={`${dimed.className} text-5xl text-black`}>About Me</h1>
         </div>
 
-    <section className="flex flex-row justify-center">
-<div className="flex items-left w-1/2" >
+    <section className="flex flex-row justify-cente items-center mx-8">
+<div className="flex items-left max-w-screen mr-8" >
     <video autoPlay="autoplay" Loop="loop" playsInLine="playsinline" muted="true" onEnded={handleVideoEnd} className="h-4/5 w-full ml-2 justify-left">
                       <source src="/aboutvid.mov" />
                       </video>
                       </div>
-                      <div className="flex items-right flex-col text-left w-1/2">
-                        <h1 className={`${dilight.className} text-sm my-2`}>Hi! I'm Haya. </h1>
-                        <h1 className={`${dilight.className} text-sm text-black text-left w-1/2`}>
-                            I am a Jordanian-born student at Boston University, on track to graduate in May 2024. 
+                      <div className="flex items-right flex-col justify-center text-justify">
+                        <h1 className={`${didotdf.className} text-lg my-2`}>Hi! I'm Haya. </h1>
+                        <h1 className={`${dilight.className} text-sm text-black text-justify max-w-md`}>
+                            I am a Jordanian-born student at Boston University, on track to graduate in May 2024.
+                            <br />
                              <br />
-                            From a young age, I thought I would follow a path in the arts. I spent my childhood reading, drawing & painting. Yet, amidst
-                            the solitude of my artistic endeavors, I craved collaboration & connection with others.
+                            I always thought I'd grow up to be a painter.
+                            <br /> 
+                            I spent my childhood drawing & painting. I loved creating new things & bringing ideas to life, & yet I hated the solitude of the lifestyle.
+                            <br /> 
+                            <br /> 
+                            I've always been confident about two things: <br /> 
+                            1. My desire to create  <br /> 
+                            2. My desire to lead a lifestyle of collaboration & interaction with others. <br /> 
                             <br />
-                            This is what led me to embark on a different path in college. While maintainting a minor in Visual Arts, I chose to 
-                            major in Computer Science & Technology. Recognizing the digital landscape as the emerging frontier of innovation,
-                            I sought to master the language through which modern ideas were being brought to life.
+                            In college, I decided to major in Computer Science & Technology with a minor in Visual Arts.
+                            Recognizing the digital landscape as the emerging frontier of innovation,
+                            I wanted to learn language through which modern ideas were being brought to life, so I could one day do so with my own.
                             <br />
-                            Over the past four years, I've meticulously crafted a versatile skill set spanning engineering, product management, 
-                            & design. In this journey, I stumbled upon the role of a product leader &#8212; an opportunity to synthesize my diverse 
-                            expertise and lead teams in crafting innovative solutions that transcend traditional disciplinary boundaries.
                             <br />
-                            Regardless of the starting point, my ultimate aim remains consistent: to guide teams towards the creation of 
-                            groundbreaking solutions that address multifaceted challenges. 
+                            Amongst academics, I sought leadership & facilitation roles. 
+                            From representing BU as a student facilitator to joining clubs like Women in Computer Science &
+                            Club Tennis. I also joined the Spark! program at Boston university, where I interned as a project manager, 
+                            & participated in a fellowship & mentorship program for aspiring product managers looking to bring their products to fruition.
+
+                            At this point in my life, I've crafted a diverse skill-set &#8212; from leadership roles to acquired engineering, product management, 
+                            & design skills. 
+                            <br />
+                            <br />
+                            Regardless of the starting point, my ultimate aim is to guide & facilitate teams in the creation of new innovative solutions to enhance our lives.
                             
                          </h1>
+                         <h1 className={`${didot.className} text-right mt-4 text-sm`}>H M</h1>
                       </div>
 </section>
 

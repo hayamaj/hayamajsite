@@ -1,16 +1,18 @@
 "use client";
 import Image from "next/image";
 import Link from 'next/link';
-import Navigation from '../../Nav'; // Import the Navigation component
+import Navigation from '../../../Nav'; // Import the Navigation component
 import { useState, useEffect, useRef } from 'react';
 import localFont from 'next/font/local'
 import { CldImage } from 'next-cloudinary';
+import React from "react";
+import VideoPlayer from "../../../VideoPlayer";
 
 {     /*fonts*/     }
 const dilight = localFont({
   src: [
     {
-      path: '../../../fonts/dilight.otf',
+      path: '../../../../fonts/dilight.otf',
       weight: '400'
     }
   ],
@@ -18,7 +20,7 @@ const dilight = localFont({
 const direg = localFont({
   src: [
     {
-      path: '../../../fonts/direg.otf',
+      path: '../../../../fonts/direg.otf',
       weight: '400'
     }
   ],
@@ -26,42 +28,42 @@ const direg = localFont({
 const dimed = localFont({
   src: [
     {
-      path: '../../../fonts/dimed.otf',
+      path: '../../../../fonts/dimed.otf',
     }
   ],
 })
 const dibold = localFont({
   src: [
     {
-      path: '../../../fonts/dibold.otf',
+      path: '../../../../fonts/dibold.otf',
     }
   ],
 })
 const diboldital = localFont({
   src: [
     {
-      path: '../../../fonts/diboldital.otf',
+      path: '../../../../fonts/diboldital.otf',
     }
   ],
 })
 const didot = localFont({
   src: [
     {
-      path: '../../../fonts/didot.ttf',
+      path: '../../../../fonts/didot.ttf',
     }
   ],
 })
 const didotdf = localFont({
   src: [
     {
-      path: '../../../fonts/didotdf.ttf',
+      path: '../../../../fonts/didotdf.ttf',
     }
   ],
 })
 const proxnova = localFont({
   src: [
     {
-      path: '../../../fonts/pnlight.otf',
+      path: '../../../../fonts/pnlight.otf',
     }
   ],
 })
@@ -69,7 +71,7 @@ const proxnova = localFont({
 const proxnovareg = localFont({
   src: [
     {
-      path: '../../../fonts/pnreg.ttf',
+      path: '../../../../fonts/pnreg.ttf',
     }
   ],
 })
@@ -77,12 +79,11 @@ const proxnovareg = localFont({
 const proxnovabold = localFont({
   src: [
     {
-      path: '../../../fonts/pnbold.otf',
+      path: '../../../../fonts/pnbold.otf',
     }
   ],
 })
-
-export default function Art() {
+export default function Dibs() {
     const [isSidebarOpen, setIsSidebarOpen] = useState(false);
     const [videoEnded, setVideoEnded] = useState(false);
     const videoRef = useRef(null);
@@ -124,21 +125,11 @@ export default function Art() {
         <div className="flex flex-col items-center">
         <Navigation isIndexPage={false} class="sticky" /> {/* Use the Navigation component here */}
         </div>
-  
-        <div className="w-screen h-screen overflow-y-scroll">
-          <div className="text-center pt-16 my-24">
-          <h1 className={`${didotdf.className} text-4xl`}>My Drawings</h1>
-          </div>
-  
-          <div className="flex flex-wrap justify-center my-16 mt-6 mx-8">
-            <CldImage src="https://res.cloudinary.com/dqqim3gc1/image/upload/v1707191749/image-gallery/IN001.jpg" height={600} width={800} crop="auto" alt="Facebook" />
-            <CldImage src="https://res.cloudinary.com/dqqim3gc1/image/upload/v1707191748/image-gallery/PC002.jpg" height={600} width={500} crop="auto" alt="Facebook" />
-            <CldImage src="https://res.cloudinary.com/dqqim3gc1/image/upload/v1707191727/image-gallery/2021-6_yqsasb.jpg" height={600} width={500} crop="auto" alt="Facebook" />
-  
-          </div>
-  
-  
-          <div className={`${didotdf.className} px-1 py-8 flex items-center sm:flex-row flex-col`}>
+
+<div className="w-screen h-screen flex flex-col gap-4 text-lg font-semibold justify-center items-center ">
+<VideoPlayer />
+</div>
+<div className={`${didotdf.className} px-1 py-8 flex items-center sm:flex-row flex-col`}>
           <span className="mx-auto text-center text-xs text-neutral-900">
             <div className="mb-4">
             <Link href="/about" className="underline decoration-1 underline-offset-2 mx-2">About</Link>
@@ -150,7 +141,6 @@ export default function Art() {
             </div>
           </span>
         </div>
-       </div>
-      </main>
+</main>
       )
-  }
+}

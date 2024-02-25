@@ -130,7 +130,7 @@ export default function Photo() {
 
       <div className="w-screen h-screen overflow-y-scroll">
         <div className="text-center pt-16 my-24">
-          <h1 className={`${didotdf.className} text-2xl`}>Photography</h1>
+        <h1 className={`${didotdf.className} text-4xl`}>My Photography</h1>
         </div>
 
         <div className="flex flex-wrap justify-center my-16 mt-6 mx-8">

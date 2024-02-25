@@ -126,8 +126,8 @@ export default function MotionGraphics() {
         </div>
   
         <div className="w-screen h-screen overflow-y-scroll">
-          <div className="text-center pt-16 my-24">
-            <h1 className={`${didotdf.className} text-2xl`}>Motion Graphics</h1>
+          <div className="text-center mt-24">
+          <h1 className={`${didotdf.className} text-4xl`}>Motion Graphics Projects</h1>
           </div>
   
         <div className="flex flex-wrap justify-center my-8 mt-0 mx-8">

@@ -116,8 +116,8 @@ const Navigation = ({ isIndexPage }) => {
   return (
   <div className="flex">
     <div className="flex justify-between items-center">
-        <div className="flex flex-col absolute left-12 top-6 z-50">
-      <h1 className={`${didot.className} text-center text-3xl ${isIndexPage ? 'text-white' : 'text-accent'}`} onClick={() => handleNameClick()}>Haya AlMajali</h1>
+        <div className="flex flex-col absolute left-8 top-8 z-50">
+      <h1 className={`${didot.className} text-center text-3xl ${isIndexPage ? `${didot.className}` : `${direg.className}`} ${isIndexPage ? 'text-white ' : 'text-accent '}  ${isIndexPage ? 'text-5xl' : 'text-xl'}`} onClick={() => handleNameClick()}>Haya AlMajali</h1>
     </div>
 </div>
     {/*
@@ -134,8 +134,8 @@ const Navigation = ({ isIndexPage }) => {
 
 
 
-<div className="absolute top-6 right-8 z-40">
-  <button className={`outline-none mobile-menu-button ${isIndexPage ? 'text-white' : 'text-black'}`} onClick={toggleSidebar}>
+<div className="absolute top-8 right-8 z-40">
+  <button className={`outline-none mobile-menu-button ${isIndexPage ? 'text-white' : 'text-accent'}`} onClick={toggleSidebar}>
     <svg className="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
       <path strokeLinecap="square" strokeLinejoin="square" strokeWidth="1" d="M4 6h16M4 12h16M4 18h16" onClick={isSidebarOpen ? toggleSidebar : undefined}></path>
     </svg>
@@ -147,7 +147,7 @@ const Navigation = ({ isIndexPage }) => {
 
 <div className="absolute top-8 right-8 z-50">
   {isSidebarOpen && (
-    <button className="outline-none mobile-menu-button text-black" onClick={toggleSidebar}>
+    <button className="outline-none mobile-menu-button text-accent" onClick={toggleSidebar}>
       <svg className="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
         <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="1" d="M6 18L18 6M6 6l12 12"></path>
       </svg>
@@ -160,11 +160,12 @@ const Navigation = ({ isIndexPage }) => {
     {isSidebarOpen && (
       <div className="z-40 bg-white fixed top-0 right-0 w-screen h-full shadow-sm sidebar">
 
-        <div className="my-64 text-center">
+        <div className="my-48 text-center">
           <Link href="/product" className={` ${didotdf.className} text-neutral-950 my-4 mt-2 block text-2xl decoration-1 hover:underline underline-offset-4 whitespace-nowrap`}>Product</Link>
           <Link href="/eng" className={` ${didotdf.className} text-neutral-950 mt-2 my-4 block text-2xl decoration-1 hover:underline underline-offset-4`}>Eng</Link>
           <Link href="/art" className={` ${didotdf.className} text-neutral-950 mt-2 my-4 block text-2xl decoration-1 hover:underline underline-offset-4`}>Design</Link>
-          <Link href="/contact" className={` ${didotdf.className} text-neutral-400 my-4 block mt-56 text-2xl decoration-1 hover:text-neutral-200 hover:underline underline-offset-4`}>Contact</Link>
+          <Link href="/contact" className={` ${didotdf.className} text-accent block text-sm mt-48 decoration-1 hover:text-neutral-200 hover:underline underline-offset-4`}>Contact</Link>
+          <Link href="/about" className={` ${didotdf.className} text-accent mt-1 block text-sm decoration-1 hover:text-neutral-200 hover:underline underline-offset-4`}>About</Link>
         </div>
       </div>
     )}

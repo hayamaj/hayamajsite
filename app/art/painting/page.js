@@ -117,8 +117,8 @@ export default function Painting() {
       </div>
 
       <div className="w-screen h-screen overflow-y-scroll">
-        <div className="text-center pt-16 my-24">
-          <h1 className={`${didotdf.className} text-2xl`}>Painting</h1>
+        <div className="text-center pt-16 mt-16">
+          <h1 className={`${didotdf.className} text-4xl`}>My Paintings</h1>
         </div>
 
         <div className="flex flex-wrap justify-center my-16 mt-6 mx-8">
