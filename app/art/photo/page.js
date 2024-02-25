@@ -1,7 +1,7 @@
 "use client";
 import Image from "next/image";
 import Link from 'next/link';
-import Navigation from '../../navigation'; // Import the Navigation component
+import Navigation from '../../Nav'; // Import the Navigation component
 import { useState, useEffect, useRef } from 'react';
 import localFont from 'next/font/local'
 import { CldImage } from 'next-cloudinary';
