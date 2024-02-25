@@ -88,13 +88,8 @@ const proxnovabold = localFont({
   ],
 })
 
-interface ContactProps {
-  EMAILJS_SERVICE_ID: string;
-  REACT_APP_TEMPLATE_ID: string;
-  EMAILJS_PUBLIC_KEY: string;
-}
 
-export default function Contact({ EMAILJS_SERVICE_ID, REACT_APP_TEMPLATE_ID, EMAILJS_PUBLIC_KEY }: ContactProps) {
+export default function Contact() {
   const [isSidebarOpen, setIsSidebarOpen] = useState(false);
   const [videoEnded, setVideoEnded] = useState(false);
 
@@ -114,7 +109,7 @@ export default function Contact({ EMAILJS_SERVICE_ID, REACT_APP_TEMPLATE_ID, EMA
   } = useForm();
 
   async function onSubmit() {
-    if (!EMAILJS_SERVICE_ID || !REACT_APP_TEMPLATE_ID || !EMAILJS_PUBLIC_KEY || !form.current) {
+    if (!process.env.EMAILJS_SERVICE_ID || !process.env.REACT_APP_TEMPLATE_ID || !process.env.EMAILJS_PUBLIC_KEY || !form.current) {
       console.error(
         'EmailJS environment variables or form reference are not defined'
       );
@@ -122,7 +117,7 @@ export default function Contact({ EMAILJS_SERVICE_ID, REACT_APP_TEMPLATE_ID, EMA
     }
 
     try {
-      await emailjs.sendForm(EMAILJS_SERVICE_ID, REACT_APP_TEMPLATE_ID, form.current, EMAILJS_PUBLIC_KEY);
+      await emailjs.sendForm(process.env.EMAILJS_SERVICE_ID, process.env.REACT_APP_TEMPLATE_ID, form.current, process.env.EMAILJS_PUBLIC_KEY);
       setSubmitResult('success');
       setIsModalOpen(true);
       reset();
