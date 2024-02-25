@@ -162,7 +162,7 @@ export default function Contact() {
   };
 
   return (
-    <main className={`bg-white text-blacks flex min-h-screen max-w-screen flex-col items-center justify-between text-black`}>
+    <main className={`bg-white text-black flex min-h-screen max-w-screen flex-col items-center justify-between text-black`}>
     <div className="flex flex-col items-center">
         <Navigation isIndexPage={false} /> {/* Use the Navigation component here */}
     </div>
@@ -196,7 +196,7 @@ export default function Contact() {
           <form
             ref={form}
             onSubmit={handleSubmit(onSubmit)}
-            className="space-y-4 justify-center"
+            className="space-y-4 justify-center max-w-screen"
           >
             <input
               {...register('name', { required: true })}
