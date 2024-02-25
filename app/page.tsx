@@ -1,113 +1,177 @@
-import Image from "next/image";
+"use client";
+
+import { useState, useEffect, ChangeEvent } from 'react';
+// Import the Navigation component
+import localFont from 'next/font/local'
+import Link from 'next/link';
+import Navigation from './navigation'
+
+{     /*fonts*/     }
+const dilight = localFont({
+  src: [
+    {
+      path: '../fonts/dilight.otf',
+      weight: '400'
+    }
+  ],
+})
+const direg = localFont({
+  src: [
+    {
+      path: '../fonts/direg.otf',
+      weight: '400'
+    }
+  ],
+})
+const dimed = localFont({
+  src: [
+    {
+      path: '../fonts/dimed.otf',
+    }
+  ],
+})
+const dibold = localFont({
+  src: [
+    {
+      path: '../fonts/dibold.otf',
+    }
+  ],
+})
+const diboldital = localFont({
+  src: [
+    {
+      path: '../fonts/diboldital.otf',
+    }
+  ],
+})
+const didot = localFont({
+  src: [
+    {
+      path: '../fonts/didot.ttf',
+    }
+  ],
+})
+const didotdf = localFont({
+  src: [
+    {
+      path: '../fonts/didotdf.ttf',
+    }
+  ],
+})
+const proxnova = localFont({
+  src: [
+    {
+      path: '../fonts/pnlight.otf',
+    }
+  ],
+})
+
+const proxnovareg = localFont({
+  src: [
+    {
+      path: '../fonts/pnreg.ttf',
+    }
+  ],
+})
+
+const proxnovabold = localFont({
+  src: [
+    {
+      path: '../fonts/pnbold.otf',
+    }
+  ],
+})
+
+
 
 export default function Home() {
+  const [isSidebarOpen, setIsSidebarOpen] = useState(false);
+  const [videoEnded, setVideoEnded] = useState(false);
+  const isIndexPage = true; 
+
+
+  useEffect(() => {
+    
+    // Add event listener to detect clicks outside the sidebar
+    const handleOutsideClick = (e: MouseEvent) => {
+      const target = e.target as HTMLElement; // Type assertion to HTMLElement
+      if (isSidebarOpen && !(target && target.closest('.sidebar'))) {
+        setIsSidebarOpen(false);
+      }
+    };
+
+    // Attach the event listener
+    document.addEventListener('mousedown', handleOutsideClick);
+
+    // Remove the event listener on component unmount
+    return () => {
+      document.removeEventListener('mousedown', handleOutsideClick);
+    };
+  }, [isSidebarOpen]);
+
+  const handleVideoEnd = () => {
+    setVideoEnded(true);
+    console.log("works");
+  };
+
+  {/*resume, not sure if still needed here.*/}
+  const handleDownload = () => {
+    const pdfUrl = '/AlMajali-Resume.pdf';
+    const link = document.createElement('a');
+    link.href = pdfUrl;
+    link.setAttribute('download', 'AlMajali-Resume.pdf');
+    document.body.appendChild(link);
+    link.click();
+    document.body.removeChild(link);
+  };
+
   return (
-    <main className="flex min-h-screen flex-col items-center justify-between p-24">
-      <div className="z-10 max-w-5xl w-full items-center justify-between font-mono text-sm lg:flex">
-        <p className="fixed left-0 top-0 flex w-full justify-center border-b border-gray-300 bg-gradient-to-b from-zinc-200 pb-6 pt-8 backdrop-blur-2xl dark:border-neutral-800 dark:bg-zinc-800/30 dark:from-inherit lg:static lg:w-auto  lg:rounded-xl lg:border lg:bg-gray-200 lg:p-4 lg:dark:bg-zinc-800/30">
-          Get started by editing&nbsp;
-          <code className="font-mono font-bold">app/page.tsx</code>
-        </p>
-        <div className="fixed bottom-0 left-0 flex h-48 w-full items-end justify-center bg-gradient-to-t from-white via-white dark:from-black dark:via-black lg:static lg:h-auto lg:w-auto lg:bg-none">
-          <a
-            className="pointer-events-none flex place-items-center gap-2 p-8 lg:pointer-events-auto lg:p-0"
-            href="https://vercel.com?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            By{" "}
-            <Image
-              src="/vercel.svg"
-              alt="Vercel Logo"
-              className="dark:invert"
-              width={100}
-              height={24}
-              priority
-            />
-          </a>
+    <main className={`bg-white flex min-h-screen max-w-screen flex-col items-center justify-between`}>
+    <div className="flex flex-col items-center">
+        <Navigation isIndexPage={true} /> {/* Use the Navigation component here */}
+    </div>
+
+<div className="flex flex-col justify-center items-center h-screen z-100" >
+    <video autoPlay muted onEnded={handleVideoEnd} className="w-full h-full object-cover object-right-bottom">
+                      <source src="/introvid.mov"/>
+                      </video>
+                      </div>
+
+          <div className={` ${dilight.className} whitespace-nowrap opacity-0 z-100 absolute left-1/3 top-1/3 transition-opacity duration-1000 ${videoEnded ? 'opacity-100' : ''} text-3xl md:text-4xl [text-wrap:balance] bg-clip-text text-neutral-200 `}>An aspiring <strong className={` ${proxnovareg.className} underline underline-offset-4 decoration-1 whitespace-nowrap`}>product leader</strong> <br /> with expertise in <span className=" text-neutral-200 inline-flex flex-col h-[calc(theme(fontSize.3xl)*theme(lineHeight.tight))] md:h-[calc(theme(fontSize.4xl)*theme(lineHeight.tight))] overflow-hidden">
+            <ul className={` ${dibold.className} block animate-text-slide-3 text-justify text-accent leading-tight [&_li]:block`}>
+            <li className="whitespace-nowrap">product management</li>
+            <li>engineering</li>
+            <li>design</li>
+            <li aria-hidden="true">product management</li>
+          </ul>
+          </span>
+      </div>
+
+{/*resume stuff, figure out where to put*/}
+
+{/*
+      <div className="mx-auto flex flex-col items-center">
+        <div className="flex flex-col items-center text-center hover:no-underline ">
+          <button onClick={handleDownload} className={`${inter300.className} px-2 md:mt-4 text-sm text-neutral-800 hover:text-neutral-800`}>download my resume.</button>
+          <button onClick={handleDownload} className={`w-3 h-3 my-4 border border-neutral-950 bg-white hover:bg-neutral-950`}></button>
+
         </div>
       </div>
+                  */}
 
-      <div className="relative flex place-items-center before:absolute before:h-[300px] before:w-full sm:before:w-[480px] before:-translate-x-1/2 before:rounded-full before:bg-gradient-radial before:from-white before:to-transparent before:blur-2xl before:content-[''] after:absolute after:-z-20 after:h-[180px] after:w-full sm:after:w-[240px] after:translate-x-1/3 after:bg-gradient-conic after:from-sky-200 after:via-blue-200 after:blur-2xl after:content-[''] before:dark:bg-gradient-to-br before:dark:from-transparent before:dark:to-blue-700 before:dark:opacity-10 after:dark:from-sky-900 after:dark:via-[#0141ff] after:dark:opacity-40 before:lg:h-[360px] z-[-1]">
-        <Image
-          className="relative dark:drop-shadow-[0_0_0.3rem_#ffffff70] dark:invert"
-          src="/next.svg"
-          alt="Next.js Logo"
-          width={180}
-          height={37}
-          priority
-        />
+<div className={`${didotdf.className} px-1 py-8 flex items-center sm:flex-row flex-col`}>
+        <span className="mx-auto text-center text-xs text-neutral-900">
+          <div className="mb-4">
+          <Link href="/about" className="underline decoration-1 underline-offset-2 mx-2">About</Link>
+          <Link href="/contact" className="underline decoration-1 underline-offset-2 mx-2">Contact</Link> <br />
+          </div>
+          <div className={`${dilight.className}`}>
+          hayamaj@bu.edu <br />
+          [857] 891 - 8848 <br />
+          </div>
+        </span>
       </div>
+      </main>
 
-      <div className="mb-32 grid text-center lg:max-w-5xl lg:w-full lg:mb-0 lg:grid-cols-4 lg:text-left">
-        <a
-          href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          className="group rounded-lg border border-transparent px-5 py-4 transition-colors hover:border-gray-300 hover:bg-gray-100 hover:dark:border-neutral-700 hover:dark:bg-neutral-800/30"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2 className={`mb-3 text-2xl font-semibold`}>
-            Docs{" "}
-            <span className="inline-block transition-transform group-hover:translate-x-1 motion-reduce:transform-none">
-              -&gt;
-            </span>
-          </h2>
-          <p className={`m-0 max-w-[30ch] text-sm opacity-50`}>
-            Find in-depth information about Next.js features and API.
-          </p>
-        </a>
-
-        <a
-          href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          className="group rounded-lg border border-transparent px-5 py-4 transition-colors hover:border-gray-300 hover:bg-gray-100 hover:dark:border-neutral-700 hover:dark:bg-neutral-800/30"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2 className={`mb-3 text-2xl font-semibold`}>
-            Learn{" "}
-            <span className="inline-block transition-transform group-hover:translate-x-1 motion-reduce:transform-none">
-              -&gt;
-            </span>
-          </h2>
-          <p className={`m-0 max-w-[30ch] text-sm opacity-50`}>
-            Learn about Next.js in an interactive course with&nbsp;quizzes!
-          </p>
-        </a>
-
-        <a
-          href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          className="group rounded-lg border border-transparent px-5 py-4 transition-colors hover:border-gray-300 hover:bg-gray-100 hover:dark:border-neutral-700 hover:dark:bg-neutral-800/30"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2 className={`mb-3 text-2xl font-semibold`}>
-            Templates{" "}
-            <span className="inline-block transition-transform group-hover:translate-x-1 motion-reduce:transform-none">
-              -&gt;
-            </span>
-          </h2>
-          <p className={`m-0 max-w-[30ch] text-sm opacity-50`}>
-            Explore starter templates for Next.js.
-          </p>
-        </a>
-
-        <a
-          href="https://vercel.com/new?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          className="group rounded-lg border border-transparent px-5 py-4 transition-colors hover:border-gray-300 hover:bg-gray-100 hover:dark:border-neutral-700 hover:dark:bg-neutral-800/30"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2 className={`mb-3 text-2xl font-semibold`}>
-            Deploy{" "}
-            <span className="inline-block transition-transform group-hover:translate-x-1 motion-reduce:transform-none">
-              -&gt;
-            </span>
-          </h2>
-          <p className={`m-0 max-w-[30ch] text-sm opacity-50 text-balance`}>
-            Instantly deploy your Next.js site to a shareable URL with Vercel.
-          </p>
-        </a>
-      </div>
-    </main>
   );
 }
