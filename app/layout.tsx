@@ -91,7 +91,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={`${dilight.className} text-black`}>{children}</body>
+      <body className={dilight.className}>{children}</body>
     </html>
   );
 }
