@@ -172,7 +172,7 @@ export default function Home() {
                             
                          </h1>
                          <h1 className={`${didot.className} text-right mt-4 text-sm`}>H M</h1>
-                      </div>
+  
                       </div>
 </section>
 
