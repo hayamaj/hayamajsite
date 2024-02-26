@@ -119,7 +119,7 @@ export default function Product() {
 
   
   <div className="text-center my-16 mb-8">
-    <h1 className={`${dimed.className} text-5xl text-black`}>Product Management Portfolio</h1>
+    <h1 className={`${dimed.className} text-5xl text-black mt-24`}>Product Management Portfolio</h1>
   </div>
 
         <div className="mt-4 flex flex-row justify-center">

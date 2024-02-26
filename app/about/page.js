@@ -3,7 +3,9 @@ import { useState, useEffect } from 'react';
 import Navigation from '../Nav'; // Import the Navigation component
 import localFont from 'next/font/local'
 import Link from 'next/link';
+import Image from 'next/image';
 {     /*fonts*/     }
+
 const dilight = localFont({
   src: [
     {
@@ -145,6 +147,8 @@ export default function Home() {
     <div className="text-center mt-24 mb-8">
     <h1 className={`${dimed.className} text-5xl text-black`}>About Me</h1>
         </div>
+
+                    
 
         <section className="flex flex-col justify-center items-center mx-4 sm:mx-12"> {/* Add margin on small screens */}
         <div className="w-full flex flex-row sm:flex-row">
