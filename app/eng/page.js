@@ -99,8 +99,8 @@ export default function eng() {
       <section className="max-w-screen-lg mx-auto mt-16 mx-2">
 
 
-        <div className="text-center mt-16 mb-8">
-        <h1 className={`${dimed.className} text-5xl text-black`}>Engineering & Computer Science</h1>
+        <div className="text-center mb-8">
+        <h1 className={`${dimed.className} text-5xl text-black mt-24`}>Engineering & Computer Science</h1>
         </div>
 
 
