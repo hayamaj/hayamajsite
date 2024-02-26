@@ -117,7 +117,7 @@ const Navigation = ({ isIndexPage }) => {
   <div className="flex">
     <div className="flex justify-between items-center">
         <div className="flex flex-col absolute left-8 top-8 z-50">
-      <h1 className={`${didot.className} text-center text-3xl ${isIndexPage ? `${didot.className}` : `${direg.className}`} ${isIndexPage ? 'text-white ' : 'text-accent '}  ${isIndexPage ? 'text-5xl' : 'text-xl'}`} onClick={() => handleNameClick()}>Haya AlMajali</h1>
+      <h1 className={`${didot.className} text-center text-3xl ${isIndexPage ? `${didot.className}` : `${direg.className}`} ${isIndexPage ? 'text-white ' : 'text-accent '}  ${isIndexPage ? 'text-2xl' : 'text-2xl'}`} onClick={() => handleNameClick()}>HAYA ALMAJALI</h1>
     </div>
 </div>
     {/*
@@ -136,20 +136,18 @@ const Navigation = ({ isIndexPage }) => {
 
 <div className="absolute top-8 right-8 z-40">
   <button className={`outline-none mobile-menu-button ${isIndexPage ? 'text-white' : 'text-accent'}`} onClick={toggleSidebar}>
-    <svg className="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-      <path strokeLinecap="square" strokeLinejoin="square" strokeWidth="1" d="M4 6h16M4 12h16M4 18h16" onClick={isSidebarOpen ? toggleSidebar : undefined}></path>
+  <svg className="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+      <path strokeLinecap="butt" strokeLinejoin="miter" strokeWidth="1.6" d="M1 9h22" onClick={isSidebarOpen ? toggleSidebar : undefined}></path>
+      <path strokeLinecap="butt" strokeLinejoin="miter" strokeWidth="1.6" d="M1 15h22" onClick={isSidebarOpen ? toggleSidebar : undefined}></path>
     </svg>
   </button>
 </div>
-
-
-
 
 <div className="absolute top-8 right-8 z-50">
   {isSidebarOpen && (
     <button className="outline-none mobile-menu-button text-accent" onClick={toggleSidebar}>
       <svg className="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="1" d="M6 18L18 6M6 6l12 12"></path>
+        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="1.6" d="M6 18L18 6M6 6l12 12"></path>
       </svg>
     </button>
   )}

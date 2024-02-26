@@ -90,6 +90,9 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
+      <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no, shrink-to-fit=no, viewport-fit=cover" />
+      </head>
       <body className={dilight.className}>{children}</body>
     </html>
   );
