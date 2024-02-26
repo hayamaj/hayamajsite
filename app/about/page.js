@@ -139,7 +139,7 @@ export default function Home() {
   }, []);
 
   return (
-    <main className={`bg-white text-blacks flex min-h-screen max-w-screen flex-col items-center justify-between text-black`}>
+    <main className={`bg-white text-black flex min-h-screen max-w-screen flex-col items-center justify-between text-black`}>
     <div className="flex flex-col items-center">
         <Navigation isIndexPage={false} class="sticky" /> {/* Use the Navigation component here */}
     </div>
@@ -166,28 +166,28 @@ export default function Home() {
                             <br />
                              <br />
                             I always thought I'd grow up to be a painter.
-                            I spent my childhood drawing & painting. While I thrived on the creativity and the act of bringing ideas to life, I found the solitary nature of the artist's life stifling.
+                            I spent my childhood drawing and painting. While I thrived on the creativity and the act of bringing ideas to life, I found the solitary nature of the artist's life stifling.
                             <br /> 
                             <br /> 
                             I've always been confident about two things: 
-                            I love to create & I excel most when collaborating with other creative minds <br /> 
+                            I love to create and I excel most when collaborating with other creative minds <br /> 
                             <br />
                             In college, I decided to major in Computer Science & Technology (with a minor in Visual Arts).
                             Despite its apparent contradiction to my collaborative aspirations,
-                            I recognized the digital landscape as the frontier of new & innovative ideas. So, 
-                            I sought to learn & master this new language.
+                            I recognized the digital landscape as the frontier of new and innovative ideas. So, 
+                            I sought to learn and master this new language.
                             <br />
                             <br />
                             Throughout my academic journey, I actively sought out leadership and facilitation roles to maintain a sense of collaboration.
-                            Whether representing BU as a student facilitator or engaging in clubs like Women in Computer Science & Club Tennis, I consistently pursued opportunities for teamwork.
+                            Whether representing BU as a student facilitator or engaging in clubs like Women in Computer Science & Club Tennis, I pursued opportunities for teamwork.
                             Additionally, my involvement in programs like the Spark! internship and a fellowship for aspiring product managers further honed my skills in project management and product development.
 
                             Now, equipped with a diverse skill set ranging from leadership to engineering and design, I want to guide teams in the pursuit of innovative solutions that can enrich our lives.
                             At this point in my life, I've crafted a diverse skill-set &#8212; from leadership roles to acquired engineering, product management, 
-                            & design skills. 
+                            and design skills. 
                             <br />
                             <br />
-                            Regardless of where my journey begins, my ultimate aim is to guide & facilitate teams in the creation of transformative solutions.
+                            Regardless of where my journey begins, my ultimate goal is to guide and facilitate teams in the creation of transformative solutions.
                             
                          </h1>
                          <h1 className={`${didot.className} text-right mt-4 text-sm`}>H M</h1>

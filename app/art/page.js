@@ -130,7 +130,7 @@ export default function Art() {
                       </video>
                       </div>
 
-                      <div className={` ${didotdf.className} text-center  z-100 absolute align-middle top-80 text-3xl md:text-4xl [text-wrap:balance] bg-clip-text text-white `}>
+                      <div className={` ${didotdf.className} text-center z-100 absolute align-middle top-80 text-3xl md:text-4xl [text-wrap:balance] bg-clip-text text-white `}>
                         <Link href="/art/painting" className="mx-2 hover:underline decoration-1 underline-offset-2">Painting</Link>&#8212;
                         <Link href="/art/photo" className="mx-2 hover:underline decoration-1 underline-offset-2">Photography</Link>&#8212;
                         <Link href="/art/drawing" className="mx-2 hover:underline decoration-1 underline-offset-2">Drawing</Link>&#8212;

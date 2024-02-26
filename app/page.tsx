@@ -126,18 +126,17 @@ export default function Home() {
   };
 
   return (
-    <main className={`bg-white flex min-h-screen max-w-screen flex-col items-center justify-between`}>
+    <main className={`bg-white min-h-screen max-w-screen items-center justify-between phone:max-w-phone`}>
     <div className="flex flex-col items-center">
         <Navigation isIndexPage={true} /> {/* Use the Navigation component here */}
     </div>
-
 <div className="flex flex-col justify-center items-center h-screen z-100" >
     <video autoPlay muted onEnded={handleVideoEnd} className="w-full h-full object-cover object-right-bottom">
                       <source src="/introvid.mov"/>
                       </video>
                       </div>
 
-          <div className={` ${dilight.className} whitespace-nowrap opacity-0 z-100 absolute left-1/3 top-1/3 transition-opacity duration-1000 ${videoEnded ? 'opacity-100' : ''} text-3xl md:text-4xl [text-wrap:balance] bg-clip-text text-neutral-200 `}>An aspiring <strong className={` ${proxnovareg.className} underline underline-offset-4 decoration-1 whitespace-nowrap`}>product leader</strong> <br /> with expertise in <span className=" text-neutral-200 inline-flex flex-col h-[calc(theme(fontSize.3xl)*theme(lineHeight.tight))] md:h-[calc(theme(fontSize.4xl)*theme(lineHeight.tight))] overflow-hidden">
+          <div className={` ${dilight.className} opacity-0 z-100 absolute left-1/3 top-1/3 transition-opacity duration-1000 ${videoEnded ? 'opacity-100' : ''} text-3xl md:text-4xl [text-wrap:balance] bg-clip-text text-neutral-200 `}>An aspiring <strong className={` ${proxnovareg.className} underline underline-offset-4 decoration-1 whitespace-nowrap`}>product leader</strong> <br /> with expertise in <span className=" text-neutral-200 inline-flex flex-col h-[calc(theme(fontSize.3xl)*theme(lineHeight.tight))] md:h-[calc(theme(fontSize.4xl)*theme(lineHeight.tight))] overflow-hidden">
             <ul className={` ${dibold.className} block animate-text-slide-3 text-justify text-accent leading-tight [&_li]:block`}>
             <li className="whitespace-nowrap">product management</li>
             <li>engineering</li>
@@ -147,19 +146,7 @@ export default function Home() {
           </span>
       </div>
 
-{/*resume stuff, figure out where to put*/}
-
-{/*
-      <div className="mx-auto flex flex-col items-center">
-        <div className="flex flex-col items-center text-center hover:no-underline ">
-          <button onClick={handleDownload} className={`${inter300.className} px-2 md:mt-4 text-sm text-neutral-800 hover:text-neutral-800`}>download my resume.</button>
-          <button onClick={handleDownload} className={`w-3 h-3 my-4 border border-neutral-950 bg-white hover:bg-neutral-950`}></button>
-
-        </div>
-      </div>
-                  */}
-
-<div className={`${didotdf.className} px-1 py-8 flex items-center sm:flex-row flex-col`}>
+<div className={`${didotdf.className} max-w-screen px-1 py-8 flex items-center sm:flex-row flex-col`}>
         <span className="mx-auto text-center text-xs text-neutral-900">
           <div className="mb-4">
           <Link href="/about" className="underline decoration-1 underline-offset-2 mx-2">About</Link>
