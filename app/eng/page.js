@@ -92,12 +92,12 @@ const proxnovabold = localFont({
 
 export default function eng() {
     return (
-        <main className={`bg-white min-h-screen ${dilight.className}`}>
+        <main className={`bg-white min-h-screen max-w-screen items-center justify-between sm:mx-8 phone:mx-8 text-black ${dilight.className}`}>
           <div className="flex flex-col items-center">
           <Navigation isIndexPage={false} class="sticky" /> {/* Use the Navigation component here */}
       </div>
+      <section className="max-w-screen-lg mx-auto mt-16 mx-2">
 
-            <div className="container mx-auto px-4">
 
         <div className="text-center mt-16 mb-8">
         <h1 className={`${dimed.className} text-5xl text-black`}>Engineering & Computer Science</h1>
@@ -339,8 +339,10 @@ export default function eng() {
           <button onClick={handleDownload} className={` ${dilight.className} mr-4 -mt-1 bg-white text-left text-black`}> &#8592; &nbsp; Click to download a PDF</button>
 
         </div>
+    
                         </div>
-
+                        </section>
+      
                         <div className={`${didotdf.className} px-1 py-8 flex items-center sm:flex-row flex-col`}>
         <span className="mx-auto text-center text-xs text-neutral-900">
           <div className="mb-4">
@@ -353,7 +355,7 @@ export default function eng() {
           </div>
         </span>
       </div>
-            </div>
+
         </main>
     )
 }

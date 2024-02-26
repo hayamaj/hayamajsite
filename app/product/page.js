@@ -110,12 +110,13 @@ export default function Product() {
     };
   
       return (
-        <main className={`bg-white min-h-screen text-black ${dilight.className}`}>
+        <main className={`bg-white min-h-screen max-w-screen items-center justify-between sm:mx-8 phone:mx-8 text-black ${dilight.className}`}>
           <div className="flex flex-col items-center">
           <Navigation isIndexPage={false} class="sticky" /> {/* Use the Navigation component here */}
         </div>
   
-        <div className="container mx-auto px-4">
+        <section className="max-w-screen-lg mx-auto mt-16 mx-2">
+
   
   <div className="text-center my-16 mb-8">
     <h1 className={`${dimed.className} text-5xl text-black`}>Product Management Portfolio</h1>
@@ -177,7 +178,7 @@ export default function Product() {
                   </div>
 
       */}
-
+</section>
           
   <div className={`${didotdf.className} px-1 py-8 flex items-center sm:flex-row flex-col`}>
           <span className="mx-auto text-center text-xs text-neutral-900">
@@ -191,7 +192,7 @@ export default function Product() {
             </div>
           </span>
         </div>
-  </div>
+
 
 
         </main>

@@ -147,9 +147,9 @@ export default function Home() {
         </div>
 
         <section className="flex flex-col justify-center items-center mx-4 sm:mx-12"> {/* Add margin on small screens */}
-        <div className="w-full flex flex-col sm:flex-row">
+        <div className="w-full flex flex-row sm:flex-row">
         {isDesktop && (
-          <div className="w-full sm:w-1/2 pr-0 sm:pr-4 mb-4 sm:mb-0">
+          <div className="w-full sm:w-1/2 pr-0 sm:pr-4 mb-4 sm:mb-0 mx-4">
             <video autoPlay loop playsInline muted className="w-full">
               <source src="/aboutvid.mov" />
             </video>
@@ -158,33 +158,32 @@ export default function Home() {
         <div className={`w-full sm:w-${isDesktop ? '1/2' : 'full'}`}>
           <h1 className="text-lg mb-2">Hi! I'm Haya.</h1>
                         <h1 className={`${dilight.className} text-sm text-black text-justify`}>
-                            I am a Jordanian-born student at Boston University, on track to graduate in May 2024.
+                            I am a Jordanian-born student at Boston University, set to graduate in May 2024.
                             <br />
                              <br />
                             I always thought I'd grow up to be a painter.
+                            I spent my childhood drawing & painting. While I thrived on the creativity and the act of bringing ideas to life, I found the solitary nature of the artist's life stifling.
                             <br /> 
-                            I spent my childhood drawing & painting. I loved creating new things & bringing ideas to life, & yet I hated the solitude of the lifestyle.
                             <br /> 
-                            <br /> 
-                            I've always been confident about two things: <br /> 
-                            1. My desire to create  <br /> 
-                            2. My desire to lead a lifestyle of collaboration & interaction with others. <br /> 
+                            I've always been confident about two things: 
+                            I love to create & I thrive most when collaborating with other creative minds <br /> 
                             <br />
-                            In college, I decided to major in Computer Science & Technology with a minor in Visual Arts.
-                            Recognizing the digital landscape as the emerging frontier of innovation,
-                            I wanted to learn language through which modern ideas were being brought to life, so I could one day do so with my own.
+                            In college, I decided to major in Computer Science & Technology (with a minor in Visual Arts).
+                            Despite its apparent contradiction to my collaborative aspirations,
+                            I recognized the digital landscape as the frontier of new & innovative ideas. So, 
+                            I sought to learn & master this new language.
                             <br />
                             <br />
-                            Amongst academics, I sought leadership & facilitation roles. 
-                            From representing BU as a student facilitator to joining clubs like Women in Computer Science &
-                            Club Tennis. I also joined the Spark! program at Boston university, where I interned as a project manager, 
-                            & participated in a fellowship & mentorship program for aspiring product managers looking to bring their products to fruition.
+                            Throughout my academic journey, I actively sought out leadership and facilitation roles to maintain a sense of collaboration.
+                            Whether representing BU as a student facilitator or engaging in clubs like Women in Computer Science & Club Tennis, I consistently pursued opportunities for teamwork.
+                            Additionally, my involvement in programs like the Spark! internship and a fellowship for aspiring product managers further honed my skills in project management and product development.
 
+                            Now, equipped with a diverse skill set ranging from leadership to engineering and design, I want to guide teams in the pursuit of innovative solutions that can enrich our lives.
                             At this point in my life, I've crafted a diverse skill-set &#8212; from leadership roles to acquired engineering, product management, 
                             & design skills. 
                             <br />
                             <br />
-                            Regardless of the starting point, my ultimate aim is to guide & facilitate teams in the creation of new innovative solutions to enhance our lives.
+                            Regardless of where my journey begins, my ultimate aim is to guide & facilitate teams in the creation of transformative solutions.
                             
                          </h1>
                          <h1 className={`${didot.className} text-right mt-4 text-sm`}>H M</h1>
