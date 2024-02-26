@@ -146,7 +146,7 @@ export default function Home() {
     <h1 className={`${dimed.className} text-5xl text-black`}>About Me</h1>
         </div>
 
-        <section className="flex flex-col justify-center items-center mx-4 sm:mx-8"> {/* Add margin on small screens */}
+        <section className="flex flex-col justify-center items-center mx-4 sm:mx-12"> {/* Add margin on small screens */}
         <div className="w-full flex flex-col sm:flex-row">
         {isDesktop && (
           <div className="w-full sm:w-1/2 pr-0 sm:pr-4 mb-4 sm:mb-0">
