@@ -126,7 +126,7 @@ export default function Dibs() {
         <Navigation isIndexPage={false} class="sticky" /> {/* Use the Navigation component here */}
         </div>
                 {/*problem statement */}
-                <section className="max-w-screen-lg mx-auto mt-16 mx-2">
+                <section className="max-w-screen-lg sm:max-w-screen-sm mx-auto mt-16 mx-2">
 
                 <div className="flex flex-col justify-center items-center">
                 <h2 className={`${direg.className} mt-24 text-md text-accent text-center mb-1`}>2022 &#8212; 2024</h2>
