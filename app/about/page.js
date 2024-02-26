@@ -127,15 +127,19 @@ export default function Home() {
     <h1 className={`${dimed.className} text-5xl text-black`}>About Me</h1>
         </div>
 
-    <section className="flex flex-row justify-cente items-center mx-8">
-<div className="flex items-left max-w-screen mr-8" >
-    <video autoPlay="autoplay" Loop="loop" playsInLine="playsinline" muted="true" onEnded={handleVideoEnd} className="h-4/5 w-full ml-2 justify-left">
-                      <source src="/aboutvid.mov" />
-                      </video>
-                      </div>
-                      <div className="flex items-right flex-col justify-center text-justify">
-                        <h1 className={`${didotdf.className} text-lg my-2`}>Hi! I'm Haya. </h1>
-                        <h1 className={`${dilight.className} text-sm text-black text-justify max-w-md`}>
+        <section className="flex flex-col justify-center items-center mx-4 sm:mx-8"> {/* Add margin on small screens */}
+        <div className="w-full flex flex-col sm:flex-row"> {/* Use flexbox for layout */}
+    {/* Conditionally render the video based on screen size */}
+    {window.innerWidth > 640 && (
+      <div className="w-1/2 pr-0 sm:pr-4 mb-4 sm:mb-0"> {/* Adjust width and spacing */}
+      <video autoPlay loop playsInline muted className="w-full">
+          <source src="/aboutvid.mov" />
+        </video>
+      </div>
+    )}
+    <div className="w-full sm:w-1/2">
+    <h1 className="text-lg mb-2">Hi! I'm Haya.</h1>
+                        <h1 className={`${dilight.className} text-sm text-black text-justify`}>
                             I am a Jordanian-born student at Boston University, on track to graduate in May 2024.
                             <br />
                              <br />
@@ -166,6 +170,7 @@ export default function Home() {
                             
                          </h1>
                          <h1 className={`${didot.className} text-right mt-4 text-sm`}>H M</h1>
+                      </div>
                       </div>
 </section>
 
