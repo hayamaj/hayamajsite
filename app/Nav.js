@@ -162,8 +162,8 @@ const Navigation = ({ isIndexPage }) => {
           <Link href="/product" className={` ${didotdf.className} text-neutral-950 my-4 mt-2 block text-2xl decoration-1 hover:underline underline-offset-4 whitespace-nowrap`}>Product</Link>
           <Link href="/eng" className={` ${didotdf.className} text-neutral-950 mt-2 my-4 block text-2xl decoration-1 hover:underline underline-offset-4`}>Eng</Link>
           <Link href="/art" className={` ${didotdf.className} text-neutral-950 mt-2 my-4 block text-2xl decoration-1 hover:underline underline-offset-4`}>Design</Link>
-          <Link href="/about" className={` ${didotdf.className} text-accent mt-1 block text-sm decoration-1 hover:text-neutral-200 hover:underline underline-offset-4`}>About</Link>
-          <Link href="/contact" className={` ${didotdf.className} text-accent block text-sm mt-48 decoration-1 hover:text-neutral-200 hover:underline underline-offset-4`}>Contact</Link>
+          <Link href="/about" className={` ${didotdf.className} text-accent mt-1 block mt-48 text-sm decoration-1 hover:text-neutral-200 hover:underline underline-offset-4`}>About</Link>
+          <Link href="/contact" className={` ${didotdf.className} text-accent block text-sm decoration-1 hover:text-neutral-200 hover:underline underline-offset-4`}>Contact</Link>
         </div>
       </div>
     )}
