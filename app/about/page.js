@@ -170,7 +170,7 @@ export default function Home() {
                             <br /> 
                             <br /> 
                             I've always been confident about two things: 
-                            I love to create and I excel most when collaborating with other creative minds <br /> 
+                            I love to create and I excel most when collaborating with other creative minds. <br /> 
                             <br />
                             In college, I decided to major in Computer Science & Technology (with a minor in Visual Arts).
                             Despite its apparent contradiction to my collaborative aspirations,
