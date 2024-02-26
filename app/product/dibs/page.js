@@ -121,7 +121,7 @@ export default function Dibs() {
       }
     };
       return (
-        <main className={`bg-white flex min-h-screen max-w-screen flex-col items-center justify-between`}>
+        <main className={`bg-white flex min-h-screen max-w-screen flex-col items-center justify-between mx-2`}>
         <div className="flex flex-col items-center">
         <Navigation isIndexPage={false} class="sticky" /> {/* Use the Navigation component here */}
         </div>
