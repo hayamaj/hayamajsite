@@ -159,7 +159,7 @@ export default function eng() {
                     </div>
                     <div className="flex items-justify mx-4 ">
                 <Image
-                      src="/images/sml.jpg"
+                      src="/images/SML.jpg"
                       width={100}
                       height={100}
                       alt="Picture of the author"
