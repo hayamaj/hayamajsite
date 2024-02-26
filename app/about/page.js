@@ -117,6 +117,25 @@ export default function Home() {
     document.body.removeChild(link);
   };
 
+  const [isDesktop, setIsDesktop] = useState(false);
+
+  useEffect(() => {
+    // Check screen width on component mount
+    const handleResize = () => {
+      setIsDesktop(window.innerWidth > 640); // Adjust threshold as needed
+    };
+
+    handleResize(); // Call once to set initial state
+
+    // Add event listener for window resize
+    window.addEventListener('resize', handleResize);
+
+    // Cleanup function to remove event listener on component unmount
+    return () => {
+      window.removeEventListener('resize', handleResize);
+    };
+  }, []);
+
   return (
     <main className={`bg-white text-blacks flex min-h-screen max-w-screen flex-col items-center justify-between text-black`}>
     <div className="flex flex-col items-center">
@@ -128,19 +147,16 @@ export default function Home() {
         </div>
 
         <section className="flex flex-col justify-center items-center mx-4 sm:mx-8"> {/* Add margin on small screens */}
-        <div className="w-full flex flex-col sm:flex-row"> {/* Use flexbox for layout */}
-    {/* Conditionally render the video based on screen size */}
-    {window.innerWidth > 640 && (
-          <div className="w-1/2 pr-0 sm:pr-4 mb-4 sm:mb-0"> {/* Adjust width and spacing */}
-
-      <video autoPlay loop playsInline muted className="w-full">
-          <source src="/aboutvid.mov" />
-        </video>
-     </div>
+        <div className="w-full flex flex-col sm:flex-row">
+        {isDesktop && (
+          <div className="w-full sm:w-1/2 pr-0 sm:pr-4 mb-4 sm:mb-0">
+            <video autoPlay loop playsInline muted className="w-full">
+              <source src="/aboutvid.mov" />
+            </video>
+          </div>
     )}
-     </div>
-     <div className={`w-full sm:w-${window.innerWidth > 640 ? '1/2' : 'full'}`}> {/* Adjust width */}
-    <h1 className="text-lg mb-2">Hi! I'm Haya.</h1>
+        <div className={`w-full sm:w-${isDesktop ? '1/2' : 'full'}`}>
+          <h1 className="text-lg mb-2">Hi! I'm Haya.</h1>
                         <h1 className={`${dilight.className} text-sm text-black text-justify`}>
                             I am a Jordanian-born student at Boston University, on track to graduate in May 2024.
                             <br />
@@ -172,7 +188,7 @@ export default function Home() {
                             
                          </h1>
                          <h1 className={`${didot.className} text-right mt-4 text-sm`}>H M</h1>
-  
+  </div>
                       </div>
 </section>
 
