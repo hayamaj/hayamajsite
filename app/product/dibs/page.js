@@ -212,7 +212,7 @@ During move-out periods, our streets get cluttered with perfectly
                       alt="Picture of the author"
                     />
                 </div>
-                <h2 className={`${direg.className} mt-4 text-2xl text-black text-left justify-content max-w-5xl`}>Key Features
+                <h2 className={`${direg.className} mt-4 text-2xl text-black text-left justify-left max-w-5xl`}>Key Features
  </h2>
                 <div className={`${dilight.className} mt-4 text-xl text-center text-justify text-black list-none`}>
             <li><strong className={`${direg.className} mt-4 text-accent text-3xl text-center justify-content max-w-5xl`}>1.&nbsp;Post &nbsp; </strong>  </li>
@@ -266,18 +266,35 @@ During move-out periods, our streets get cluttered with perfectly
             </div>
             </div>
 
+            <div className="grid place-items-center my-4">
+                    <Image
+                      src="/images/arrow.svg"
+                      width={100}
+                      height={100}
+                      alt="Picture of the author"
+                    />
+                </div>
+
             <h2 className={`${dilight.className} my-12 text-black text-left justify-content max-w-5xl`}>
             Even after the fellowship ended, I was determined to continue working on Dibs. So, I applied to the <strong className={`${direg.className} mt-4 text-accent text-left justify-content max-w-5xl`}>Launch Lab product track</strong>,
             , which is a program at BU that provides students with instruction & support to launch their products into the real world. Over the next year, 
             we
-            <div className={`${dilight.className} ml-4 mt-4 text-xl text-center text-justify text-black list-none`}>
-            <li><strong className={`${direg.className} mt-4 text-accent text-2xl text-center justify-content max-w-5xl`}> &#8212; &nbsp;Expanded &nbsp; </strong> the development team by onboarding two new developers.</li>
-            <li><strong className={`${direg.className} mt-4 text-accent text-2xl text-center justify-content max-w-5xl`}> &#8212; &nbsp;Transitioned &nbsp;</strong> the application from a web-based platform to a mobile-centric environment.</li>
-            <li><strong className={`${direg.className} mt-4 text-accent text-2xl text-center justify-content max-w-5xl`}> &#8212; &nbsp;Implemented &nbsp;</strong> an overhaul of the app's UI/UX to enhance usability and optimize engagement.</li>
-            <li><strong className={`${direg.className} mt-4 text-accent text-2xl text-center justify-content max-w-5xl`}> &#8212; &nbsp;Explored &nbsp;</strong> a more efficient way to facilitate & simplify the acquisition & disposal of items.</li>
+            <div className={`${dilight.className} ml-4 mt-4 text-lg text-left text-left text-black list-none`}>
+            <li><strong className={`${direg.className} mt-4 text-accent text-3xl text-left justify-content max-w-5xl`}> 1. &nbsp;Expanded &nbsp; </strong> <br/>the development team by onboarding two new developers.</li>
+            <li><strong className={`${direg.className} mt-4 text-accent text-3xl text-left justify-content max-w-5xl`}> 2. &nbsp;Migrated &nbsp;</strong> <br/>the application from a web-based platform to a mobile-centric environment.</li>
+            <li><strong className={`${direg.className} mt-4 text-accent text-3xl text-left justify-content max-w-5xl`}> 3. &nbsp;Performed &nbsp;</strong> <br/>an overhaul of the app's UI/UX to enhance usability and optimize engagement.</li>
+            <li><strong className={`${direg.className} mt-4 text-accent text-3xl text-left justify-content max-w-5xl`}> 4. &nbsp;Explored &nbsp;</strong> <br/>a more efficient way to facilitate & simplify the acquisition & disposal of items.</li>
 
             </div>
  </h2>
+ <div className="grid place-items-center my-4">
+                    <Image
+                      src="/images/arrow.svg"
+                      width={100}
+                      height={100}
+                      alt="Picture of the author"
+                    />
+                </div>
  <div className="mx-4 mt-8">
             <div className="my-4">
             <h2 className={`${direg.className} text-lg text-accent text-center mb-1`}>Version 2 &#8212;2023/4 </h2>
@@ -303,6 +320,12 @@ During move-out periods, our streets get cluttered with perfectly
             <h2 className={`${dilight.className} mt-4 text-black text-left justify-content max-w-5xl`}>Click here to watch a <Link href="/product/dibs/demo" className="underline decoration-1 underline-offset-2 text-accent">demo</Link> of the app.
  </h2>
 
+ <h2 className={`${direg.className} mt-16 text-5xl text-black text-left mb-1`}>Next Steps</h2>
+<h2 className={`${dilight.className} mt-4 text-black text-left justify-content max-w-5xl`}>
+We are scheduled to launch Dibs! on app stores by late March. Following the release, our strategy involves extensive user testing and continual updates driven by feedback from the BU community.
+
+
+ </h2>
 
 
 </section>
