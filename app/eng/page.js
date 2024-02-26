@@ -99,7 +99,7 @@ export default function eng() {
 
             <div className="container mx-auto px-4">
 
-        <div className="text-center mt-16">
+        <div className="text-center mt-16 mb-8">
         <h1 className={`${dimed.className} text-5xl text-black`}>Engineering & Computer Science</h1>
         </div>
 

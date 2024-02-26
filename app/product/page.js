@@ -117,7 +117,7 @@ export default function Product() {
   
         <div className="container mx-auto px-4">
   
-  <div className="text-center my-16">
+  <div className="text-center my-16 mb-8">
     <h1 className={`${dimed.className} text-5xl text-black`}>Product Management Portfolio</h1>
   </div>
 
