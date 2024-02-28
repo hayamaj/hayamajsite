@@ -131,7 +131,7 @@ export default function Home() {
     <div className={`flex flex-col items-center`}>
         <Navigation isIndexPage={isIndexPage} /> {/* Use the Navigation component here */}
     </div>
-<div className={`flex flex-col justify-center items-center h-screen z-100 ${videoEnded ? 'opacity-5' : 'opacity-100'}`} >
+<div className={`flex flex-col justify-center items-center h-screen z-100 ${videoEnded ? 'opacity-0' : 'opacity-100'}`} >
     <video autoPlay playsInline muted onEnded={handleVideoEnd} className="w-full h-full object-cover object-right-bottom">
                       <source src="/introvid.mov"/>
                       </video>
