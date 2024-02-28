@@ -88,7 +88,7 @@ const proxnovabold = localFont({
 export default function Home() {
   const [isSidebarOpen, setIsSidebarOpen] = useState(false);
   const [videoEnded, setVideoEnded] = useState(false);
-  const isIndexPage = true; 
+  const [isIndexPage, setIsIndexPage] = useState(true); // assuming it starts as true
 
 
   useEffect(() => {
@@ -112,7 +112,7 @@ export default function Home() {
 
   const handleVideoEnd = () => {
     setVideoEnded(true);
-    console.log("works");
+    setIsIndexPage(false);
   };
 
   {/*resume, not sure if still needed here.*/}
@@ -127,17 +127,17 @@ export default function Home() {
   };
 
   return (
-    <main className={`${videoEnded ? 'bg-black' : 'bg-white'} min-h-screen max-w-screen items-center justify-between phone:max-w-phone`}>
-    <div className={`flex flex-col items-center`}>
-        <Navigation isIndexPage={true} /> {/* Use the Navigation component here */}
+    <main className={`${videoEnded ? 'bg-[#e1dcf2]' : ''} min-h-screen max-w-screen items-center justify-between phone:max-w-phone`}>
+    <div className={`flex flex-col items-center ${videoEnded ? 'video-ended' : ''}`}>
+        <Navigation isIndexPage={isIndexPage} /> {/* Use the Navigation component here */}
     </div>
-<div className={`flex flex-col justify-center items-center h-screen z-100 ${videoEnded ? 'opacity-0' : 'opacity-100'}`} >
+<div className={`flex flex-col justify-center items-center h-screen z-100 ${videoEnded ? 'opacity-5' : 'opacity-100'}`} >
     <video autoPlay muted onEnded={handleVideoEnd} className="w-full h-full object-cover object-right-bottom">
                       <source src="/introvid.mov"/>
                       </video>
                       </div>
 
-          <div className={` ${dilight.className} opacity-0 z-100 absolute top-1/3 left-24 text-left transition-opacity duration-1000 ${videoEnded ? 'opacity-100' : ''} text-5xl md:text-4xl [text-wrap:balance] bg-clip-text text-neutral-300 `}>An aspiring <strong className={` ${didot.className} text-white `}>product leader</strong> with expertise in <span className=" text-white inline-flex flex-col h-[calc(theme(fontSize.5xl)*theme(lineHeight.tight))] md:h-[calc(theme(fontSize.4xl)*theme(lineHeight.tight))] overflow-hidden">
+          <div className={` ${dilight.className} opacity-0 z-100 absolute top-1/2 ml-12 text-left transition-opacity duration-1000 ${videoEnded ? 'opacity-100' : ''} text-5xl md:text-4xl [text-wrap:balance] bg-clip-text text-black `}>An aspiring <strong className={` ${direg.className} underline decoration-1 underline-offset-2 text-black `}>product leader</strong> with expertise in <span className=" text-white inline-flex flex-col h-[calc(theme(fontSize.5xl)*theme(lineHeight.tight))] md:h-[calc(theme(fontSize.4xl)*theme(lineHeight.tight))] overflow-hidden">
             <ul className={` ${diboldital.className} block animate-text-slide-3 text-justify text-accent leading-tight [&_li]:block`}>
             <li className="whitespace-nowrap">PRODUCT MGMT</li>
             <li>ENGINEERING</li>

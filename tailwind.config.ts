@@ -47,7 +47,8 @@ module.exports = {
         "pm-light": "#c7c7c7",
         "eng-light": "#fac5cb",
         "art-light": "#aaffd4",
-        "accent": "#5f39f4"
+        "accent": "#5f39f4",
+        "acc-y": "#FAD02C"
         
       },
       fontFamily: {
