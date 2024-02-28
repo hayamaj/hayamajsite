@@ -139,7 +139,7 @@ export default function Home() {
 
           <div className={` ${dilight.className} opacity-0 z-100 absolute top-1/2 ml-12 text-left transition-opacity duration-1000 ${videoEnded ? 'opacity-100' : ''} text-5xl md:text-4xl [text-wrap:balance] bg-clip-text text-black `}>An aspiring <strong className={` ${direg.className} underline decoration-1 underline-offset-2 text-black `}>product leader</strong> with expertise in <span className=" text-white inline-flex flex-col h-[calc(theme(fontSize.5xl)*theme(lineHeight.tight))] md:h-[calc(theme(fontSize.4xl)*theme(lineHeight.tight))] overflow-hidden">
             <ul className={` ${diboldital.className} block animate-text-slide-3 text-justify text-accent leading-tight [&_li]:block`}>
-            <li className="whitespace-nowrap">PRODUCT MGMT</li>
+            <li className="">PRODUCT MGMT</li>
             <li>ENGINEERING</li>
             <li>DESIGN</li>
             <li aria-hidden="true">PRODUCT MGMT</li>
