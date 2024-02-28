@@ -110,6 +110,11 @@ const Navigation = ({ isIndexPage }) => {
   const handleNameClick = () => {
     window.location.href = '/'; // Redirect to the home page
   };
+
+  const handleVideoEnd = () => {
+    setVideoEnded(true);
+    console.log("works");
+  };
  
 
 
@@ -117,7 +122,7 @@ const Navigation = ({ isIndexPage }) => {
   <div className="flex">
     <div className="flex justify-between items-center">
         <div className="flex flex-col absolute left-8 top-8 z-50">
-      <h1 className={`${didot.className} text-center text-3xl ${isIndexPage ? `${didot.className}` : `${direg.className}`} ${isIndexPage ? 'text-white ' : 'text-accent '}  ${isIndexPage ? 'text-2xl' : 'text-2xl'}`} onClick={() => handleNameClick()}>HAYA ALMAJALI</h1>
+      <h1 className={`${direg.className} text-center text-3xl ${isIndexPage ? `${direg.className}` : `${direg.className}`} ${isIndexPage ? 'text-white ' : 'text-accent '}  ${isIndexPage ? 'text-2xl' : 'text-2xl'}`} onClick={() => handleNameClick()}>HAYA ALMAJALI</h1>
     </div>
 </div>
     {/*

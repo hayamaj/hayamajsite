@@ -139,6 +139,14 @@ export default function Product() {
                 </div>
 
         </div>
+        <Link href="/eng" className="flex flex-row-reverse mx-24 my-16">
+          <Image
+                      src="/images/right-arrow.png"
+                      width={100}
+                      height={100}
+                      alt="Picture of the author"
+                    />
+                    </Link>
 
 
   {/*

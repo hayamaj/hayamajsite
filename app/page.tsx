@@ -5,6 +5,7 @@ import { useState, useEffect, ChangeEvent } from 'react';
 import localFont from 'next/font/local'
 import Link from 'next/link';
 import Navigation from './Nav'
+import Image from 'next/image';
 
 {     /*fonts*/     }
 const dilight = localFont({
@@ -126,28 +127,38 @@ export default function Home() {
   };
 
   return (
-    <main className={`bg-white min-h-screen max-w-screen items-center justify-between phone:max-w-phone`}>
-    <div className="flex flex-col items-center">
+    <main className={`${videoEnded ? 'bg-black' : 'bg-white'} min-h-screen max-w-screen items-center justify-between phone:max-w-phone`}>
+    <div className={`flex flex-col items-center`}>
         <Navigation isIndexPage={true} /> {/* Use the Navigation component here */}
     </div>
-<div className="flex flex-col justify-center items-center h-screen z-100" >
+<div className={`flex flex-col justify-center items-center h-screen z-100 ${videoEnded ? 'opacity-0' : 'opacity-100'}`} >
     <video autoPlay muted onEnded={handleVideoEnd} className="w-full h-full object-cover object-right-bottom">
                       <source src="/introvid.mov"/>
                       </video>
                       </div>
 
-          <div className={` ${dilight.className} opacity-0 z-100 absolute left-1/3 top-1/3 transition-opacity duration-1000 ${videoEnded ? 'opacity-100' : ''} text-3xl md:text-4xl [text-wrap:balance] bg-clip-text text-neutral-200 `}>An aspiring <strong className={` ${proxnovareg.className} underline underline-offset-4 decoration-1 whitespace-nowrap`}>product leader</strong> <br /> with expertise in <span className=" text-neutral-200 inline-flex flex-col h-[calc(theme(fontSize.3xl)*theme(lineHeight.tight))] md:h-[calc(theme(fontSize.4xl)*theme(lineHeight.tight))] overflow-hidden">
-            <ul className={` ${dibold.className} block animate-text-slide-3 text-justify text-accent leading-tight [&_li]:block`}>
-            <li className="whitespace-nowrap">product management</li>
-            <li>engineering</li>
-            <li>design</li>
-            <li aria-hidden="true">product management</li>
+          <div className={` ${dilight.className} opacity-0 z-100 absolute top-1/3 left-24 text-left transition-opacity duration-1000 ${videoEnded ? 'opacity-100' : ''} text-5xl md:text-4xl [text-wrap:balance] bg-clip-text text-neutral-300 `}>An aspiring <strong className={` ${didot.className} text-white `}>product leader</strong> with expertise in <span className=" text-white inline-flex flex-col h-[calc(theme(fontSize.5xl)*theme(lineHeight.tight))] md:h-[calc(theme(fontSize.4xl)*theme(lineHeight.tight))] overflow-hidden">
+            <ul className={` ${diboldital.className} block animate-text-slide-3 text-justify text-accent leading-tight [&_li]:block`}>
+            <li className="whitespace-nowrap">PRODUCT MGMT</li>
+            <li>ENGINEERING</li>
+            <li>DESIGN</li>
+            <li aria-hidden="true">PRODUCT MGMT</li>
           </ul>
           </span>
+          <Link href="/product" className="flex flex-row-reverse mx-24 my-16">
+          <Image
+                      src="/images/right-arrow.png"
+                      width={100}
+                      height={100}
+                      alt="Picture of the author"
+                    />
+                    </Link>
       </div>
 
-<div className={`${didotdf.className} max-w-screen px-1 py-8 flex items-center sm:flex-row flex-col`}>
-        <span className="mx-auto text-center text-xs text-neutral-900">
+
+
+<div className={`${didotdf.className} ${videoEnded ? 'bg-white' : 'bg-white'} max-w-screen px-1 py-8 flex items-center sm:flex-row flex-col`}>
+        <span className={`mx-auto text-center text-xs`}>
           <div className="mb-4">
           <Link href="/about" className="underline decoration-1 underline-offset-2 mx-2">About</Link>
           <Link href="/contact" className="underline decoration-1 underline-offset-2 mx-2">Contact</Link> <br />

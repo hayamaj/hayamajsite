@@ -341,6 +341,15 @@ export default function eng() {
         </div>
     
                         </div>
+
+                        <Link href="/art" className="flex flex-row-reverse mx-24 my-16">
+          <Image
+                      src="/images/right-arrow.png"
+                      width={100}
+                      height={100}
+                      alt="Picture of the author"
+                    />
+                    </Link>
                         </section>
       
                         <div className={`${didotdf.className} px-1 py-8 flex items-center sm:flex-row flex-col`}>
