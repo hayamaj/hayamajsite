@@ -128,7 +128,7 @@ export default function Home() {
 
   return (
     <main className={`${videoEnded ? 'bg-white' : ''} min-h-screen max-w-screen items-center justify-between`}>
-    <div className={`flex flex-col items-center ${videoEnded ? 'video-ended' : ''}`}>
+    <div className={`flex flex-col items-center`}>
         <Navigation isIndexPage={isIndexPage} /> {/* Use the Navigation component here */}
     </div>
 <div className={`flex flex-col justify-center items-center h-screen z-100 ${videoEnded ? 'opacity-5' : 'opacity-100'}`} >
