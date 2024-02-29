@@ -4,7 +4,8 @@ import { useState, useEffect, ChangeEvent } from 'react';
 // Import the Navigation component
 import localFont from 'next/font/local'
 import Link from 'next/link';
-import Navigation from './Nav'
+import Navigation from './Nav';
+import NavBar from './NavBar';
 import Image from 'next/image';
 
 {     /*fonts*/     }
@@ -127,10 +128,7 @@ export default function Home() {
   };
 
   return (
-    <main className={`${videoEnded ? 'bg-accy' : ''} min-h-screen max-w-screen items-center justify-between`}>
-    <div className={`flex flex-col items-center `}>
-        <Navigation isIndexPage={isIndexPage} /> {/* Use the Navigation component here */}
-    </div>
+    <main className={`${videoEnded ? 'bg-bg' : ''} min-h-screen max-w-screen items-center justify-between`}>
 <div className={` flex flex-col justify-center items-center h-screen z-100 ${videoEnded ? 'opacity-0 transition-opacity duration-1000' : 'opacity-100'}`} >
     <video autoPlay playsInline muted onEnded={handleVideoEnd} className="w-full h-full object-cover object-right-bottom">
                       <source src="/introvid.mov"/>
@@ -138,39 +136,20 @@ export default function Home() {
                       </div>
 
 
-<div className={` ${dilight.className} opacity-0 z-100 absolute top-1/2 ml-12 text-left transition-opacity duration-250 ${videoEnded ? 'opacity-100' : ''} text-5xl md:text-4xl [text-wrap:balance] bg-clip-text text-black `}>
-  An aspiring <strong className={` ${direg.className} underline decoration-1 underline-offset-2 text-black `}>product leader</strong> with expertise in <span className=" text-white inline-flex flex-col h-[calc(theme(fontSize.5xl)*theme(lineHeight.tight))] md:h-[calc(theme(fontSize.4xl)*theme(lineHeight.tight))]  sm:h-[calc(theme(fontSize.xl)*theme(lineHeight.tight))] overflow-hidden">
-            <ul className={` ${diboldital.className} block animate-text-slide-3 text-justify text-accent leading-tight [&_li]:block`}>
-            <li className="whitespace-nowrap">PRODUCT MGMT</li>
-            <li>ENGINEERING</li>
-            <li>DESIGN</li>
-            <li aria-hidden="true">PRODUCT MGMT</li>
-          </ul>
-          </span>
-          <Link href="/product" className="flex flex-row-reverse mx-24 my-12">
-          <Image
-                      src="/images/right-arrow.png"
-                      width={200}
-                      height={200}
-                      alt="Picture of the author"
-                    />
-                    </Link>
-                    
-      </div>
+                      <div className={`flex ${dilight.className} opacity-0 z-100 absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 mx-auto text-left transition-opacity duration-250 ${videoEnded ? 'opacity-100' : ''} text-5xl md:text-4xl [text-wrap:balance] bg-clip-text text-bl max-w-3xl`}>
+  <h1 className={` ${dimed.className} text-5xl text-black`}>&#8212; HAYA IS AN ASPIRING <strong className={` ${dibold.className} text-5xl text-accent`}>PRODUCT LEADER </strong>WITH EXPERTISE IN <strong className={` ${direg.className} text-5xl text-black`}>PRODUCT MGMT, </strong>
+<strong className={` ${direg.className} text-5xl text-black`}>ENGINEERING </strong> & <strong className={` ${direg.className} text-5xl text-black`}>DESIGN </strong>.</h1>
+</div>
+    
 
-
-
-
-
-<div className={`${didotdf.className} ${videoEnded ? 'bg-white' : 'bg-white'} max-w-screen px-1 py-8 flex items-center sm:flex-row flex-col`}>
-        <span className={`mx-auto text-center text-xs`}>
+<div className={` max-w-screen px-1 py-8 flex items-center sm:flex-row flex-col`}>
+        <span className={`mx-auto text-center text-gr text-sm`}>
           <div className="mb-4">
-          <Link href="/about" className="underline decoration-1 underline-offset-2 mx-2">About</Link>
-          <Link href="/contact" className="underline decoration-1 underline-offset-2 mx-2">Contact</Link> <br />
           </div>
-          <div className={`${dilight.className}`}>
-          hayamaj@bu.edu <br />
-          [857] 891 - 8848 <br />
+          <div className={`${dilight.className} text-sm`}>
+          <strong className={`text-sm`}>HAYA ALMAJALI</strong><br />
+          <strong className={`text-sm`}>hayamaj@bu.edu</strong><br />
+          <strong className={`text-sm`}>[857] 891 - 8848</strong><br />
           </div>
         </span>
       </div>

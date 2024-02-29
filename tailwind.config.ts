@@ -7,10 +7,10 @@ module.exports = {
     "./app/**/*.{js,ts,jsx,tsx,mdx}",
   ],
   theme: {
-    screens: {
-      'phone': '390px',
-    },
     extend: {
+      screens: {
+        'phone': '390px',
+      },
       backgroundImage: {
         "gradient-radial": "radial-gradient(var(--tw-gradient-stops))",
         "gradient-conic":
@@ -48,7 +48,11 @@ module.exports = {
         "eng-light": "#fac5cb",
         "art-light": "#aaffd4",
         "accent": "#5f39f4",
-        "accy": "#f9f9fc"
+        "accy": "#f9f9fc",
+        "bl": "#323132",
+        "gr":"#b3b3b3",
+        "yellow": "#EBFF0E",
+        "bg":"#fafafa"
         
       },
       fontFamily: {

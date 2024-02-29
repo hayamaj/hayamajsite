@@ -121,20 +121,18 @@ export default function Dibs() {
       }
     };
       return (
-        <main className={`bg-white flex min-h-screen max-w-screen flex-col items-center justify-between sm:mx-8 phone:mx-8`}>
-        <div className="flex flex-col items-center">
-        <Navigation isIndexPage={false} class="sticky" /> {/* Use the Navigation component here */}
-        </div>
+        <main className={`bg-bg flex min-h-screen max-w-screen flex-col items-center justify-between sm:mx-8 phone:mx-8`}>
+
                 {/*problem statement */}
-                <section className="max-w-screen-lg mx-auto mt-16 mx-2">
+                <section className="max-w-screen-lg mx-auto mx-2">
 
                 <div className="flex flex-col justify-center items-center">
                 <h2 className={`${direg.className} mt-24 text-md text-accent text-center mb-1`}>2022 &#8212; 2024</h2>
-                <h2 className={`${direg.className} mt-4 text-5xl text-black flex justify-center items-center max-w-xl text-center mb-1`}>A Digital Thrift Store Solution to Campus Waste Management</h2>
+                <h2 className={`${direg.className} mt-4 text-5xl text-bl flex justify-center items-center max-w-xl text-center mb-1`}>A Digital Thrift Store Solution to Campus Waste Management</h2>
                 </div>
 
                 <div className="flex justify-center items-center">
-                <h2 className={`${dilight.className} mt-8 text-black text-center justify-content max-w-lg`}>
+                <h2 className={`${dilight.className} mt-8 text-bl text-center justify-content max-w-lg`}>
                     From the initial prototype to getting ready for launch, I've led Dibs through several product cycles. 
                     It all started on a sunny afternoon during my sophomore year of college, in the middle of move-out season.
                     Seeing all the nice furniture left out on the streets because students couldn't be bothered  to find a better home for them gave me the idea for Dibs
@@ -152,7 +150,7 @@ export default function Dibs() {
                     </div>
 
                     <div className="ml-4 flex justify-center flex-col items-center">
-                <h2 className={`${direg.className} mt-8 text-black text-center justify-content max-w-md`}>
+                <h2 className={`${direg.className} mt-8 text-bl text-center justify-content max-w-md`}>
                     Haya AlMajali </h2>
                     <h2 className={`${dilight.className} text-neutral-400 text-center justify-content max-w-md`}>
                     Product Lead </h2>
@@ -161,10 +159,19 @@ export default function Dibs() {
 
 
 
+                    <h2 className={`${direg.className} mt-16 text-5xl text-bl text-left mb-1`}>My Role</h2>
+<h2 className={`${dilight.className} mt-4 text-bl text-left justify-content max-w-5xl`}>
+As Product Manager for dibs, 
+I worked with multiple multidisciplinary team to take dibs! from conception to launch. 
+I conducted research, user interviews, managed customer onboarding, oversaw development, 
+and worked closely with the product designer and lead engineer through several product cycles 
+spanning 2 years. 
+ </h2>
 
 
-<h2 className={`${direg.className} mt-16 text-5xl text-black text-left mb-1`}>Problem Statement</h2>
-<h2 className={`${dilight.className} mt-4 text-black text-left justify-content max-w-5xl`}>
+
+<h2 className={`${direg.className} mt-16 text-5xl text-bl text-left mb-1`}>Problem Statement</h2>
+<h2 className={`${dilight.className} mt-4 text-bl text-left justify-content max-w-5xl`}>
 During move-out periods, our streets get cluttered with perfectly
  usable items discarded by students (mostly those living off-campus).
   It's not that these items are in bad shape, it's just easier for students
@@ -176,10 +183,10 @@ During move-out periods, our streets get cluttered with perfectly
     benefit the students & protect our environment. </h2>
 
 
-    <h2 className={`${direg.className} mt-16 text-5xl text-black text-left mb-1`}>User Research Insights</h2>
-<h2 className={`${dilight.className} mt-4 text-black text-left justify-content max-w-5xl`}>
+    <h2 className={`${direg.className} mt-16 text-5xl text-bl text-left mb-1`}>User Research Insights</h2>
+<h2 className={`${dilight.className} mt-4 text-bl text-left justify-content max-w-5xl`}>
  </h2>
- <h2 className={`${dilight.className} mt-4 text-black text-left justify-content max-w-5xl`}>
+ <h2 className={`${dilight.className} mt-4 text-bl text-left justify-content max-w-5xl`}>
     There was no doubt that the cluttered streets of Boston posed an environmental issue. 
     What we needed confirmation on was the second half of the issue &#8212; how the students were affected. So, we surveyed & 
     interviewed about 50 BU students, focusing on their experience living on/off campus.
@@ -194,8 +201,8 @@ During move-out periods, our streets get cluttered with perfectly
                     />
                 </div>
 
-                <h2 className={`${direg.className} mt-16 text-5xl text-black text-left mb-1`}>Competitive Analysis</h2>
-<h2 className={`${dilight.className} mt-4 text-black text-left justify-content max-w-5xl`}>
+                <h2 className={`${direg.className} mt-16 text-5xl text-bl text-left mb-1`}>Competitive Analysis</h2>
+<h2 className={`${dilight.className} mt-4 text-bl text-left justify-content max-w-5xl`}>
         Our main competitors, such as <strong className={`${direg.className} mt-4 text-accent text-xl text-left justify-content max-w-5xl`}>Craigslist </strong>, <strong className={`${direg.className} mt-4 text-xl text-accent text-left justify-content max-w-5xl`}>Facebook Marketplace</strong> & <strong className={`${direg.className} mt-4 text-xl text-accent text-left justify-content max-w-5xl`}>BuyNothing</strong> lack features tailored for university students.
         Facebook Marketplace & Craigslist's broad audience don't cater specifically to students' needs, especially during move-in/move-out periods. 
         Their interfaces fail to accomodate their fast-paced, mobile-centric lifestyles and  they lack the sense of community needed to incentivize students to utilize this solution.
@@ -203,7 +210,7 @@ During move-out periods, our streets get cluttered with perfectly
 
 
 
- <h2 className={`${direg.className} mt-16 text-5xl text-black text-left mb-1`}>Minimum Viable Product (MVP)</h2>
+ <h2 className={`${direg.className} mt-16 text-5xl text-bl text-left mb-1`}>Minimum Viable Product (MVP)</h2>
  <div>
                     <Image
                       src="/images/dibs-old.png"
@@ -212,9 +219,9 @@ During move-out periods, our streets get cluttered with perfectly
                       alt="Picture of the author"
                     />
                 </div>
-                <h2 className={`${direg.className} mt-4 text-2xl text-black text-left justify-left max-w-5xl`}>Key Features
+                <h2 className={`${direg.className} mt-4 text-2xl text-bl text-left justify-left max-w-5xl`}>Key Features
  </h2>
-                <div className={`${dilight.className} mt-4 text-xl text-center text-justify text-black list-none`}>
+                <div className={`${dilight.className} mt-4 text-xl text-center text-justify text-bl list-none`}>
             <li><strong className={`${direg.className} mt-4 text-accent text-3xl text-center justify-content max-w-5xl`}>1.&nbsp;Post &nbsp; </strong>  </li>
             <li className="ml-6">Post a picture & short description of an item that you're looking to get rid of.</li>
             <li><strong className={`${direg.className} mt-4 text-accent text-3xl text-center justify-content max-w-5xl`}>2.&nbsp;View & Favorite &nbsp;</strong></li>
@@ -226,8 +233,8 @@ During move-out periods, our streets get cluttered with perfectly
             </div>
 
 
- <h2 className={`${direg.className} mt-16 text-5xl text-black text-left mb-1`}>Product Roadmap</h2>
-<h2 className={`${dilight.className} mt-4 text-black text-left justify-content max-w-5xl`}>
+ <h2 className={`${direg.className} mt-16 text-5xl text-bl text-left mb-1`}>Product Roadmap</h2>
+<h2 className={`${dilight.className} mt-4 text-bl text-left justify-content max-w-5xl`}>
     In Spring 2022, I applied to the <strong className={`${direg.className} mt-4 text-accent text-left justify-content max-w-5xl`}>Spark! Technology Innovation Fellowship </strong>with my idea. 
     This fellowship provided structured instruction on the product innovation process with technical support from 
     experts and industry mentors.
@@ -242,8 +249,8 @@ During move-out periods, our streets get cluttered with perfectly
 
  </h2>
 
- <h2 className={`${direg.className} mt-16 text-5xl text-black text-left mb-1`}>Product Evolution</h2>
-<h2 className={`${dilight.className} mt-4 text-black text-left justify-content max-w-5xl`}>
+ <h2 className={`${direg.className} mt-16 text-5xl text-bl text-left mb-1`}>Product Evolution</h2>
+<h2 className={`${dilight.className} mt-4 text-bl text-left justify-content max-w-5xl`}>
  </h2>
  <div className="mt-4">
               <div className="my-4">
@@ -258,11 +265,11 @@ During move-out periods, our streets get cluttered with perfectly
                 </div>
               </div>
 
-            <div className={`${dilight.className} text-black text-lg text-left mb-1`}>
-                My Role: <strong className={`${direg.className} text-lg text-black text-center mb-1`}>Technical Innovator/Lead Developer</strong>
+            <div className={`${dilight.className} text-bl text-lg text-left mb-1`}>
+                My Role: <strong className={`${direg.className} text-lg text-bl text-center mb-1`}>Technical Innovator/Lead Developer</strong>
             </div>
-            <div className={`${dilight.className} text-black text-lg text-left mb-1`}>
-                Tech Stack: <strong className={`${direg.className} text-lg text-black text-center mb-1`}>React Native, Expo, TypeScript, Firebase & Google Auth</strong>
+            <div className={`${dilight.className} text-bl text-lg text-left mb-1`}>
+                Tech Stack: <strong className={`${direg.className} text-lg text-bl text-center mb-1`}>React Native, Expo, TypeScript, Firebase & Google Auth</strong>
             </div>
             </div>
 
@@ -275,11 +282,11 @@ During move-out periods, our streets get cluttered with perfectly
                     />
                 </div>
 
-            <h2 className={`${dilight.className} my-12 text-black text-left justify-content max-w-5xl`}>
+            <h2 className={`${dilight.className} my-12 text-bl text-left justify-content max-w-5xl`}>
             Even after the fellowship ended, I was determined to continue working on Dibs. So, I applied to the <strong className={`${direg.className} mt-4 text-accent text-left justify-content max-w-5xl`}>Launch Lab product track</strong>,
             , which is a program at BU that provides students with instruction & support to launch their products into the real world. Over the next year, 
             we
-            <div className={`${dilight.className} ml-4 mt-4 text-lg text-left text-left text-black list-none`}>
+            <div className={`${dilight.className} ml-4 mt-4 text-lg text-left text-left text-bl list-none`}>
             <li><strong className={`${direg.className} mt-4 text-accent text-3xl text-left justify-content max-w-5xl`}> 1. &nbsp;Expanded &nbsp; </strong> <br/>the development team by onboarding two new developers.</li>
             <li><strong className={`${direg.className} mt-4 text-accent text-3xl text-left justify-content max-w-5xl`}> 2. &nbsp;Migrated &nbsp;</strong> <br/>the application from a web-based platform to a mobile-centric environment.</li>
             <li><strong className={`${direg.className} mt-4 text-accent text-3xl text-left justify-content max-w-5xl`}> 3. &nbsp;Performed &nbsp;</strong> <br/>an overhaul of the app's UI/UX to enhance usability and optimize engagement.</li>
@@ -308,20 +315,20 @@ During move-out periods, our streets get cluttered with perfectly
                 </div>
               </div>
   
-              <div className={`${dilight.className} text-black text-lg text-left mb-1`}>
-                My Role: <strong className={`${direg.className} text-lg text-black text-center mb-1`}>Product Lead/Manager</strong>
+              <div className={`${dilight.className} text-bl text-lg text-left mb-1`}>
+                My Role: <strong className={`${direg.className} text-lg text-bl text-center mb-1`}>Product Lead/Manager</strong>
             </div>
-            <div className={`${dilight.className} text-black text-lg text-left mb-1`}>
-                Tech Stack: <strong className={`${direg.className} text-lg text-black text-center mb-1`}>React Native, Expo, TypeScript, Firebase & Google Auth</strong>
-            </div>
-
+            <div className={`${dilight.className} text-bl text-lg text-left mb-1`}>
+                Tech Stack: <strong className={`${direg.className} text-lg text-bl text-center mb-1`}>React Native, Expo, TypeScript, Firebase & Google Auth</strong>
             </div>
 
-            <h2 className={`${dilight.className} mt-4 text-black text-left justify-content max-w-5xl`}>Click here to watch a <Link href="/product/dibs/demo" className="underline decoration-1 underline-offset-2 text-accent">demo</Link> of the app.
+            </div>
+
+            <h2 className={`${dilight.className} mt-4 text-bl text-left justify-content max-w-5xl`}>Click here to watch a <Link href="/product/dibs/demo" className="underline decoration-1 underline-offset-2 text-accent">demo</Link> of the app.
  </h2>
 
- <h2 className={`${direg.className} mt-16 text-5xl text-black text-left mb-1`}>Next Steps</h2>
-<h2 className={`${dilight.className} mt-4 text-black text-left justify-content max-w-5xl`}>
+ <h2 className={`${direg.className} mt-16 text-5xl text-bl text-left mb-1`}>Next Steps</h2>
+<h2 className={`${dilight.className} mt-4 text-bl text-left justify-content max-w-5xl`}>
 We are scheduled to launch Dibs! on app stores by late March. Following the release, our strategy involves extensive user testing and continual updates driven by feedback from the BU community.
 
 
@@ -332,18 +339,17 @@ We are scheduled to launch Dibs! on app stores by late March. Following the rele
 
 
               
-        <div className={`${didotdf.className} px-1 py-8 flex items-center sm:flex-row flex-col`}>
-          <span className="mx-auto text-center text-xs text-neutral-900">
-            <div className="mb-4">
-            <Link href="/about" className="underline decoration-1 underline-offset-2 mx-2">About</Link>
-            <Link href="/contact" className="underline decoration-1 underline-offset-2 mx-2">Contact</Link> <br />
-            </div>
-            <div className={`${dilight.className}`}>
-            hayamaj@bu.edu <br />
-            [857] 891 - 8848 <br />
-            </div>
-          </span>
-        </div>
+<div className={` max-w-screen px-1 py-8 flex items-center sm:flex-row flex-col`}>
+        <span className={`mx-auto text-center text-gr text-sm`}>
+          <div className="mb-4">
+          </div>
+          <div className={`${dilight.className} text-sm`}>
+          <strong className={`text-sm`}>HAYA ALMAJALI</strong><br />
+          <strong className={`text-sm`}>hayamaj@bu.edu</strong><br />
+          <strong className={`text-sm`}>[857] 891 - 8848</strong><br />
+          </div>
+        </span>
+      </div>
       </main>
       )
   }

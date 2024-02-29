@@ -4,6 +4,7 @@ import Navigation from '../Nav'; // Import the Navigation component
 import localFont from 'next/font/local'
 import Link from 'next/link';
 import Image from 'next/image';
+import { useRouter } from 'next/navigation'
 
 {     /*fonts*/     }
 const dilight = localFont({
@@ -82,6 +83,11 @@ const proxnovabold = localFont({
 })
 
 export default function Product() {
+
+  const handleClick = (e) => {
+    e.preventDefault()
+    router.push(href)
+  }
     const [showDropdown, setShowDropdown] = useState(false);
     const ModalRef = useRef(null); // Correct usage of useRef
     const [expanded, setExpanded] = useState(false);
@@ -110,18 +116,16 @@ export default function Product() {
     };
   
       return (
-        <main className={`bg-white min-h-screen max-w-screen items-center justify-between sm:mx-8 phone:mx-8 text-black ${dilight.className}`}>
-          <div className="flex flex-col items-center">
-          <Navigation isIndexPage={false} class="sticky" /> {/* Use the Navigation component here */}
-        </div>
+        <main className={` min-h-screen max-w-screen items-center justify-between sm:mx-8 phone:mx-8 text-black ${dilight.className}`}>
+
   
         <section className="max-w-screen-lg mx-auto mt-16 mx-2">
 
-  
+  {/* 
   <div className="text-center my-16 mb-8">
     <h1 className={`${dimed.className} text-5xl text-black mt-24`}>Product Management Portfolio</h1>
   </div>
-
+*/}
         <div className="mt-4 flex flex-row justify-center">
             <div className="flex items-justify ">
                 <Image
@@ -139,14 +143,7 @@ export default function Product() {
                 </div>
 
         </div>
-        <Link href="/eng" className="flex flex-row-reverse mx-24 my-16">
-          <Image
-                      src="/images/right-arrow.png"
-                      width={100}
-                      height={100}
-                      alt="Picture of the author"
-                    />
-                    </Link>
+       
 
 
   {/*
@@ -188,18 +185,17 @@ export default function Product() {
       */}
 </section>
           
-  <div className={`${didotdf.className} px-1 py-8 flex items-center sm:flex-row flex-col`}>
-          <span className="mx-auto text-center text-xs text-neutral-900">
-            <div className="mb-4">
-            <Link href="/about" className="underline decoration-1 underline-offset-2 mx-2">About</Link>
-            <Link href="/contact" className="underline decoration-1 underline-offset-2 mx-2">Contact</Link> <br />
-            </div>
-            <div className={`${dilight.className}`}>
-            hayamaj@bu.edu <br />
-            [857] 891 - 8848 <br />
-            </div>
-          </span>
-        </div>
+<div className={` max-w-screen px-1 py-8 flex items-center sm:flex-row flex-col`}>
+        <span className={`mx-auto text-center text-gr text-sm`}>
+          <div className="mb-4">
+          </div>
+          <div className={`${dilight.className} text-sm`}>
+          <strong className={`text-sm`}>HAYA ALMAJALI</strong><br />
+          <strong className={`text-sm`}>hayamaj@bu.edu</strong><br />
+          <strong className={`text-sm`}>[857] 891 - 8848</strong><br />
+          </div>
+        </span>
+      </div>
 
 
 

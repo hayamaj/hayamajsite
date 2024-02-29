@@ -1,10 +1,11 @@
 "use client";
-import Image from "next/image";
-import Link from 'next/link';
+import { useState, useEffect } from 'react';
 import Navigation from '../Nav'; // Import the Navigation component
-import { useState, useEffect, useRef } from 'react';
 import localFont from 'next/font/local'
+import Link from 'next/link';
+import Image from 'next/image';
 {     /*fonts*/     }
+
 const dilight = localFont({
   src: [
     {
@@ -80,11 +81,9 @@ const proxnovabold = localFont({
   ],
 })
 
-
-export default function Art() {
+export default function Resume() {
   const [isSidebarOpen, setIsSidebarOpen] = useState(false);
   const [videoEnded, setVideoEnded] = useState(false);
-  const videoRef = useRef(null);
   const isIndexPage = true; 
 
   useEffect(() => {
@@ -104,38 +103,59 @@ export default function Art() {
     };
   }, [isSidebarOpen]);
 
-  const toggleSidebar = () => {
-    setIsSidebarOpen(!isSidebarOpen);
+  const handleVideoEnd = () => {
+    setVideoEnded(true);
+    console.log("works");
   };
-  const handleVideoTimeUpdate = () => {
-    const videoElement = videoRef.current;
-    if (!videoElement) return;
 
-    const remainingTime = videoElement.duration - videoElement.currentTime;
-    const threshold = 6; // Adjust this threshold as needed
-
-    if (remainingTime <= threshold) {
-      setVideoEnded(true);
-    }
+  {/*resume, not sure if still needed here.*/}
+  const handleDownload = () => {
+    const pdfUrl = '/AlMajali-Resume.pdf';
+    const link = document.createElement('a');
+    link.href = pdfUrl;
+    link.setAttribute('download', 'AlMajali-Resume.pdf');
+    document.body.appendChild(link);
+    link.click();
+    document.body.removeChild(link);
   };
-    return (
-      <main className={`bg-white flex min-h-screen max-w-screen flex-col items-center justify-between`}>
 
-      <div className="flex flex-col justify-center items-center h-screen z-100" >
-    <video ref={videoRef} autoPlay="autoplay" playsInLine="playsinline" muted="true" onTimeUpdate={handleVideoTimeUpdate} className="w-full h-full object-cover object-right-bottom">
-                      <source src="/drawingvid.mov" />
-                      </video>
-                      </div>
+  const [isDesktop, setIsDesktop] = useState(false);
 
-                      <div className={` ${didotdf.className} text-center z-100 absolute align-middle top-80 text-3xl md:text-4xl [text-wrap:balance] bg-clip-text text-white `}>
-                        <Link href="/art/painting" className="mx-2 hover:underline decoration-1 underline-offset-2">Painting</Link>&#8212;
-                        <Link href="/art/photo" className="mx-2 hover:underline decoration-1 underline-offset-2">Photography</Link>&#8212;
-                        <Link href="/art/drawing" className="mx-2 hover:underline decoration-1 underline-offset-2">Drawing</Link>&#8212;
-                        <Link href="/art/motiongraphics" className="mx-2 hover:underline decoration-1 underline-offset-2">Motion Graphics</Link>
-          </div>
+  useEffect(() => {
+    // Check screen width on component mount
+    const handleResize = () => {
+      setIsDesktop(window.innerWidth > 640); // Adjust threshold as needed
+    };
 
+    handleResize(); // Call once to set initial state
 
-          <div className={` max-w-screen px-1 py-8 flex items-center sm:flex-row flex-col`}>
+    // Add event listener for window resize
+    window.addEventListener('resize', handleResize);
+
+    // Cleanup function to remove event listener on component unmount
+    return () => {
+      window.removeEventListener('resize', handleResize);
+    };
+  }, []);
+
+  return (
+    <main className={`bg-bg text-bl flex min-h-screen max-w-screen flex-col justify-center text-bl`}>
+
+<div className="text-center mb-8">
+    <h1 className={`${direg.className} text-4xl text-bl`}>My Resume</h1>
+        </div>
+<div className="align-center justify-center flex">
+        <iframe
+        src="/AlMajali-Resume.pdf"
+        width="80%"
+        height="600px"
+        style={{ border: 'none' }}
+      >
+        This browser does not support PDFs. Please download the PDF to view it.
+      </iframe>
+      </div>
+
+      <div className={` max-w-screen px-1 py-8 flex items-center sm:flex-row flex-col`}>
         <span className={`mx-auto text-center text-gr text-sm`}>
           <div className="mb-4">
           </div>
@@ -146,7 +166,7 @@ export default function Art() {
           </div>
         </span>
       </div>
+      </main>
 
-    </main>
-    )
+  );
 }

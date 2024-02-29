@@ -121,9 +121,7 @@ export default function MotionGraphics() {
     };
       return (
         <main className={`bg-white flex min-h-screen max-w-screen flex-col items-center justify-between`}>
-        <div className="flex flex-col items-center">
-        <Navigation isIndexPage={false} class="sticky" /> {/* Use the Navigation component here */}
-        </div>
+
   
         <div className="w-screen h-screen overflow-y-scroll">
           <div className="text-center mt-24">
@@ -138,18 +136,17 @@ export default function MotionGraphics() {
   
   
   
-        <div className={`${didotdf.className} px-1 py-8 flex items-center sm:flex-row flex-col`}>
-          <span className="mx-auto text-center text-xs text-neutral-900">
-            <div className="mb-4">
-            <Link href="/about" className="underline decoration-1 underline-offset-2 mx-2">About</Link>
-            <Link href="/contact" className="underline decoration-1 underline-offset-2 mx-2">Contact</Link> <br />
-            </div>
-            <div className={`${dilight.className}`}>
-            hayamaj@bu.edu <br />
-            [857] 891 - 8848 <br />
-            </div>
-          </span>
-        </div>
+        <div className={` max-w-screen px-1 py-8 flex items-center sm:flex-row flex-col`}>
+        <span className={`mx-auto text-center text-gr text-sm`}>
+          <div className="mb-4">
+          </div>
+          <div className={`${dilight.className} text-sm`}>
+          <strong className={`text-sm`}>HAYA ALMAJALI</strong><br />
+          <strong className={`text-sm`}>hayamaj@bu.edu</strong><br />
+          <strong className={`text-sm`}>[857] 891 - 8848</strong><br />
+          </div>
+        </span>
+      </div>
        </div>
       </main>
       )

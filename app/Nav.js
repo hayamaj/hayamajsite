@@ -1,11 +1,41 @@
+"use client";
+
 import React from 'react';
-import Link from 'next/link';
-import { Inter } from "next/font/google";
-import { useState, useEffect, useRef } from "react";
-import Image from 'next/image';
-const inter300 = Inter({ subsets: ['latin'], weight: ['300'] });
-const inter500 = Inter({ subsets: ['latin'], weight: ['500'] });
+import { useState, useEffect } from "react";
+import { Transition } from '@headlessui/react';
+import { MenuIcon, XIcon } from '@heroicons/react/outline';
 import localFont from 'next/font/local'
+import { usePathname, useRouter } from 'next/navigation';
+import Link from 'next/link';
+
+
+function NavLink({ href, exact = false, children, activeColor, ...props }) {
+  const pathname = usePathname();
+  
+  const isActive = exact ? pathname === href : pathname.startsWith(href);
+  console.log('pathname:', pathname);
+console.log('href:', href);
+console.log('isActive:', isActive);
+console.log('color:', activeColor);
+
+const linkClasses = `${props.className || ''} ${isActive ? 'text-bl' : 'text-gr'}`;
+
+
+
+return (
+  <Link legacyBehavior href={href} passHref>
+    <a
+      {...props}
+      className={linkClasses.trim()} // Trim to remove any extra spaces
+    >
+      {children}
+    </a>
+  </Link>
+);
+}
+
+
+export { NavLink };
 
 {     /*fonts*/     }
 const dilight = localFont({
@@ -59,35 +89,12 @@ const didotdf = localFont({
     }
   ],
 })
-const proxnova = localFont({
-  src: [
-    {
-      path: '../fonts/pnlight.otf',
-    }
-  ],
-})
-
-const proxnovareg = localFont({
-  src: [
-    {
-      path: '../fonts/pnreg.ttf',
-    }
-  ],
-})
-
-const proxnovabold = localFont({
-  src: [
-    {
-      path: '../fonts/pnbold.otf',
-    }
-  ],
-})
 
 
-
-
-const Navigation = ({ isIndexPage }) => {
+export const Navigation = () => {
   const [isSidebarOpen, setIsSidebarOpen] = useState(false);
+  const [isOpen, setIsOpen] = useState(false);
+
   useEffect(() => {
     // Add event listener to detect clicks outside the sidebar
     const handleOutsideClick = (e) => {
@@ -104,77 +111,80 @@ const Navigation = ({ isIndexPage }) => {
       document.removeEventListener('mousedown', handleOutsideClick);
     };
   }, [isSidebarOpen]);
+
   const toggleSidebar = () => {
     setIsSidebarOpen(!isSidebarOpen);
   };
+
   const handleNameClick = () => {
     window.location.href = '/'; // Redirect to the home page
   };
 
-  const handleVideoEnd = () => {
-    setVideoEnded(true);
-    console.log("works");
-  };
- 
-
-
+  
   return (
-  <div className="flex bg-white">
-    <div className="flex justify-between items-center ">
-        <div className="flex flex-col absolute left-8 top-8 z-50">
-      <h1 className={`${direg.className} text-center text-3xl ${isIndexPage ? `${direg.className}` : `${direg.className}`} ${isIndexPage ? 'text-white ' : 'text-accent '}  ${isIndexPage ? 'text-2xl' : 'text-2xl'}`} onClick={() => handleNameClick()}>HAYA ALMAJALI</h1>
-    </div>
-</div>
-    {/*
-    <div className={` ${inter300.className} lg:block top-4 right-4 absolute flex flex-col text-sm text-neutral-950`}>
-      <Link href="/contact" class=" mx-1"></Link>
-      <p className={`${inter300.className} -mt-4 `}></p>
-    </div>
-    <div className={`absolute top-2 right-10 ${inter300.className} text-sm hidden lg:flex flex-row mt-2`}>
-  <Link href="/contact" className="text-neutral-700 mt-2 text-justify hover:text-pm-light">contact</Link>
-
-</div>
-  */}
-
-
-
-
-<div className="absolute top-8 right-8 z-40 ">
-  <button className={`outline-none mobile-menu-button ${isIndexPage ? 'text-white' : 'text-accent'}`} onClick={toggleSidebar}>
-  <svg className="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-      <path strokeLinecap="butt" strokeLinejoin="miter" strokeWidth="1.6" d="M1 9h22" onClick={isSidebarOpen ? toggleSidebar : undefined}></path>
-      <path strokeLinecap="butt" strokeLinejoin="miter" strokeWidth="1.6" d="M1 15h22" onClick={isSidebarOpen ? toggleSidebar : undefined}></path>
-    </svg>
-  </button>
-</div>
-
-<div className="absolute top-8 right-8 z-50">
-  {isSidebarOpen && (
-    <button className="outline-none mobile-menu-button text-accent" onClick={toggleSidebar}>
-      <svg className="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="1.6" d="M6 18L18 6M6 6l12 12"></path>
-      </svg>
-    </button>
-  )}
-</div>
-
-
-    {/* Sidebar */}
-    {isSidebarOpen && (
-      <div className="z-40 bg-white fixed top-0 right-0 w-screen h-full shadow-sm sidebar">
-
-        <div className="my-48 text-center">
-          <Link href="/product" className={` ${didotdf.className} text-neutral-950 my-4 mt-2 block text-2xl decoration-1 hover:underline underline-offset-4 whitespace-nowrap`}>Product</Link>
-          <Link href="/eng" className={` ${didotdf.className} text-neutral-950 mt-2 my-4 block text-2xl decoration-1 hover:underline underline-offset-4`}>Eng</Link>
-          <Link href="/art" className={` ${didotdf.className} text-neutral-950 mt-2 my-4 block text-2xl decoration-1 hover:underline underline-offset-4`}>Design</Link>
-          <Link href="/about" className={` ${didotdf.className} text-accent block mt-36 mb-2 text-md decoration-1 hover:text-neutral-200 hover:underline underline-offset-4`}>[ About ]</Link>
-          <Link href="/contact" className={` ${didotdf.className} text-accent block text-md decoration-1 hover:text-neutral-200 hover:underline underline-offset-4`}>[ Contact ]</Link>
+    <nav className={`bg-bg `}>
+      <div className="max-w-7xl mx-auto py-4 px-4 sm:px-6 lg:px-8">
+        <div className="flex items-center justify-between h-16">
+          <div className="flex items-center">
+            <div className="flex-items-left">
+              <h1 className={`${direg.className} text-center text-bl text-3xl cursor-pointer`} onClick={handleNameClick}>
+                HAYA ALMAJALI
+              </h1>
+            </div>
+          </div>
+          <div className="hidden sm:flex absolute right-24">
+            <div className="ml-auto">
+              <div className={` ${direg.className} flex space-x-8 text-gr`}>
+              <NavLink href="/" exact className="nav-item nav-link"></NavLink>
+              <NavLink href="/product" exact className="nav-item nav-link">Work</NavLink>
+              <NavLink href="/resume" exact className="nav-item nav-link">My Resume</NavLink>
+              <NavLink href="/about" exact className="nav-item nav-link">About + Contact</NavLink>
+              <NavLink href="" exact className="nav-item nav-link">|</NavLink>
+              <NavLink href="/art" exact className="nav-item nav-link">Design</NavLink>
+              </div>
+            </div>
+          </div>
+          <div className="-mr-2 flex md:hidden">
+            <button
+              onClick={() => setIsOpen(!isOpen)}
+              type="button"
+              className="inline-flex items-center justify-center p-2 rounded-md text-gray-400 hover:text-white hover:bg-gray-700 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-white"
+              aria-controls="mobile-menu"
+              aria-expanded="false"
+            >
+              <span className="sr-only">Open main menu</span>
+              {isOpen ? <XIcon className="block h-6 w-6" aria-hidden="true" /> : <MenuIcon className="block h-6 w-6" aria-hidden="true" />}
+            </button>
+          </div>
         </div>
       </div>
-    )}
-  </div>
-    
+
+      <Transition
+        show={isOpen}
+        enter="transition-opacity duration-200"
+        enterFrom="opacity-0"
+        enterTo="opacity-100"
+        leave="transition-opacity duration-200"
+        leaveFrom="opacity-100"
+        leaveTo="opacity-0"
+      >
+        {(ref) => (
+          <div className="md:hidden" id="mobile-menu">
+            <div ref={ref} className="px-2 pt-2 pb-3 space-y-1 sm:px-3">
+              <Link href="/" passHref>
+                <a className="text-gray-300 hover:bg-gray-700 hover:text-white block px-3 py-2 rounded-md text-base font-medium">Home</a>
+              </Link>
+              <Link href="/about" passHref>
+                <a className="text-gray-300 hover:bg-gray-700 hover:text-white block px-3 py-2 rounded-md text-base font-medium">About</a>
+              </Link>
+              {/* Add more links as needed */}
+            </div>
+          </div>
+        )}
+      </Transition>
+    </nav>
   );
 };
+
 
 export default Navigation;

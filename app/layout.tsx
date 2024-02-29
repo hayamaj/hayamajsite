@@ -1,6 +1,8 @@
 import type { Metadata } from "next";
 import "./globals.css";
 import localFont from 'next/font/local'
+import Navigation from "./Nav";
+
 
 {     /*fonts*/     }
 const dilight = localFont({
@@ -91,9 +93,14 @@ export default function RootLayout({
   return (
     <html lang="en">
       <head>
+        
         <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no, shrink-to-fit=no, viewport-fit=cover" />
       </head>
-      <body className={`${dilight.className} bg-white`}>{children}</body>
+
+      <body className={`${dilight.className} bg-bg`}>
+        <Navigation />
+        {children}
+      </body>
     </html>
   );
 }

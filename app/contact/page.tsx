@@ -163,10 +163,7 @@ export default function Contact() {
 
   return (
     <main className={`bg-white text-black flex min-h-screen max-w-screen flex-col items-center justify-between text-black`}>
-    <div className="flex flex-col items-center">
-        <Navigation isIndexPage={false} /> {/* Use the Navigation component here */}
-    </div>
-
+  
     <div className="text-center mt-24 mb-8">
     <h1 className={`${dimed.className} text-5xl text-black`}>Let's Get in Touch!</h1>
         </div>
