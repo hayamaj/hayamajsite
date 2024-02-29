@@ -148,7 +148,7 @@ export const Navigation = () => {
             <button
               onClick={() => setIsOpen(!isOpen)}
               type="button"
-              className="inline-flex items-center justify-center p-2 rounded-md text-gray-400 hover:text-white hover:bg-gray-700 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-white"
+              className="inline-flex items-center justify-center p-2 rounded-md text-bl focus:outline-none focus:ring-2 focus:ring-inset focus:ring-white"
               aria-controls="mobile-menu"
               aria-expanded="false"
             >
@@ -169,13 +169,19 @@ export const Navigation = () => {
         leaveTo="opacity-0"
       >
         {(ref) => (
-          <div className="md:hidden" id="mobile-menu">
-            <div ref={ref} className="px-2 pt-2 pb-3 space-y-1 sm:px-3">
-              <Link href="/" passHref>
-                <a className="text-gray-300 hover:bg-gray-700 hover:text-white block px-3 py-2 rounded-md text-base font-medium">Home</a>
+          <div className={` ${direg.className} md:hidden fixed bg-bg w-screen h-full z-50 items-center justify-center`} id="mobile-menu">
+            <div ref={ref} className="px-2 pt-2 pb-3 space-y-8 my-24 sm:px-3 justify-center text-center">
+              <Link legacyBehavior href="/" passHref>
+                <a className="text-bl hover:text-gr block px-3 py-2 rounded-md text-2xl">Work</a>
               </Link>
-              <Link href="/about" passHref>
-                <a className="text-gray-300 hover:bg-gray-700 hover:text-white block px-3 py-2 rounded-md text-base font-medium">About</a>
+              <Link legacyBehavior href="/resume" passHref>
+                <a className="text-bl hover:text-gr block px-3 py-2 rounded-md text-2xl">My Resume</a>
+              </Link>
+              <Link legacyBehavior href="/about" passHref>
+                <a className="text-bl hover:text-gr block px-3 py-2 rounded-md text-2xl">About + Contact</a>
+              </Link>
+              <Link legacyBehavior href="/art" passHref>
+                <a className="text-bl hover:text-gr block px-3 py-2 rounded-md text-2xl">Design</a>
               </Link>
               {/* Add more links as needed */}
             </div>
