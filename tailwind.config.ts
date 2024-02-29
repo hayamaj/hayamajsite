@@ -48,7 +48,7 @@ module.exports = {
         "eng-light": "#fac5cb",
         "art-light": "#aaffd4",
         "accent": "#5f39f4",
-        "acc-y": "#FAD02C"
+        "accy": "#f9f9fc"
         
       },
       fontFamily: {

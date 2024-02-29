@@ -127,33 +127,38 @@ export default function Home() {
   };
 
   return (
-    <main className={`${videoEnded ? 'bg-white' : ''} min-h-screen max-w-screen items-center justify-between`}>
-    <div className={`flex flex-col items-center`}>
+    <main className={`${videoEnded ? 'bg-accy' : ''} min-h-screen max-w-screen items-center justify-between`}>
+    <div className={`flex flex-col items-center `}>
         <Navigation isIndexPage={isIndexPage} /> {/* Use the Navigation component here */}
     </div>
-<div className={`flex flex-col justify-center items-center h-screen z-100 ${videoEnded ? 'opacity-0' : 'opacity-100'}`} >
+<div className={` flex flex-col justify-center items-center h-screen z-100 ${videoEnded ? 'opacity-0 transition-opacity duration-1000' : 'opacity-100'}`} >
     <video autoPlay playsInline muted onEnded={handleVideoEnd} className="w-full h-full object-cover object-right-bottom">
                       <source src="/introvid.mov"/>
                       </video>
                       </div>
 
-          <div className={` ${dilight.className} opacity-0 z-100 absolute top-1/2 ml-12 text-left transition-opacity duration-1000 ${videoEnded ? 'opacity-100' : ''} text-5xl md:text-4xl [text-wrap:balance] bg-clip-text text-black `}>An aspiring <strong className={` ${direg.className} underline decoration-1 underline-offset-2 text-black `}>product leader</strong> with expertise in <span className=" text-white inline-flex flex-col h-[calc(theme(fontSize.5xl)*theme(lineHeight.tight))] md:h-[calc(theme(fontSize.4xl)*theme(lineHeight.tight))] overflow-hidden">
+
+<div className={` ${dilight.className} opacity-0 z-100 absolute top-1/2 ml-12 text-left transition-opacity duration-250 ${videoEnded ? 'opacity-100' : ''} text-5xl md:text-4xl [text-wrap:balance] bg-clip-text text-black `}>
+  An aspiring <strong className={` ${direg.className} underline decoration-1 underline-offset-2 text-black `}>product leader</strong> with expertise in <span className=" text-white inline-flex flex-col h-[calc(theme(fontSize.5xl)*theme(lineHeight.tight))] md:h-[calc(theme(fontSize.4xl)*theme(lineHeight.tight))]  sm:h-[calc(theme(fontSize.xl)*theme(lineHeight.tight))] overflow-hidden">
             <ul className={` ${diboldital.className} block animate-text-slide-3 text-justify text-accent leading-tight [&_li]:block`}>
-            <li className="">PRODUCT MGMT</li>
+            <li className="whitespace-nowrap">PRODUCT MGMT</li>
             <li>ENGINEERING</li>
             <li>DESIGN</li>
             <li aria-hidden="true">PRODUCT MGMT</li>
           </ul>
           </span>
-          <Link href="/product" className="flex flex-row-reverse mx-24 my-16">
+          <Link href="/product" className="flex flex-row-reverse mx-24 my-12">
           <Image
                       src="/images/right-arrow.png"
-                      width={100}
-                      height={100}
+                      width={200}
+                      height={200}
                       alt="Picture of the author"
                     />
                     </Link>
+                    
       </div>
+
+
 
 
 
