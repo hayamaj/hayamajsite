@@ -119,7 +119,7 @@ export default function Product() {
         <main className={` min-h-screen max-w-screen items-center justify-between sm:mx-8 phone:mx-8 text-black ${dilight.className}`}>
 
   
-        <section className="max-w-screen-lg mx-auto mt-16 mx-2">
+        <section className="max-w-screen-lg mx-auto mt-16 mx-2 ">
         <h1 className={`${direg.className} flex justify-center text-center text-4xl my-2`}>My Projects</h1>
 
   {/* 
@@ -127,7 +127,7 @@ export default function Product() {
     <h1 className={`${dimed.className} text-5xl text-black mt-24`}>Product Management Portfolio</h1>
   </div>
 */}
-        <div className="mt-4 flex flex-row justify-center">
+        <div className="mt-4 flex flex-row justify-center pb-12">
             <div className="flex items-justify ">
                 <Image
                       src="/images/dibsscreen.png"
@@ -145,7 +145,7 @@ export default function Product() {
 
         </div>
 
-        <section className=" mx-auto mb-12">
+        <section className=" mx-auto pb-12">
         <div className="flex flex-col my-4">
         <h1 className={`${direg.className} flex justify-center text-center text-4xl my-2`}>Skills</h1>
 
