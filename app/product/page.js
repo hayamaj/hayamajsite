@@ -152,22 +152,22 @@ export default function Product() {
         <div className="flex flex-wrap mx-auto align-center justify-center mt-8">
                 <div className="flex flex-col items-center mx-4">
         
-            <h1 className={`${dimed.className} mb-4 bg-[#cff2c9] rounded-full py-1 px-4 text-center text-2xl mt-2`}>COMMUNICATION</h1>
+            <h1 className={`${direg.className} mb-4 bg-[#cff2c9] rounded-full py-1 px-4 text-center text-xl mt-2`}>COMMUNICATION</h1>
             <h1 className={`${dilight.className} text-sm max-w-sm justify-text`}></h1>
             </div>
             <div className="flex flex-col items-center mx-4 ">
         
-            <h1 className={`${dimed.className} mb-4 bg-[#cff2c9] rounded-full py-1 px-4  text-center text-2xl mt-2`}>TIME-MANAGEMENT</h1>
+            <h1 className={`${direg.className} mb-4 bg-[#cff2c9] rounded-full py-1 px-4  text-center text-xl mt-2`}>TIME-MANAGEMENT</h1>
             <h1 className={`${dilight.className} max-w-sm justify-text text-sm`}></h1>
             </div>
             <div className="flex flex-col items-center mx-4 ">
         
-            <h1 className={`${dimed.className} mb-4 bg-[#cff2c9] rounded-full py-1 px-4  text-center text-2xl mt-2`}>LEADERSHIP</h1>
+            <h1 className={`${direg.className} mb-4 bg-[#cff2c9] rounded-full py-1 px-4  text-center text-xl mt-2`}>LEADERSHIP</h1>
             <h1 className={`${dilight.className} max-w-sm justify-text text-sm`}></h1>
             </div>
             <div className="flex flex-col items-center mx-4 ">
         
-            <h1 className={`${dimed.className} mb-4 bg-[#cff2c9] rounded-full py-1 px-4  text-center text-2xl mt-2`}>PROJECT/PRODUCT MGMT</h1>
+            <h1 className={`${direg.className} mb-4 bg-[#cff2c9] rounded-full py-1 px-4  text-center text-xl mt-2`}>PROJECT/PRODUCT MGMT</h1>
             <h1 className={`${dilight.className} max-w-sm justify-text text-sm`}></h1>
             </div>
             
@@ -186,27 +186,27 @@ export default function Product() {
         <div className="flex flex-wrap mx-auto align-center justify-center mt-8">
                 <div className="flex flex-col items-center mx-4">
         
-            <h1 className={`${dimed.className} mb-4 bg-[#d1c9f2] rounded-full py-1 px-4 text-center text-2xl mt-2`}>JIRA / TRELLO</h1>
+            <h1 className={`${direg.className} mb-4 bg-[#d1c9f2] rounded-full py-1 px-4 text-center text-xl mt-2`}>JIRA / TRELLO</h1>
             <h1 className={`${dilight.className} text-sm max-w-sm justify-text`}>Used Jira & Trello for several project management positions, creating tickets, and adding in plugins. Additionally, to lead the development of my own product.</h1>
             </div>
             <div className="flex flex-col items-center mx-4 ">
         
-            <h1 className={`${dimed.className} mb-4 bg-[#d1c9f2] rounded-full py-1 px-4  text-center text-2xl mt-2`}>OPENAI TECHNOLOGIES</h1>
+            <h1 className={`${direg.className} mb-4 bg-[#d1c9f2] rounded-full py-1 px-4  text-center text-xl mt-2`}>OPENAI TECHNOLOGIES</h1>
             <h1 className={`${dilight.className} max-w-sm justify-text text-sm`}>Used during my internship at Dakota Systems, where I assessed & implemented open-source AI technologies like GPT-4 to improve organizational, technical & business processes.</h1>
             </div>
             <div className="flex flex-col items-center mx-4 ">
         
-            <h1 className={`${dimed.className} mb-4 bg-[#d1c9f2] rounded-full py-1 px-4  text-center text-2xl mt-2`}>NEXT JS FRAMEWORK / <br/>TAILWINDCSS</h1>
+            <h1 className={`${direg.className} mb-4 bg-[#d1c9f2] rounded-full py-1 px-4  text-center text-xl mt-2`}>NEXT JS FRAMEWORK / <br/>TAILWINDCSS</h1>
             <h1 className={`${dilight.className} max-w-sm justify-text text-sm`}>Self-taught during building my personal website. I hard-coded this website!</h1>
             </div>
             <div className="flex flex-col items-center mx-4 ">
         
-            <h1 className={`${dimed.className} mb-4 bg-[#d1c9f2] rounded-full py-1 px-4  text-center text-2xl mt-2`}>CREATIVE CLOUD APPS</h1>
+            <h1 className={`${direg.className} mb-4 bg-[#d1c9f2] rounded-full py-1 px-4  text-center text-xl mt-2`}>CREATIVE CLOUD APPS</h1>
             <h1 className={`${dilight.className} max-w-sm justify-text text-sm`}>Used Adobe Apps extensively for classes ranging from Software Development to Motion Graphics. This includes Adobe Photoshop, Illustrator, Premiere Pro & After Effects.</h1>
             </div>
             <div className="flex flex-col items-center mx-4 ">
         
-            <h1 className={`${dimed.className} mb-4 bg-[#d1c9f2] rounded-full py-1 px-4  text-center text-2xl mt-2`}>SLACK / ATLASSIAN / GOOGLE SUITES</h1>
+            <h1 className={`${direg.className} mb-4 bg-[#d1c9f2] rounded-full py-1 px-4  text-center text-xl mt-2`}>SLACK / ATLASSIAN / GOOGLE SUITES</h1>
             <h1 className={`${dilight.className} max-w-sm justify-text text-sm`}>Used for my project management positions to communicate with teams, set up meetings & faciliate development.</h1>
             </div>
             
