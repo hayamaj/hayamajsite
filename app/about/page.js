@@ -240,6 +240,8 @@ export default function Home() {
 
                 </section>
 
+              
+
                 <div className="text-center mt-8 mb-8">
     <h1 className={`${direg.className} text-4xl text-bl`}>Let's Connect</h1>
         </div>

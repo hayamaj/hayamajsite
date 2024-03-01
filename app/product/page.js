@@ -120,6 +120,7 @@ export default function Product() {
 
   
         <section className="max-w-screen-lg mx-auto mt-16 mx-2">
+        <h1 className={`${direg.className} flex justify-center text-center text-4xl my-2`}>My Projects</h1>
 
   {/* 
   <div className="text-center my-16 mb-8">
@@ -143,46 +144,73 @@ export default function Product() {
                 </div>
 
         </div>
+
+        <section className=" mx-auto mb-12">
+        <div className="flex flex-col my-4">
+        <h1 className={`${direg.className} flex justify-center text-center text-4xl my-2`}>Skills</h1>
+
+        <div className="flex flex-wrap mx-auto align-center justify-center mt-8">
+                <div className="flex flex-col items-center mx-4">
+        
+            <h1 className={`${dimed.className} mb-4 bg-[#cff2c9] rounded-full py-1 px-4 text-center text-2xl mt-2`}>EFFECTIVE COMMUNICATION</h1>
+            <h1 className={`${dilight.className} text-sm max-w-sm justify-text`}></h1>
+            </div>
+            <div className="flex flex-col items-center mx-4 ">
+        
+            <h1 className={`${dimed.className} mb-4 bg-[#cff2c9] rounded-full py-1 px-4  text-center text-2xl mt-2`}>TIME-MANAGEMENT</h1>
+            <h1 className={`${dilight.className} max-w-sm justify-text text-sm`}></h1>
+            </div>
+            <div className="flex flex-col items-center mx-4 ">
+        
+            <h1 className={`${dimed.className} mb-4 bg-[#cff2c9] rounded-full py-1 px-4  text-center text-2xl mt-2`}>LEADERSHIP</h1>
+            <h1 className={`${dilight.className} max-w-sm justify-text text-sm`}></h1>
+            </div>
+            <div className="flex flex-col items-center mx-4 ">
+        
+            <h1 className={`${dimed.className} mb-4 bg-[#cff2c9] rounded-full py-1 px-4  text-center text-2xl mt-2`}>PROJECT/PRODUCT MANAGEMENT</h1>
+            <h1 className={`${dilight.className} max-w-sm justify-text text-sm`}></h1>
+            </div>
+            
+                </div>
+
+                </div>
        
 
+                </section>
 
-  {/*
-  
-  <div className="flex flex-col my-2 mt-8">
-                          <h1 className={`${direg.className} my-2`}>PRODUCTS</h1>
-                          <div className="flex flex-row">
-                          <div>
-                          <h1 className={`${dilight.className} mb-4`}><strong className={`${dimed.className} mb-4`}>DIBS!</strong> </h1>
-                          </div>
-                          <div className="ml-4 ">
-                          A campus-specific mobile app where students can share images & locations of items they no longer need, fostering a sustainable & collaborative community to reduce waste. 
-                          <br/> 
-                          <Link href="/product/dibs" className="underline decoration-1 underline-offset-2 mx-2">Learn More</Link>
 
-                          </div>
-                          
-                  </div>
-                  </div>
-  
-                  <div className="flex flex-col my-2 mt-8">
-                          <h1 className={`${direg.className} my-2`}>TOOLS</h1>
-                          <div className="flex relative z-20 max-w-screen-md text-justify">
-                              <h1 className={`${dilight.className}`}>
-                                  <li className="list-none">Jira, Slack, Trello, Miro</li>
-                              </h1>
-                          </div>
-                  </div>
-  
-                  <div className="flex flex-col my-2 mt-8">
-                          <h1 className={`${direg.className} my-2`}>SKILLS</h1>
-                          <div className="flex relative z-20 max-w-screen-md text-justify">
-                              <h1 className={`${dilight.className}`}>
-                                  <li className="list-none">Organize Meetings</li>
-                              </h1>
-                          </div>
-                  </div>
+        <section className=" mx-auto">
+        <div className="flex flex-col my-4">
+        <h1 className={`${direg.className} flex justify-center text-center text-4xl my-2`}>Frameworks/Technologies</h1>
 
-      */}
+        <div className="flex flex-wrap mx-auto align-center justify-center mt-8">
+                <div className="flex flex-col items-center mx-4">
+        
+            <h1 className={`${dimed.className} mb-4 bg-[#d1c9f2] rounded-full py-1 px-4 text-center text-2xl mt-2`}>JIRA / TRELLO</h1>
+            <h1 className={`${dilight.className} text-sm max-w-sm justify-text`}>Used Jira & Trello for several project management positions, creating tickets, and adding in plugins. Additionally, to lead the development of my own product.</h1>
+            </div>
+            <div className="flex flex-col items-center mx-4 ">
+        
+            <h1 className={`${dimed.className} mb-4 bg-[#d1c9f2] rounded-full py-1 px-4  text-center text-2xl mt-2`}>NEXT JS FRAMEWORK / TAILWINDCSS</h1>
+            <h1 className={`${dilight.className} max-w-sm justify-text text-sm`}>Self-taught during building my personal website. I hard-coded this website!</h1>
+            </div>
+            <div className="flex flex-col items-center mx-4 ">
+        
+            <h1 className={`${dimed.className} mb-4 bg-[#d1c9f2] rounded-full py-1 px-4  text-center text-2xl mt-2`}>CREATIVE CLOUD APPS</h1>
+            <h1 className={`${dilight.className} max-w-sm justify-text text-sm`}>Used Adobe Apps extensively for classes ranging from Software Development to Motion Graphics. This includes Adobe Photoshop, Illustrator, Premiere Pro & After Effects.</h1>
+            </div>
+            <div className="flex flex-col items-center mx-4 ">
+        
+            <h1 className={`${dimed.className} mb-4 bg-[#d1c9f2] rounded-full py-1 px-4  text-center text-2xl mt-2`}>SLACK / ATLASSIAN / GOOGLE SUITES</h1>
+            <h1 className={`${dilight.className} max-w-sm justify-text text-sm`}>Used for my project management positions to communicate with teams, set up meetings & faciliate development.</h1>
+            </div>
+            
+                </div>
+
+                </div>
+       
+
+                </section>
 </section>
           
 <div className={` max-w-screen px-1 py-8 flex items-center sm:flex-row flex-col`}>
