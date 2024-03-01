@@ -167,7 +167,7 @@ export default function Product() {
             </div>
             <div className="flex flex-col items-center mx-4 ">
         
-            <h1 className={`${dimed.className} mb-4 bg-[#cff2c9] rounded-full py-1 px-4  text-center text-2xl mt-2`}>PROJECT/PRODUCT MANAGEMENT</h1>
+            <h1 className={`${dimed.className} mb-4 bg-[#cff2c9] rounded-full py-1 px-4  text-center text-2xl mt-2`}>PROJECT/PRODUCT MGMT</h1>
             <h1 className={`${dilight.className} max-w-sm justify-text text-sm`}></h1>
             </div>
             
