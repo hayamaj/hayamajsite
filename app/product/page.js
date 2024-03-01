@@ -152,7 +152,7 @@ export default function Product() {
         <div className="flex flex-wrap mx-auto align-center justify-center mt-8">
                 <div className="flex flex-col items-center mx-4">
         
-            <h1 className={`${dimed.className} mb-4 bg-[#cff2c9] rounded-full py-1 px-4 text-center text-2xl mt-2`}>EFFECTIVE COMMUNICATION</h1>
+            <h1 className={`${dimed.className} mb-4 bg-[#cff2c9] rounded-full py-1 px-4 text-center text-2xl mt-2`}>COMMUNICATION</h1>
             <h1 className={`${dilight.className} text-sm max-w-sm justify-text`}></h1>
             </div>
             <div className="flex flex-col items-center mx-4 ">
@@ -191,7 +191,7 @@ export default function Product() {
             </div>
             <div className="flex flex-col items-center mx-4 ">
         
-            <h1 className={`${dimed.className} mb-4 bg-[#d1c9f2] rounded-full py-1 px-4  text-center text-2xl mt-2`}>OPENAI</h1>
+            <h1 className={`${dimed.className} mb-4 bg-[#d1c9f2] rounded-full py-1 px-4  text-center text-2xl mt-2`}>OPENAI TECHNOLOGIES</h1>
             <h1 className={`${dilight.className} max-w-sm justify-text text-sm`}>Used during my internship at Dakota Systems, where I assessed & implemented open-source AI technologies like GPT-4 to improve organizational, technical & business processes.</h1>
             </div>
             <div className="flex flex-col items-center mx-4 ">
