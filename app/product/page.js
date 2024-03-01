@@ -196,7 +196,7 @@ export default function Product() {
             </div>
             <div className="flex flex-col items-center mx-4 ">
         
-            <h1 className={`${dimed.className} mb-4 bg-[#d1c9f2] rounded-full py-1 px-4  text-center text-2xl mt-2`}>NEXT JS FRAMEWORK / TAILWINDCSS</h1>
+            <h1 className={`${dimed.className} mb-4 bg-[#d1c9f2] rounded-full py-1 px-4  text-center text-2xl mt-2`}>NEXT JS FRAMEWORK / <br/>TAILWINDCSS</h1>
             <h1 className={`${dilight.className} max-w-sm justify-text text-sm`}>Self-taught during building my personal website. I hard-coded this website!</h1>
             </div>
             <div className="flex flex-col items-center mx-4 ">
