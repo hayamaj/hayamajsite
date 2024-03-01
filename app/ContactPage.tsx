@@ -28,7 +28,7 @@ const ContactPage: React.FC = () => {
   return (
     <div className="flex flex-col items-center justify-center">
       {/* Button or link to open the modal */}
-      <button onClick={handleOpenModal} className={`${direg.className} border rounded-full px-4 py-2 text-bl border-bl`}>Contact Me</button>
+      <button onClick={handleOpenModal} className={`${direg.className} border hover:bg-black hover:text-white rounded-full px-4 py-2 text-bl border-bl`}>Contact Me</button>
       {/* Render the modal */}
       <ContactModal isOpen={isModalOpen} onClose={handleCloseModal} />
     </div>

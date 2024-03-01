@@ -159,7 +159,7 @@ export default function Home() {
           </div>
     )}
         <div className={`sm:w-${isDesktop ? '1/2' : 'full'} `}>
-          <h1 className={`${direg.className} text-2xl text-gr mb-4 mt-4 max-w-md`}>Aspiring Product Leader, Engineer & Creative.</h1>
+          <h1 className={`${direg.className} text-xl text-bl mb-4 mt-4 max-w-md`}>Discipline, Collaboration and Creative Thinking.</h1>
                         <h1 className={`${dilight.className} max-w-md text-sm text-bl text-left`}>
                             I am a Jordanian-born student at Boston University, set to graduate in May 2024.
                             <br />
@@ -187,7 +187,7 @@ export default function Home() {
                             Regardless of where my journey begins, my ultimate goal is to guide and facilitate teams in the creation of transformative solutions.
                             
                          </h1>
-                         <h1 className={`${didot.className} text-left mt-4 text-sm`}>H M</h1>
+                         <h1 className={`${didot.className} text-right mr-24 mt-4 text-sm`}>H M</h1>
   </div>
                       </div>
 </section>
@@ -201,9 +201,28 @@ export default function Home() {
 
               
 
-                <div className="text-center mt-8 mb-8">
-    <h1 className={`${direg.className} text-4xl text-bl`}>Let's Connect</h1>
+                <div className="text-center mt-4 mb-4">
+    <h1 className={`${direg.className} text-4xl text-bl`}>Let's Connect!</h1>
         </div>
+        <div className="flex flex-row mx-2 justify-center">
+        <a href="https://www.linkedin.com/in/hayamaj/" className="flex items-justify my-4 mx-2">
+                <Image
+                      src="/images/linkedin.png"
+                      width={25}
+                      height={25}
+                      alt="Picture of the author"
+                    />
+        </a>
+        <a href="mailto:hayamaj@bu.edu" target="_blank" aria-label="hayamaj@bu.edu" className="flex items-center mx-2">
+                <Image
+                      src="/images/email.png"
+                      width={25}
+                      height={25}
+                      alt="Picture of the author"
+                    />
+        </a>
+        </div>
+        <h1 className={`${dimed.className} py-4 text-md mx-auto text-gr my-4 justify-center text-justify max-w-lg`}>Please don't hesitate to get in touch if you ever want to chat, share feedback, or simply connect! I'm always open to new conversations and will do my best to respond to you as soon as I can. </h1> 
 
         <ContactPage />
 
