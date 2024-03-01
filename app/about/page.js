@@ -197,48 +197,7 @@ export default function Home() {
     <h1 className={`${direg.className} text-4xl text-bl`}></h1>
         </div>
 
-        <section className=" mx-auto">
-        <div className="flex flex-col my-4">
-        <h1 className={`${direg.className} flex justify-center text-center text-4xl my-2`}>Skills & Experience</h1>
 
-        <div className="flex flex-wrap mx-auto justify-center mt-8">
-                <div className="flex flex-col items-center mx-4">
-        <Image
-              src="/images/ai.png"
-              width={180}
-              height={180}
-              alt="Picture of the author"
-            />
-            <h1 className={`${dimed.className} text-center text-2xl mt-2`}>Artificial Intelligence</h1>
-            <h1 className={`${dilight.className} text-center text-sm`}>AI Integration & Solutions Engineer</h1>
-            </div>
-            <div className="flex flex-col items-center mx-4 ">
-        <Image
-              src="/images/swe.png"
-              width={180}
-              height={180}
-              alt="Picture of the author"
-            />
-            <h1 className={`${dimed.className} text-center text-2xl mt-2`}>Software Development</h1>
-            <h1 className={`${dilight.className} text-center text-sm`}>Software Engineering Intern</h1>
-            </div>
-            <div className="flex flex-col items-center mx-4 ">
-        <Image
-              src="/images/pm.png"
-              width={180}
-              height={180}
-              alt="Picture of the author"
-            />
-            <h1 className={`${dimed.className} text-center text-2xl mt-2`}>Project Management</h1>
-            <h1 className={`${dilight.className} text-center text-sm`}>Software Project Manager</h1>
-            </div>
-            
-                </div>
-
-                </div>
-       
-
-                </section>
 
               
 
