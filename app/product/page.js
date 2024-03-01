@@ -181,7 +181,7 @@ export default function Product() {
 
         <section className=" mx-auto">
         <div className="flex flex-col my-4">
-        <h1 className={`${direg.className} flex justify-center text-center text-4xl my-2`}>Frameworks/Technologies</h1>
+        <h1 className={`${direg.className} flex justify-center text-center text-4xl my-2`}>Software & Tech</h1>
 
         <div className="flex flex-wrap mx-auto align-center justify-center mt-8">
                 <div className="flex flex-col items-center mx-4">
