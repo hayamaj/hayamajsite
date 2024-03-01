@@ -19,8 +19,32 @@ module.exports = {
       animation: {
         'infinite-scroll': 'infinite-scroll 45s linear infinite',
         'text-slide-3': 'text-slide-3 4.5s cubic-bezier(0.83, 0, 0.17, 1) infinite',
+        typewriter: "typewriter 2s steps(85) forwards",
+        caret: 'typewriter 2s steps(85) forwards, blink 1s steps(85) infinite 2s',
       },
       keyframes: {
+        typewriter: {
+          to: {
+            left: "100%"
+          },
+        },
+        blink: {
+          '0%': {
+            opacity: '0',
+          },
+          '0.1%': {
+            opacity: '1',
+          },
+          '50%': {
+            opacity: '1',
+          },
+          '50.1%': {
+            opacity: '0',
+          },
+          '100%': {
+            opacity: '0',
+          },
+        },
         'infinite-scroll': {
           from: { transform: 'translateX(0)' },
           to: { transform: 'translateX(-100%)' },

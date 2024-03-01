@@ -140,7 +140,7 @@ export const Navigation = () => {
               <NavLink href="/" exact className="nav-item nav-link"></NavLink>
               <NavLink href="/product" exact className="nav-item nav-link">Work</NavLink>
               <NavLink href="/resume" exact className="nav-item nav-link">My Resume</NavLink>
-              <NavLink href="/about" exact className="nav-item nav-link">About + Contact</NavLink>
+              <NavLink href="/about" exact className="nav-item nav-link">About + Connect</NavLink>
               <NavLink href="" exact className="nav-item nav-link">|</NavLink>
               <NavLink href="/art" exact className="nav-item nav-link">Design</NavLink>
               </div>
@@ -180,7 +180,7 @@ export const Navigation = () => {
                 <a onClick={() => setIsOpen(false)} className="text-bl hover:text-gr block px-3 py-2 rounded-md text-2xl">My Resume</a>
               </Link>
               <Link legacyBehavior href="/about" passHref>
-                <a onClick={() => setIsOpen(false)} className="text-bl hover:text-gr block px-3 py-2 rounded-md text-2xl">About + Contact</a>
+                <a onClick={() => setIsOpen(false)} className="text-bl hover:text-gr block px-3 py-2 rounded-md text-2xl">About + Connect</a>
               </Link>
               <Link legacyBehavior href="/art" passHref>
                 <a onClick={() => setIsOpen(false)} className="text-bl hover:text-gr block px-3 py-2 rounded-md text-2xl">Design</a>

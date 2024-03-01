@@ -7,7 +7,27 @@ import Image from 'next/image';
 import ContactModal from '../ContactModal';
 import ContactPage from '../ContactPage';
 {     /*fonts*/     }
-
+const noereg = localFont({
+  src: [
+    {
+      path: '../../fonts/noereg.ttf',
+    }
+  ],
+})
+const noeital = localFont({
+  src: [
+    {
+      path: '../../fonts/noeital.ttf',
+    }
+  ],
+})
+const noe = localFont({
+  src: [
+    {
+      path: '../../fonts/noe.ttf',
+    }
+  ],
+})
 const dilight = localFont({
   src: [
     {
@@ -159,7 +179,7 @@ export default function Home() {
           </div>
     )}
         <div className={`sm:w-${isDesktop ? '1/2' : 'full'} `}>
-          <h1 className={`${direg.className} text-xl text-bl mb-4 mt-4 max-w-md`}>Discipline, Collaboration and Creative Thinking.</h1>
+          <h1 className={`${noeital.className} text-xl text-bl mb-4 mt-4 max-w-md`}>Discipline, Collaboration and Creative Thinking.</h1>
                         <h1 className={`${dilight.className} max-w-md text-sm text-bl text-left`}>
                             I am a Jordanian-born student at Boston University, set to graduate in May 2024.
                             <br />
@@ -222,7 +242,7 @@ export default function Home() {
                     />
         </a>
         </div>
-        <h1 className={`${dimed.className} py-4 text-md mx-auto text-gr my-4 justify-center text-justify max-w-lg`}>Please don't hesitate to get in touch if you ever want to chat, share feedback, or simply connect! I'm always open to new conversations and will do my best to respond to you as soon as I can. </h1> 
+        <h1 className={`${dimed.className} px-4 py-4 text-md mx-auto text-gr my-4 justify-center text-justify max-w-lg`}>Please don't hesitate to get in touch if you ever want to chat, share feedback, or simply connect! I'm always open to new conversations and will do my best to respond to you as soon as I can. </h1> 
 
         <ContactPage />
 
