@@ -9,6 +9,7 @@ import { usePathname, useRouter } from 'next/navigation';
 import Link from 'next/link';
 
 
+
 function NavLink({ href, exact = false, children, activeColor, ...props }) {
   const pathname = usePathname();
   
@@ -120,6 +121,7 @@ export const Navigation = () => {
     window.location.href = '/'; // Redirect to the home page
   };
 
+
   
   return (
     <nav className={`bg-bg `}>
@@ -171,17 +173,17 @@ export const Navigation = () => {
         {(ref) => (
           <div className={` ${direg.className} md:hidden fixed bg-bg w-screen h-full z-50 items-center justify-center`} id="mobile-menu">
             <div ref={ref} className="px-2 pt-2 pb-3 space-y-8 my-24 sm:px-3 justify-center text-center">
-              <Link legacyBehavior href="/" passHref>
-                <a className="text-bl hover:text-gr block px-3 py-2 rounded-md text-2xl">Work</a>
+              <Link legacyBehavior href="/product" passHref>
+                <a onClick={() => setIsOpen(false)} className="text-bl hover:text-gr block px-3 py-2 rounded-md text-2xl">Work</a>
               </Link>
               <Link legacyBehavior href="/resume" passHref>
-                <a className="text-bl hover:text-gr block px-3 py-2 rounded-md text-2xl">My Resume</a>
+                <a onClick={() => setIsOpen(false)} className="text-bl hover:text-gr block px-3 py-2 rounded-md text-2xl">My Resume</a>
               </Link>
               <Link legacyBehavior href="/about" passHref>
-                <a className="text-bl hover:text-gr block px-3 py-2 rounded-md text-2xl">About + Contact</a>
+                <a onClick={() => setIsOpen(false)} className="text-bl hover:text-gr block px-3 py-2 rounded-md text-2xl">About + Contact</a>
               </Link>
               <Link legacyBehavior href="/art" passHref>
-                <a className="text-bl hover:text-gr block px-3 py-2 rounded-md text-2xl">Design</a>
+                <a onClick={() => setIsOpen(false)} className="text-bl hover:text-gr block px-3 py-2 rounded-md text-2xl">Design</a>
               </Link>
               {/* Add more links as needed */}
             </div>

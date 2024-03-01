@@ -137,8 +137,8 @@ export default function Home() {
 
 
                       <div className={`flex ${dilight.className} opacity-0 z-100 absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 mx-auto text-left transition-opacity duration-250 ${videoEnded ? 'opacity-100' : ''} text-5xl md:text-4xl [text-wrap:balance] bg-clip-text text-bl max-w-3xl`}>
-  <h1 className={` ${dimed.className} text-5xl text-black`}>&#8212; HAYA IS AN ASPIRING <strong className={` ${dibold.className} text-5xl text-accent`}>PRODUCT LEADER </strong>WITH EXPERTISE IN <strong className={` ${direg.className} text-5xl text-black`}>PRODUCT MGMT, </strong>
-<strong className={` ${direg.className} text-5xl text-black`}>ENGINEERING </strong> & <strong className={` ${direg.className} text-5xl text-black`}>DESIGN </strong>.</h1>
+  <h1 className={` ${direg.className} text-3xl text-bl`}>&#8212; HAYA IS AN ASPIRING <strong className={` ${dibold.className} text-3xl text-accent`}>PRODUCT LEADER </strong>WITH EXPERTISE IN <strong className={` ${diboldital.className} text-3xl text-bl`}>PRODUCT MANAGEMENT, </strong>
+<strong className={` ${diboldital.className} text-3xl text-bl`}>ENGINEERING </strong> & <strong className={` ${diboldital.className} text-3xl text-bl`}>DESIGN. </strong></h1>
 </div>
     
 
