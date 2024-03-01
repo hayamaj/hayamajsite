@@ -120,7 +120,7 @@ export default function Art() {
       }
     };
       return (
-        <main className={`bg-white flex min-h-screen max-w-screen flex-col items-center justify-between`}>
+        <main className={`bg-bg flex min-h-screen max-w-screen flex-col items-center justify-between`}>
   
         <div className="w-screen h-screen overflow-y-scroll">
           <div className="text-center pt-16 my-24">
