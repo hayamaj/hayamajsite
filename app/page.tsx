@@ -111,6 +111,7 @@ export default function Home() {
   const [isSidebarOpen, setIsSidebarOpen] = useState(false);
   const [videoEnded, setVideoEnded] = useState(false);
   const [isIndexPage, setIsIndexPage] = useState(true); // assuming it starts as true
+  const [animationCompleted, setAnimationCompleted] = useState(false);
   const [displayText, setDisplayText] = useState('');
   
   const textToType ="HAYA IS AN ASPIRING PRODUCT LEADER WITH EXPERTISE IN PRODUCT MANAGEMENT, ENGINEERING & DESIGN.";
@@ -128,6 +129,7 @@ export default function Home() {
           currentIndex++;
         } else {
           clearInterval(interval);
+          setAnimationCompleted(true); // Animation completed
         }
       }, typingSpeed);
 
@@ -181,7 +183,7 @@ export default function Home() {
     </div>
 
     <div className="flex flex-col items-center justify-center">
-      <Link href="/about" className={`${diboldital.className} border flex justify-center -mt-96 hover:bg-accent bg-bg hover:text-white rounded-full px-4 py-2 text-accent border-accent`}>ABOUT + CONNECT</Link>
+      <Link href="/about" className={`${diboldital.className} border flex justify-center -mt-96 rounded-full px-4 py-2 border-accent text-accent transition-colors duration-300 ${animationCompleted ? 'bg-accent text-white hover:bg-white hover:text-accent' : 'bg-bg hover:bg-accent hover:text-white'}`}>ABOUT + CONNECT</Link>
 
     </div>
     </div>
