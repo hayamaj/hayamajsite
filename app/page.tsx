@@ -183,7 +183,7 @@ export default function Home() {
     </div>
 
     <div className="flex flex-col items-center justify-center">
-      <Link href="/about" className={`${diboldital.className} border flex justify-center -mt-96 rounded-full px-4 py-2 border-accent text-accent transition-colors duration-300 ${animationCompleted ? 'bg-accent text-white hover:bg-white hover:text-accent' : 'bg-bg hover:bg-accent hover:text-white'}`}>ABOUT + CONNECT</Link>
+      <Link href="/about" className={`${diboldital.className} border flex justify-center -mt-96 rounded-full px-4 py-2 border-accent text-accent transition-colors duration-300 ${animationCompleted ? 'bg-accent text-white hover:bg-white hover:text-accent' : 'bg-bg hover:bg-accent hover:text-bg'}`}>ABOUT + CONNECT</Link>
 
     </div>
     </div>
