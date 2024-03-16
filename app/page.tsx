@@ -114,7 +114,7 @@ export default function Home() {
   const [animationCompleted, setAnimationCompleted] = useState(false);
   const [displayText, setDisplayText] = useState('');
   
-  const textToType ="HAYA IS AN ASPIRING PRODUCT LEADER WITH EXPERTISE IN PRODUCT MANAGEMENT, ENGINEERING & DESIGN.";
+  const textToType ="haya is an aspiring product leader with expertise in product management, engineering & design.";
   const typingSpeed = 50; // Adjust typing speed here (in milliseconds)
   const initialDelay = 1000; // Adjust initial delay here (in milliseconds)
 
@@ -182,10 +182,14 @@ export default function Home() {
                       &#8212; {displayText}
     </div>
 
-    <div className="flex flex-col items-center justify-center">
-      <Link href="/about" className={`${diboldital.className} border flex justify-center -mt-96 rounded-full px-4 py-2 border-accent text-accent transition-colors duration-300 ${animationCompleted ? 'bg-accent text-white hover:bg-white hover:text-accent' : 'bg-bg hover:bg-accent hover:text-bg'}`}>ABOUT + CONNECT</Link>
-
-    </div>
+    <div className="flex items-center justify-center -mt-96">
+    <Link href="/about" className={`${diboldital.className} border rounded-full px-4 py-2 border-accent text-accent transition-colors duration-300 ${animationCompleted ? 'bg-accent text-white hover:bg-white hover:text-accent' : 'bg-bg hover:bg-accent hover:text-bg'}`}>ABOUT</Link>
+    <span className="mx-2">  </span>
+    <Link href="/product" className= {`${diboldital.className} border rounded-full px-4 py-2 border-accent text-accent transition-colors duration-300 ${animationCompleted ? 'bg-accent text-white hover:bg-white hover:text-accent' : 'bg-bg hover:bg-accent hover:text-bg'}`}>WORK</Link>
+    <span className="mx-2">  </span>
+    <Link href="/resume" className= {`${diboldital.className} border rounded-full px-4 py-2 border-accent text-accent transition-colors duration-300 ${animationCompleted ? 'bg-accent text-white hover:bg-white hover:text-accent' : 'bg-bg hover:bg-accent hover:text-bg'}`}>RESUME</Link>
+  </div>
+    
     </div>
 
  {/*
