@@ -328,10 +328,16 @@ During move-out periods, our streets get cluttered with perfectly
  </h2>
 
  <h2 className={`${direg.className} mt-16 text-5xl text-bl text-left mb-1`}>Next Steps</h2>
+ <div className="grid place-items-center my-4">
+                    <Image
+                      src="/images/examplepm.png"
+                      width={1000}
+                      height={1000}
+                      alt="Picture of the author"
+                    />
+                </div>
 <h2 className={`${dilight.className} mt-4 text-bl text-left justify-content max-w-5xl`}>
-We are scheduled to launch Dibs! on app stores by late March. Following the release, our strategy involves extensive user testing and continual updates driven by feedback from the BU community.
-
-
+We are scheduled to launch Dibs! on app stores by late April. Following the release, our strategy involves extensive user testing and continual updates driven by feedback from the BU community.
  </h2>
 
 
