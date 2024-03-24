@@ -1,5 +1,5 @@
 "use client";
-
+import styles from "./Home.module.css";
 import { useState, useEffect, ChangeEvent } from 'react';
 // Import the Navigation component
 import localFont from 'next/font/local'
@@ -7,6 +7,8 @@ import Link from 'next/link';
 import Navigation from './Nav';
 import NavBar from './NavBar';
 import Image from 'next/image';
+import RootLayout from './layout';
+import router from "next/router";
 
 {     /*fonts*/     }
 const noereg = localFont({
@@ -164,10 +166,10 @@ export default function Home() {
     setIsIndexPage(false);
   };
 
-
+  
  
   return (
-    <main className={`${videoEnded ? 'bg-bg' : ''} min-h-screen h-screen max-w-screen items-center justify-between`}>
+    <main className={`animate-custom min-h-screen h-screen max-w-screen items-center justify-between`}>
       
 <div className={` flex flex-col justify-center items-center h-screen z-100 transition-opacity duration-500`} >
                         {/*  
@@ -178,16 +180,16 @@ export default function Home() {
                         */}
                       </div>
 <div className="flex mx-auto flex-col">
-                      <div className={`flex ${noereg.className} lg:text-4xl text-3xl lg:max-w-6xl max-w-7xl z-100 absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2  before:absolute mx-auto text-left before:inset-0 before:animate-typewriter before:bg-bg after:absolute after:inset-0 after:w-[0.125em] after:animate-caret [text-wrap:balance] bg-clip-text text-bl`}>
+                      <div className={`flex ${noereg.className} lg:text-4xl text-3xl lg:max-w-6xl max-w-7xl z-100 absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2  before:absolute mx-auto text-left before:inset-0 before:animate-typewriter after:absolute after:inset-0 after:w-[0.125em] after:animate-caret [text-wrap:balance] bg-clip-text text-bl`}>
                       &#8212; {displayText}
     </div>
 
     <div className="flex items-center justify-center -mt-96">
-    <Link href="/about" className={`${diboldital.className} border rounded-full px-4 py-2 border-accent text-accent transition-colors duration-300 ${animationCompleted ? 'bg-accent text-white hover:bg-white hover:text-accent' : 'bg-bg hover:bg-accent hover:text-bg'}`}>ABOUT</Link>
+    <Link href="/about" className={`${direg.className} border rounded-full px-4 py-2 border-black text-black transition-colors duration-300 ${animationCompleted ? 'bg-black text-white border-black hover:bg-transparent hover:text-black' : 'bg-transparent hover:bg-accent hover:text-bg'}`}>ABOUT</Link>
     <span className="mx-2">  </span>
-    <Link href="/product" className= {`${diboldital.className} border rounded-full px-4 py-2 border-accent text-accent transition-colors duration-300 ${animationCompleted ? 'bg-accent text-white hover:bg-white hover:text-accent' : 'bg-bg hover:bg-accent hover:text-bg'}`}>WORK</Link>
+    <Link href="/product" className= {`${direg.className} border rounded-full px-4 py-2 border-black text-black transition-colors duration-300 ${animationCompleted ? 'bg-black text-white border-black hover:bg-transparent hover:text-black' : 'bg-transparent hover:bg-accent hover:text-bg'}`}>WORK</Link>
     <span className="mx-2">  </span>
-    <Link href="/resume" className= {`${diboldital.className} border rounded-full px-4 py-2 border-accent text-accent transition-colors duration-300 ${animationCompleted ? 'bg-accent text-white hover:bg-white hover:text-accent' : 'bg-bg hover:bg-accent hover:text-bg'}`}>RESUME</Link>
+    <Link href="/resume" className= {`${direg.className} border rounded-full px-4 py-2 border-black text-black transition-colors duration-300 ${animationCompleted ? 'bg-black text-white border-black hover:bg-transparent hover:text-black' : 'bg-transparent hover:bg-accent hover:text-bg'}`}>RESUME</Link>
   </div>
     
     </div>
@@ -211,6 +213,5 @@ export default function Home() {
         </span>
       </div>
       </main>
-
   );
 }

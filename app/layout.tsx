@@ -1,7 +1,10 @@
+
 import type { Metadata } from "next";
 import "./globals.css";
 import localFont from 'next/font/local'
 import Navigation from "./Nav";
+
+
 
 
 {     /*fonts*/     }
@@ -80,16 +83,21 @@ const proxnovabold = localFont({
   ],
 })
 
-export const metadata: Metadata = {
+
+
+const metadata: Metadata = {
   title: "Haya AlMajali",
   description: "Haya AlMajali's Portfolio",
 };
 
+
 export default function RootLayout({
+  
   children,
 }: Readonly<{
   children: React.ReactNode;
 }>) {
+
   return (
     <html lang="en">
       <head>

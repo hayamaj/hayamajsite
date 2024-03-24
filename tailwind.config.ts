@@ -15,6 +15,7 @@ module.exports = {
         "gradient-radial": "radial-gradient(var(--tw-gradient-stops))",
         "gradient-conic":
           "conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))",
+        "custom-gradient": "linear-gradient(to right, #eb7494, #ae77b2, #97b5da, #0099ca)"
       },
       animation: {
         'infinite-scroll': 'infinite-scroll 45s linear infinite',
@@ -76,8 +77,9 @@ module.exports = {
         "bl": "#323132",
         "gr":"#b3b3b3",
         "yellow": "#EBFF0E",
-        "bg":"#fafafa"
-        
+        "bg":"#fafafa",
+        "secondary-glow": "conic-gradient(from 10deg at 50% 50%, #eb7494 0deg, #ae77b2 55deg, #97b5da 120deg, #0099ca 160deg, transparent 360deg)",
+        "third-glow": "conic-gradient(from 90deg at 50% 50%, #ff8b7e 0deg, #e24e6b 160deg, #7ed2da 120deg, #8bdce0 55deg, transparent 360deg)"
       },
       fontFamily: {
         sans: ['var(--font-didot)'],
