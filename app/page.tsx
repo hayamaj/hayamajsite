@@ -116,7 +116,7 @@ export default function Home() {
   const [animationCompleted, setAnimationCompleted] = useState(false);
   const [displayText, setDisplayText] = useState('');
   
-  const textToType ="haya is an aspiring product leader with expertise in product management, engineering & design.";
+  const textToType ="Aspiring Product Leader with expertise in Product Management, Engineering & Design.";
   const typingSpeed = 50; // Adjust typing speed here (in milliseconds)
   const initialDelay = 1000; // Adjust initial delay here (in milliseconds)
 

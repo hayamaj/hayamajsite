@@ -119,8 +119,7 @@ export default function Art() {
     }
   };
     return (
-      <main className={`bg-white flex min-h-screen max-w-screen flex-col items-center justify-between`}>
-
+      <main className={` flex min-h-screen max-w-screen flex-col items-center justify-between`}>
       <div className="flex flex-col justify-center items-center h-screen z-100" >
     <video ref={videoRef} autoPlay="autoplay" playsInLine="playsinline" muted="true" onTimeUpdate={handleVideoTimeUpdate} className="w-full h-full object-cover object-right-bottom">
                       <source src="/drawingvid.mov" />
