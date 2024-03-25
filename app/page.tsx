@@ -185,11 +185,11 @@ export default function Home() {
     </div>
 
     <div className="flex items-center justify-center -mt-96">
-    <Link href="/about" className={`${direg.className} border rounded-full px-4 py-2 border-black text-black transition-colors duration-300 ${animationCompleted ? 'bg-black text-white border-black hover:bg-transparent hover:text-black' : 'bg-transparent hover:bg-accent hover:text-bg'}`}>ABOUT</Link>
+    <Link href="/about" className={`${direg.className} border rounded-full px-4 py-2 border-black text-black transition-colors duration-300 ${animationCompleted ? 'bg-black text-white border-black hover:bg-transparent hover:text-black' : 'bg-transparent hover:bg-black hover:text-bg'}`}>ABOUT</Link>
     <span className="mx-2">  </span>
-    <Link href="/product" className= {`${direg.className} border rounded-full px-4 py-2 border-black text-black transition-colors duration-300 ${animationCompleted ? 'bg-black text-white border-black hover:bg-transparent hover:text-black' : 'bg-transparent hover:bg-accent hover:text-bg'}`}>WORK</Link>
+    <Link href="/product" className= {`${direg.className} border rounded-full px-4 py-2 border-black text-black transition-colors duration-300 ${animationCompleted ? 'bg-black text-white border-black hover:bg-transparent hover:text-black' : 'bg-transparent hover:bg-black hover:text-bg'}`}>WORK</Link>
     <span className="mx-2">  </span>
-    <Link href="/resume" className= {`${direg.className} border rounded-full px-4 py-2 border-black text-black transition-colors duration-300 ${animationCompleted ? 'bg-black text-white border-black hover:bg-transparent hover:text-black' : 'bg-transparent hover:bg-accent hover:text-bg'}`}>RESUME</Link>
+    <Link href="/resume" className= {`${direg.className} border rounded-full px-4 py-2 border-black text-black transition-colors duration-300 ${animationCompleted ? 'bg-black text-white border-black hover:bg-transparent hover:text-black' : 'bg-transparent hover:bg-black hover:text-bg'}`}>RESUME</Link>
   </div>
     
     </div>
