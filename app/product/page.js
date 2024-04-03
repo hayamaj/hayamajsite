@@ -120,7 +120,9 @@ export default function Product() {
 
   
         <section className="max-w-screen-lg mx-auto mt-16 mx-2 ">
-        <h1 className={`${direg.className} flex justify-center text-center text-4xl my-2`}>My Projects</h1>
+
+
+        <h1 className={`${direg.className} flex justify-center text-center text-4xl my-2 text-black `}>My Projects</h1>
 
   {/* 
   <div className="text-center my-16 mb-8">
@@ -222,10 +224,9 @@ export default function Product() {
         <span className={`mx-auto text-center text-gr text-sm`}>
           <div className="mb-4">
           </div>
-          <div className={`${dilight.className} text-sm`}>
-          <strong className={`text-sm`}>HAYA ALMAJALI</strong><br />
-          <strong className={`text-sm`}>hayamaj@bu.edu</strong><br />
-          <strong className={`text-sm`}>[857] 891 - 8848</strong><br />
+          <div className={`${dilight.className} text-sm text-bl`}>
+          <strong className={`text-sm`}>Haya AlMajali</strong><br />
+          <strong className={`text-sm italic`}> &#169; 2024</strong><br />
           </div>
         </span>
       </div>

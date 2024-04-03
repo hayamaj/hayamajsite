@@ -124,9 +124,11 @@ export default function MotionGraphics() {
 
   
         <div className="w-screen h-screen overflow-y-scroll">
-          <div className="text-center mt-24">
-          <h1 className={`${didotdf.className} text-4xl`}>Motion Graphics Projects</h1>
-          </div>
+        <div className="pt-16 mt-8 mx-4 pb-4">
+    <div className="flex items-baseline float-left">
+      <Link href="/art/photo" className={`${didotdf.className} mx-4 px-4 bg-bg text-black text-black hover:underline`}> &lt; Drawing</Link>
+    </div>
+        </div>
   
         <div className="flex flex-wrap justify-center my-8 mt-0 mx-8">
               <video autoPlay muted loop style={{ width: '800px', height: '800px' }}>
@@ -140,10 +142,9 @@ export default function MotionGraphics() {
         <span className={`mx-auto text-center text-gr text-sm`}>
           <div className="mb-4">
           </div>
-          <div className={`${dilight.className} text-sm`}>
-          <strong className={`text-sm`}>HAYA ALMAJALI</strong><br />
-          <strong className={`text-sm`}>hayamaj@bu.edu</strong><br />
-          <strong className={`text-sm`}>[857] 891 - 8848</strong><br />
+          <div className={`${dilight.className} text-sm text-bl`}>
+          <strong className={`text-sm`}>Haya AlMajali</strong><br />
+          <strong className={`text-sm italic`}> &#169; 2024</strong><br />
           </div>
         </span>
       </div>

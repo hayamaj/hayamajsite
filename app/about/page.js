@@ -161,7 +161,7 @@ export default function Home() {
   }, []);
 
   return (
-    <main className={`bg-bg text-bl flex min-h-screen max-w-screen flex-col justify-center text-bl`}>
+    <main className={` bg-bg text-bl flex min-h-screen max-w-screen flex-col justify-center text-bl`}>
 
     <div className="text-center mt-8 mb-8">
     <h1 className={`${direg.className} text-4xl text-bl`}>About Me</h1>
@@ -252,10 +252,9 @@ export default function Home() {
         <span className={`mx-auto text-center text-gr text-sm`}>
           <div className="mb-4">
           </div>
-          <div className={`${dilight.className} text-sm`}>
-          <strong className={`text-sm`}>HAYA ALMAJALI</strong><br />
-          <strong className={`text-sm`}>hayamaj@bu.edu</strong><br />
-          <strong className={`text-sm`}>[857] 891 - 8848</strong><br />
+          <div className={`${dilight.className} text-sm text-bl`}>
+          <strong className={`text-sm`}>Haya AlMajali</strong><br />
+          <strong className={`text-sm italic`}> &#169; 2024</strong><br />
           </div>
         </span>
       </div>

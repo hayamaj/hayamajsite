@@ -121,10 +121,7 @@ export default function Dibs() {
       }
     };
       return (
-        <main className={`bg-white flex min-h-screen max-w-screen flex-col items-center justify-between`}>
-        <div className="flex flex-col items-center">
-        <Navigation isIndexPage={false} class="sticky" /> {/* Use the Navigation component here */}
-        </div>
+        <main className={`bg-bg flex min-h-screen max-w-screen flex-col items-center justify-between`}>
 
 <div className="w-screen h-screen flex flex-col gap-4 text-lg font-semibold justify-center items-center ">
 <VideoPlayer />

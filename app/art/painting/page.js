@@ -114,8 +114,10 @@ export default function Painting() {
     <main className={`bg-bg flex min-h-screen max-w-screen flex-col items-center justify-between `}>
 
       <div className="w-screen h-screen overflow-y-scroll">
-        <div className="text-center pt-16 mt-16">
-          <h1 className={`${didotdf.className} text-4xl`}>My Paintings</h1>
+        <div className="pt-16 mt-8 mx-4">
+          <div className="flex items-baseline float-right">
+      <Link href="/art/photo" className={`${didotdf.className} mx-4 bg-bg px-4 text-black text-black hover:underline`}>Photography &gt;</Link>
+    </div>
         </div>
 
         <div className="flex flex-wrap justify-center my-16 mt-6 mx-8">
@@ -131,10 +133,9 @@ export default function Painting() {
         <span className={`mx-auto text-center text-gr text-sm`}>
           <div className="mb-4">
           </div>
-          <div className={`${dilight.className} text-sm`}>
-          <strong className={`text-sm`}>HAYA ALMAJALI</strong><br />
-          <strong className={`text-sm`}>hayamaj@bu.edu</strong><br />
-          <strong className={`text-sm`}>[857] 891 - 8848</strong><br />
+          <div className={`${dilight.className} text-sm text-bl`}>
+          <strong className={`text-sm`}>Haya AlMajali</strong><br />
+          <strong className={`text-sm italic`}> &#169; 2024</strong><br />
           </div>
         </span>
       </div>
