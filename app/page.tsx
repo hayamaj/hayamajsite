@@ -171,7 +171,7 @@ export default function Home() {
   return (
     <main className={`animate-custom min-h-screen h-screen max-w-screen items-center justify-between`}>
       
-<div className={` flex flex-col justify-center items-center h-screen z-100 transition-opacity duration-500`} >
+<div className={` flex flex-col justify-center items-center h-[500px] z-100 transition-opacity duration-500`} >
                         {/*  
     <video autoPlay playsInline muted onEnded={handleVideoEnd} className="w-1/2 h-1/2 object-cover object-right-bottom">
                       <source src="/introvid.mov"/>
@@ -184,12 +184,12 @@ export default function Home() {
                       &#8212; {displayText}
     </div>
 
-    <div className="flex items-center justify-center -mt-96">
-    <Link href="/about" className={`${direg.className} border rounded-full px-4 py-2 border-black text-black transition-colors duration-300 ${animationCompleted ? 'bg-black text-white border-black hover:bg-transparent hover:text-black' : 'bg-transparent hover:bg-black hover:text-bg'}`}>ABOUT</Link>
+    <div className="flex flex-row items-center justify-center">
+    <Link href="/about" className={`${dilight.className} border rounded-full px-4 py-2 border-black text-black transition-colors duration-300 ${animationCompleted ? 'bg-black text-white border-black hover:bg-transparent hover:text-black' : 'bg-transparent hover:bg-black hover:text-bg'}`}>About</Link>
     <span className="mx-2">  </span>
-    <Link href="/product" className= {`${direg.className} border rounded-full px-4 py-2 border-black text-black transition-colors duration-300 ${animationCompleted ? 'bg-black text-white border-black hover:bg-transparent hover:text-black' : 'bg-transparent hover:bg-black hover:text-bg'}`}>WORK</Link>
+    <Link href="/product" className= {`${dilight.className} border rounded-full px-4 py-2 border-black text-black transition-colors duration-300 ${animationCompleted ? 'bg-black text-white border-black hover:bg-transparent hover:text-black' : 'bg-transparent hover:bg-black hover:text-bg'}`}>Work</Link>
     <span className="mx-2">  </span>
-    <Link href="/resume" className= {`${direg.className} border rounded-full px-4 py-2 border-black text-black transition-colors duration-300 ${animationCompleted ? 'bg-black text-white border-black hover:bg-transparent hover:text-black' : 'bg-transparent hover:bg-black hover:text-bg'}`}>RESUME</Link>
+    <Link href="/resume" className= {`${dilight.className} border rounded-full px-4 py-2 border-black text-black transition-colors duration-300 ${animationCompleted ? 'bg-black text-white border-black hover:bg-transparent hover:text-black' : 'bg-transparent hover:bg-black hover:text-bg'}`}>Resume</Link>
   </div>
     
     </div>
@@ -206,8 +206,8 @@ export default function Home() {
           <div className="mb-4">
           </div>
           <div className={`${dilight.className} text-sm text-bl`}>
-          <strong className={`text-sm`}>"btw...I hard-coded this website!"</strong><br />
-          <strong className={`text-sm italic`}> &#8212; Haya AlMajali</strong><br />
+          <strong className={`text-sm italic`}>"I coded this website from scratch!"</strong><br />
+          <strong className={`text-sm `}> &#8212; Haya AlMajali</strong><br />
           </div>
         </span>
       </div>

@@ -5,6 +5,13 @@ import localFont from 'next/font/local'
 import Link from 'next/link';
 import Image from 'next/image';
 {     /*fonts*/     }
+const noeital = localFont({
+  src: [
+    {
+      path: '../../fonts/noeital.ttf',
+    }
+  ],
+})
 
 const dilight = localFont({
   src: [
@@ -142,7 +149,7 @@ export default function Resume() {
     <main className={`bg-bg text-bl flex min-h-screen max-w-screen flex-col justify-center text-bl`}>
 
 <div className="text-center mb-8">
-    <h1 className={`${direg.className} text-4xl text-bl`}>My Resume</h1>
+    <h1 className={`${noeital.className} text-4xl text-bl`}>My Resume</h1>
         </div>
 <div className="align-center justify-center flex">
         <iframe

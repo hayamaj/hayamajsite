@@ -164,7 +164,7 @@ export default function Home() {
     <main className={` bg-bg text-bl flex min-h-screen max-w-screen flex-col justify-center text-bl`}>
 
     <div className="text-center mt-8 mb-8">
-    <h1 className={`${direg.className} text-4xl text-bl`}>About Me</h1>
+    <h1 className={`${noeital.className} text-4xl text-bl`}>About Me</h1>
         </div>
 
                     
@@ -178,33 +178,32 @@ export default function Home() {
             </video>
           </div>
     )}
-        <div className={`sm:w-${isDesktop ? '1/2' : 'full'} `}>
-          <h1 className={`${noeital.className} text-xl text-bl mb-4 mt-4 max-w-md`}>Discipline, Collaboration and Creative Thinking.</h1>
-                        <h1 className={`${dilight.className} max-w-md text-sm text-bl text-left`}>
-                            I am a Jordanian-born student at Boston University, set to graduate in May 2024.
+        <div className={`sm:w-${isDesktop ? '1/2 mx-auto' : 'full'} `}>
+      {/*    <h1 className={`${noeital.className} text-xl text-bl mb-4 mt-4 max-w-md`}>Discipline, Collaboration and Creative Thinking.</h1> */}
+                        <h1 className={`${noereg.className} max-w-xl text-md text-bl text-left`}>
+                            Currently a student at Boston University studying Computer Science, set to graduate in May 2024.
                             <br />
                              <br />
-                            I always thought I'd grow up to be a painter.
-                            As a child, I thrived on the creativity and the act of bringing ideas to life, but I also found the solitary nature of the artist's life stifling.
-                            While I was confident in my passion to create, I knew that I also excelled most when collaborating with other creative minds. 
+                            I thought I'd grow up to be an artist. I've always thrived on the creativity and act of bringing ideas to life, but found the solitary nature of the artist's life stifling.
+                            While I was confident in my passion to create, I knew that I excelled most when collaborating with others. 
                             <br /> 
                             <br />
-                            In college, I decided to major in Computer Science & Technology (with a minor in Visual Arts).
-                            Despite its apparent contradiction to my collaborative aspirations,
-                            I recognized the digital landscape as the frontier of new and innovative ideas. So, 
-                            I sought to learn and master this new language.
+                            Despite its apaprent contradiction to my collaborative aspirations, I majored in Computer Science because I wanted to learn & master the language through which innovative ideas were being brought to life.
+                            I kept working on my art through my minor in Visual Arts.
                             <br />
                             <br />
-                            Throughout my academic journey, I actively sought out leadership and facilitation roles to maintain a sense of collaboration.
-                            Whether representing BU as a student facilitator or engaging in clubs like Women in Computer Science & Club Tennis, I pursued opportunities for teamwork.
-                            Additionally, my involvement in programs like the Spark! internship and a fellowship for aspiring product managers further honed my skills in project management and product development.
-
-                            Now, equipped with a diverse skill set ranging from leadership to engineering and design, I want to guide teams in the pursuit of innovative solutions that can enrich our lives.
+                            Outside of academics at BU, I actively sought out leadership and facilitation roles too.
+                            Whether representing BU as a student facilitator or engaging in clubs like Women in Computer Science & Club Tennis, I pursued opportunities for leadership & teamwork.
+                            Additionally, I applied & got into the Spark! Technology Innovation Fellowship Program, where I led a team in the development of my own mobile application - from ideation to full implementation. 
+                            <br />
+                            <br />
                             At this point in my life, I've crafted a diverse skill-set &#8212; from leadership roles to acquired engineering, product management, 
                             and design skills. 
-                            <br />
-                            <br />
                             Regardless of where my journey begins, my ultimate goal is to guide and facilitate teams in the creation of transformative solutions.
+                            
+                            <br />
+                            <br />
+                            
                             
                          </h1>
                          <h1 className={`${didot.className} text-right mr-24 mt-4 text-sm`}>H M</h1>

@@ -7,6 +7,27 @@ import Image from 'next/image';
 import { useRouter } from 'next/navigation'
 
 {     /*fonts*/     }
+const noereg = localFont({
+  src: [
+    {
+      path: '../../fonts/noereg.ttf',
+    }
+  ],
+})
+const noeital = localFont({
+  src: [
+    {
+      path: '../../fonts/noeital.ttf',
+    }
+  ],
+})
+const noe = localFont({
+  src: [
+    {
+      path: '../../fonts/noe.ttf',
+    }
+  ],
+})
 const dilight = localFont({
   src: [
     {
@@ -122,7 +143,7 @@ export default function Product() {
         <section className="max-w-screen-lg mx-auto mt-16 mx-2 ">
 
 
-        <h1 className={`${direg.className} flex justify-center text-center text-4xl my-2 text-black `}>My Projects</h1>
+        <h1 className={`${noeital.className} flex justify-center text-center text-4xl my-2 text-black `}>Personal Projects</h1>
 
   {/* 
   <div className="text-center my-16 mb-8">
@@ -149,7 +170,7 @@ export default function Product() {
 
         <section className=" mx-auto pb-12">
         <div className="flex flex-col my-4">
-        <h1 className={`${direg.className} flex justify-center text-center text-4xl my-2`}>Skills</h1>
+        <h1 className={`${noeital.className} flex justify-center text-center text-4xl my-2`}>Skills</h1>
 
         <div className="flex flex-wrap mx-auto align-center justify-center mt-8">
                 <div className="flex flex-col items-center mx-4">
@@ -183,7 +204,7 @@ export default function Product() {
 
         <section className=" mx-auto">
         <div className="flex flex-col my-4">
-        <h1 className={`${direg.className} flex justify-center text-center text-4xl my-2`}>Software & Tech</h1>
+        <h1 className={`${noeital.className} flex justify-center text-center text-4xl my-2`}>Software & Tech</h1>
 
         <div className="flex flex-wrap mx-auto align-center justify-center mt-8">
                 <div className="flex flex-col items-center mx-4">
