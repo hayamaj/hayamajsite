@@ -143,7 +143,7 @@ export default function Product() {
         <section className="max-w-screen-lg mx-auto mt-16 mx-2 ">
 
 
-        <h1 className={`${noeital.className} flex justify-center text-center text-4xl my-2 text-black `}>Personal Projects</h1>
+        <h1 className={`${noeital.className} flex justify-center text-center text-4xl my-2 text-bl `}>&#8212; Personal Projects &#8212;</h1>
 
   {/* 
   <div className="text-center my-16 mb-8">
@@ -170,28 +170,28 @@ export default function Product() {
 
         <section className=" mx-auto pb-12">
         <div className="flex flex-col my-4">
-        <h1 className={`${noeital.className} flex justify-center text-center text-4xl my-2`}>Skills</h1>
+        <h1 className={`${noeital.className} flex justify-center text-center text-4xl my-2 text-bl`}>&#8212; Skills &#8212;</h1>
 
         <div className="flex flex-wrap mx-auto align-center justify-center mt-8">
                 <div className="flex flex-col items-center mx-4">
         
             <h1 className={`${direg.className} mb-4 bg-[#cff2c9] rounded-full py-1 px-4 text-center text-xl mt-2`}>COMMUNICATION</h1>
-            <h1 className={`${dilight.className} text-sm max-w-sm justify-text`}></h1>
+            <h1 className={`${dilight.className} text-sm max-w-md justify-text`}></h1>
             </div>
             <div className="flex flex-col items-center mx-4 ">
         
             <h1 className={`${direg.className} mb-4 bg-[#cff2c9] rounded-full py-1 px-4  text-center text-xl mt-2`}>TIME-MANAGEMENT</h1>
-            <h1 className={`${dilight.className} max-w-sm justify-text text-sm`}></h1>
+            <h1 className={`${dilight.className} max-w-md justify-text text-sm`}></h1>
             </div>
             <div className="flex flex-col items-center mx-4 ">
         
             <h1 className={`${direg.className} mb-4 bg-[#cff2c9] rounded-full py-1 px-4  text-center text-xl mt-2`}>LEADERSHIP</h1>
-            <h1 className={`${dilight.className} max-w-sm justify-text text-sm`}></h1>
+            <h1 className={`${dilight.className} max-w-md justify-text text-sm`}></h1>
             </div>
             <div className="flex flex-col items-center mx-4 ">
         
             <h1 className={`${direg.className} mb-4 bg-[#cff2c9] rounded-full py-1 px-4  text-center text-xl mt-2`}>PROJECT/PRODUCT MGMT</h1>
-            <h1 className={`${dilight.className} max-w-sm justify-text text-sm`}></h1>
+            <h1 className={`${dilight.className} max-w-md justify-text text-sm`}></h1>
             </div>
             
                 </div>
@@ -204,7 +204,7 @@ export default function Product() {
 
         <section className=" mx-auto">
         <div className="flex flex-col my-4">
-        <h1 className={`${noeital.className} flex justify-center text-center text-4xl my-2`}>Software & Tech</h1>
+        <h1 className={`${noeital.className} flex justify-center text-center text-4xl my-2 text-bl`}>&#8212; Software & Tech &#8212;</h1>
 
         <div className="flex flex-wrap mx-auto align-center justify-center mt-8">
                 <div className="flex flex-col items-center mx-4">
@@ -219,7 +219,7 @@ export default function Product() {
             </div>
             <div className="flex flex-col items-center mx-4 ">
         
-            <h1 className={`${direg.className} mb-4 bg-[#d1c9f2] rounded-full py-1 px-4  text-center text-xl mt-2`}>NEXT JS FRAMEWORK / <br/>TAILWINDCSS</h1>
+            <h1 className={`${direg.className} mb-4 bg-[#d1c9f2] rounded-full py-1 px-4  text-center text-xl mt-2`}>NEXT.JS FRAMEWORK / <br/>TAILWINDCSS</h1>
             <h1 className={`${dilight.className} max-w-sm justify-text text-sm`}>Self-taught during building my personal website. I hard-coded this website!</h1>
             </div>
             <div className="flex flex-col items-center mx-4 ">

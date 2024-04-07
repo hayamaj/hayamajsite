@@ -164,7 +164,7 @@ export default function Home() {
     <main className={` bg-bg text-bl flex min-h-screen max-w-screen flex-col justify-center text-bl`}>
 
     <div className="text-center mt-8 mb-8">
-    <h1 className={`${noeital.className} text-4xl text-bl`}>About Me</h1>
+    <h1 className={`${noeital.className} text-4xl text-bl`}>&#8212; About Me &#8212;</h1>
         </div>
 
                     
