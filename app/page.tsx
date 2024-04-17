@@ -193,7 +193,7 @@ export default function Home() {
                       &#8212; {displayText}
     </div>
 
-    <div className="flex flex-row items-center justify-center">
+    <div className="flex flex-row items-center justify-center -mt-4">
     <Link href="/about" className={`${dilight.className} border rounded-full px-4 py-2 border-black text-black transition-colors duration-300 ${animationCompleted ? 'bg-black text-white border-black hover:bg-transparent hover:text-black' : 'bg-transparent hover:bg-black hover:text-bg'}`}>About</Link>
     <span className="mx-2">  </span>
     <Link href="/product" className= {`${dilight.className} border rounded-full px-4 py-2 border-black text-black transition-colors duration-300 ${animationCompleted ? 'bg-black text-white border-black hover:bg-transparent hover:text-black' : 'bg-transparent hover:bg-black hover:text-bg'}`}>Work</Link>
