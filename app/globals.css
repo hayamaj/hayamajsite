@@ -201,3 +201,11 @@
   border-radius: 50%; /* Make it circular */
   object-fit: cover;
 }
+
+/* Responsive styling for smaller screens */
+@media (max-width: 640px) {
+  .xs\:profile-pic-sm {
+    width: 60px; /* Adjust size for smaller screens */
+    height: 60px; /* Adjust size for smaller screens */
+  }
+}
