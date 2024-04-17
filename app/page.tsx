@@ -178,32 +178,32 @@ export default function Home() {
           <div className="flex mx-16 justify-end">
       <NowPlaying />
     </div>
-  
-<div className="flex flex-row items-center justify-center mx-auto h-1/2">
-                      <div className={`flex ${noereg.className} lg:text-4xl text-3xl lg:max-w-6xl max-w-7xl z-100 absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2  before:absolute mx-auto text-left before:inset-0 before:animate-typewriter after:absolute after:inset-0 after:w-[0.125em] after:animate-caret [text-wrap:balance] text-bl`}>
-                      &#8212; {displayText}
-    </div>
-    </div>
-
-
-    <div className="flex flex-row items-center justify-center -mt-8">
-    <Link href="/about" className={`${dilight.className} border rounded-full px-4 py-2 border-black text-black transition-colors duration-300 ${animationCompleted ? 'bg-black text-white border-black hover:bg-transparent hover:text-black' : 'bg-transparent hover:bg-black hover:text-bg'}`}>About</Link>
-    <span className="mx-2">  </span>
-    <Link href="/product" className= {`${dilight.className} border rounded-full px-4 py-2 border-black text-black transition-colors duration-300 ${animationCompleted ? 'bg-black text-white border-black hover:bg-transparent hover:text-black' : 'bg-transparent hover:bg-black hover:text-bg'}`}>Work</Link>
-    <span className="mx-2">  </span>
-    <Link href="/resume" className= {`${dilight.className} border rounded-full px-4 py-2 border-black text-black transition-colors duration-300 ${animationCompleted ? 'bg-black text-white border-black hover:bg-transparent hover:text-black' : 'bg-transparent hover:bg-black hover:text-bg'}`}>Resume</Link>
-  </div>
 
     
+    <div className="flex flex-col justify-center items-center mt-16 max-w-3xl sm:p-4 mx-auto">
 
-<div className={` max-w-screen px-1 py-8 flex items-center sm:flex-row flex-col`}>
-        <span className={`mx-auto text-center text-gr text-sm`}>
-          <div className="mb-4">
-          </div>
-          <div className={`${dilight.className} text-sm text-bl`}>
-          <strong className={`text-sm italic`}>"I coded this website from scratch!"</strong><br />
-          <strong className={`text-sm `}> &#8212; Haya AlMajali</strong><br />
-          </div>
+<div className={`mx-auto text-center lg:text-4xl text-3xl lg:max-w-6xl max-w-7xl z-100`}>
+    <div className={`flex ${noereg.className} transform -translate-y-1/2 before:absolute before:inset-0 before:animate-typewriter after:absolute after:inset-0 after:w-[0.125em] after:animate-caret bg-clip-text text-bl`}>
+      &#8212; {displayText}
+    </div>
+  </div>
+    </div>
+
+    <div className="flex flex-row items-center justify-center mt-8">
+    <Link href="/about" className={`${dilight.className} border rounded-full px-4 py-2 border-black text-black transition-colors duration-300 ${animationCompleted ? 'bg-black text-white border-black hover:bg-transparent hover:text-black' : 'bg-transparent hover:bg-black hover:text-bg'}`}>About</Link>
+    <span className="mx-2"></span>
+    <Link href="/product" className={`${dilight.className} border rounded-full px-4 py-2 border-black text-black transition-colors duration-300 ${animationCompleted ? 'bg-black text-white border-black hover:bg-transparent hover:text-black' : 'bg-transparent hover:bg-black hover:text-bg'}`}>Work</Link>
+    <span className="mx-2"></span>
+    <Link href="/resume" className={`${dilight.className} border rounded-full px-4 py-2 border-black text-black transition-colors duration-300 ${animationCompleted ? 'bg-black text-white border-black hover:bg-transparent hover:text-black' : 'bg-transparent hover:bg-black hover:text-bg'}`}>Resume</Link>
+  </div>
+
+  <div className="max-w-screen px-1 py-8 flex items-center sm:flex-row flex-col">
+    <span className="mx-auto text-center text-gr text-sm">
+      <div className="mb-4"></div>
+      <div className={`${dilight.className} text-sm text-bl`}>
+        <strong className="text-sm italic">"I coded this website from scratch!"</strong><br />
+        <strong className="text-sm">&#8212; Haya AlMajali</strong><br />
+      </div>
         </span>
       </div>
       </main>
