@@ -103,6 +103,8 @@
 .nowPlayingCard {
   flex-shrink: 0;
   border-radius: 22px;
+  background-color: black;
+  font-style: white;
   border: 2px solid #000;
   box-shadow: 5px 5px 0 rgba(0, 0, 0, 0.3);
   align-items: center;
@@ -121,19 +123,19 @@
 }
 
 .nowPlayingCard a {
-  color: black;
+  color: white;
   text-decoration: none;
 }
 
 .nowPlayingCard a:hover {
-  color: black;
+  color: white;
   text-decoration: underline;
 }
 
 .nowPlayingImage img {
   border-radius: 8px;
   border: 1px solid black;
-  box-shadow: 3px 3px 0 rgba(0, 0, 0, 0.3);
+  box-shadow: 2px 2px 0 rgba(0, 0, 0, 0.3);
   transition: all 0.5s ease;
   width: 60px;
   height: 60px;
@@ -162,7 +164,7 @@
 
 .nowPlayingTitle, .playlistName {
   flex-shrink: 0;
-  color: #000;
+  color: white;
   white-space: nowrap;
   text-align: left;
   font-size: 20px;
@@ -173,6 +175,7 @@
   text-align: left;
   flex-shrink: 0;
   overflow: hidden;
+  font-size: 16px;
   white-space: nowrap;
   width: 100%;
 }
@@ -188,6 +191,6 @@
 }
 
 .nowPlayingState img{
-  filter: invert(100%);
+  
   width: 100%;
 }

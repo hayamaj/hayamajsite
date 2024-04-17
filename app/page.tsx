@@ -175,7 +175,9 @@ export default function Home() {
  
   return (
     <main className={`animate-custom min-h-screen h-screen max-w-screen items-center justify-between`}>
-      
+          <div className="flex mx-16 justify-end">
+      <NowPlaying />
+    </div>
 <div className={` flex flex-col justify-center items-center h-[500px] z-100 transition-opacity duration-500`} >
                         {/*  
     <video autoPlay playsInline muted onEnded={handleVideoEnd} className="w-1/2 h-1/2 object-cover object-right-bottom">
@@ -184,6 +186,8 @@ export default function Home() {
                       </video>
                         */}
                       </div>
+
+
 <div className="flex mx-auto flex-col">
                       <div className={`flex ${noereg.className} lg:text-4xl text-3xl lg:max-w-6xl max-w-7xl z-100 absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2  before:absolute mx-auto text-left before:inset-0 before:animate-typewriter after:absolute after:inset-0 after:w-[0.125em] after:animate-caret [text-wrap:balance] bg-clip-text text-bl mt-4`}>
                       &#8212; {displayText}
@@ -196,10 +200,11 @@ export default function Home() {
     <span className="mx-2">  </span>
     <Link href="/resume" className= {`${dilight.className} border rounded-full px-4 py-2 border-black text-black transition-colors duration-300 ${animationCompleted ? 'bg-black text-white border-black hover:bg-transparent hover:text-black' : 'bg-transparent hover:bg-black hover:text-bg'}`}>Resume</Link>
   </div>
+
     
     </div>
 
-    <NowPlaying />
+
 
  {/*
                       <div className={`flex ${noe.className} opacity-0 z-100 absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 mx-auto text-left transition-opacity duration-250 ${videoEnded ? 'opacity-100' : ''} text-5xl md:text-4xl [text-wrap:balance] bg-clip-text text-bl max-w-3xl`}>

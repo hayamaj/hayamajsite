@@ -4,12 +4,51 @@ import { Buffer } from 'buffer';
 import {AiOutlinePauseCircle} from 'react-icons/ai';
 import {BiErrorCircle} from 'react-icons/bi';
 import {HiOutlineStatusOffline} from 'react-icons/hi';
+import localFont from 'next/font/local'
+import { IoMusicalNote } from "react-icons/io5";
+
 
 const NOW_PLAYING_ENDPOINT = 'https://api.spotify.com/v1/me/player/currently-playing';
 const TOKEN_ENDPOINT = 'https://accounts.spotify.com/api/token';
 const refresh_token = "AQBexcry5734UauuJabXUVS3KeAPCVOJvoinx5rLBG0vadi6c92sF56Jll1XnJXzZJSjP_Xv1Onz96xq4wROMMzHacbmPvGAJ8nP26EGX9hb8gi1jY1jlMAIMLZBbwJolGE";
 const client_id = "90ce0ee98c6749959ac3f401ad1de0c0";
 const client_secret = "930baaa6047a47b19cf6a0390e9e8499";
+
+{     /*fonts*/     }
+
+const didotdf = localFont({
+  src: [
+    {
+      path: 'fonts/didot.ttf',
+    }
+  ],
+})
+
+const proxnovareg = localFont({
+  src: [
+    {
+      path: 'fonts/pnreg.ttf',
+    }
+  ],
+})
+
+const noeital = localFont({
+  src: [
+    {
+      path: 'fonts/noeital.ttf',
+    }
+  ],
+})
+
+const direg = localFont({
+  src: [
+    {
+      path: 'fonts/direg.otf',
+      weight: '400'
+    }
+  ],
+})
+
 
 //Function to generate an access token using the refresh token everytime the website is opened or refreshed
 export const getAccessToken = async (client_id, client_secret, refresh_token) => {
@@ -141,7 +180,11 @@ const pad = (n) =>{
 
 return (
   // Depending on the value of playerState, the href, album image, and icons are updated
-<a style={{ textDecoration: 'none', color: 'black' }} href={playerState === 'PLAY' || playerState === 'PAUSE' ? nowPlaying.songUrl : ''}>
+<a style={{ textDecoration: 'none', color: 'white' }} href={playerState === 'PLAY' || playerState === 'PAUSE' ? nowPlaying.songUrl : ''}>
+  <div className="flex flex-row ml-2"> 
+  <div className={`${direg.className} text-bl text-lg mb-2`}>Currently Listening:</div>
+  <div className={`${didotdf.className} text-lg text-bl mx-2 flex-col`}></div>
+  </div> 
   <div className='nowPlayingCard'>
     {/* Album image and href displayed based on playerState */}
     <div className='nowPlayingImage'>
@@ -150,7 +193,7 @@ return (
           <img src={albumImageUrl} alt="Album" />
         </a>
       ) : (
-        <img src={albumImageUrl} alt="Album" />
+        <div></div>
       )}
     </div>
     <div id='nowPlayingDetails'>
@@ -159,7 +202,7 @@ return (
         {playerState === 'PLAY' || playerState === 'PAUSE' ? (
           <a href={nowPlaying.songUrl}>{title}</a>
         ) : (
-          title
+          <div></div>
         )}
       </div>
       {/* Artist displayed based on playerState */}
@@ -167,16 +210,18 @@ return (
         {playerState === 'PLAY' || playerState === 'PAUSE' ? (
           <a href={nowPlaying.artistUrl}>{artist}</a>
         ) : (
-          artist
+          <div className={`${direg.className}`}>Offline</div>
         )}
       </div>
       {/* Song Timer displayed based on playerState */}
-      <div className='nowPlayingTime'>{pad(minutesPlayed)}:{pad(secondsPlayed)} / {pad(minutesTotal)}:{pad(secondsTotal)}</div>
+      <div className='nowPlayingTime'>
+        {playerState === 'PLAY' || playerState === 'PAUSE' ? `${pad(minutesPlayed)}:${pad(secondsPlayed)} / ${pad(minutesTotal)}:${pad(secondsTotal)}` : ''}
+</div>
     </div>
     {/* Icon displayed based on playerState */}
     <div className='nowPlayingState'>
       {playerState === 'PLAY' ? (
-        <img alt='soundbar' src='./images/soundbar.gif' title='Now Listening' />
+        <img alt='soundbar' src='./images/sound-waves.png' title='Now Listening' />
       ) : playerState === 'PAUSE' ? (
         <AiOutlinePauseCircle size={40} />
       ) : playerState === 'OFFLINE' ? (
@@ -185,6 +230,7 @@ return (
         <BiErrorCircle size={40} />
       )}
     </div>
+
   </div>
 </a>
 )
