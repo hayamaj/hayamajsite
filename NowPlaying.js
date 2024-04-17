@@ -181,7 +181,7 @@ const pad = (n) =>{
 return (
   // Depending on the value of playerState, the href, album image, and icons are updated
 <a style={{ textDecoration: 'none', color: 'white' }} href={playerState === 'PLAY' || playerState === 'PAUSE' ? nowPlaying.songUrl : ''}>
-<div className="flex flex-row ml-2 sm:block"> 
+<div className="flex flex-row ml-2 phone:block"> 
 <div className="p-2 my-4 rounded-full justify-start">
         <img src="/images/profilepic.png" className="profile-pic"/>
     </div>
