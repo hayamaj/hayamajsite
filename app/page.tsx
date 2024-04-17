@@ -175,7 +175,7 @@ export default function Home() {
  
   return (
     <main className={`animate-custom min-h-screen h-screen max-w-screen items-center justify-between`}>
-          <div className="flex mx-16 justify-end sm:block">
+          <div className="flex mx-16 justify-end">
       <NowPlaying />
     </div>
 
