@@ -9,8 +9,13 @@ import NavBar from './NavBar';
 import Image from 'next/image';
 import RootLayout from './layout';
 import router from "next/router";
+import NowPlaying from "@/NowPlaying";
 
 {     /*fonts*/     }
+
+
+
+
 const noereg = localFont({
   src: [
     {
@@ -193,6 +198,8 @@ export default function Home() {
   </div>
     
     </div>
+
+    <NowPlaying />
 
  {/*
                       <div className={`flex ${noe.className} opacity-0 z-100 absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 mx-auto text-left transition-opacity duration-250 ${videoEnded ? 'opacity-100' : ''} text-5xl md:text-4xl [text-wrap:balance] bg-clip-text text-bl max-w-3xl`}>

@@ -14,6 +14,7 @@
     "@heroicons/react": "^1.0.6",
     "cloudinary": "^2.0.1",
     "emailjs": "^4.0.3",
+    "fastify": "^4.26.2",
     "flowbite": "^2.3.0",
     "framer-motion": "^11.0.22",
     "next": "14.1.0",
@@ -21,10 +22,10 @@
     "react": "^18",
     "react-dom": "^18",
     "react-hook-form": "^7.50.1",
-    "react-icons": "^5.0.1",
     "react-player": "^2.14.1",
     "react-router-dom": "^6.22.2",
-    "tailwind-typewriter": "^1.0.1"
+    "tailwind-typewriter": "^1.0.1",
+    "zod": "^3.22.4"
   },
   "devDependencies": {
     "@types/node": "^20",
@@ -34,7 +35,9 @@
     "eslint": "^8",
     "eslint-config-next": "14.1.0",
     "postcss": "^8",
+    "querystring": "^0.2.1",
+    "react-icons": "^5.0.1",
     "tailwindcss": "^3.3.0",
-    "typescript": "^5"
+    "typescript": "^5.4.5"
   }
 }
