@@ -181,10 +181,12 @@ const pad = (n) =>{
 return (
   // Depending on the value of playerState, the href, album image, and icons are updated
 <a style={{ textDecoration: 'none', color: 'white' }} href={playerState === 'PLAY' || playerState === 'PAUSE' ? nowPlaying.songUrl : ''}>
-  <div className="flex flex-row ml-2"> 
+<div className="flex flex-row ml-2"> 
+<div className="p-2 my-4 rounded-full justify-start">
+        <img src="/images/profilepic.png" className="profile-pic"/>
+    </div>
+  <div className="flex flex-col">
   <div className={`${direg.className} text-bl text-lg mb-2`}>Currently Listening:</div>
-  <div className={`${didotdf.className} text-lg text-bl mx-2 flex-col`}></div>
-  </div> 
   <div className='nowPlayingCard'>
     {/* Album image and href displayed based on playerState */}
     <div className='nowPlayingImage'>
@@ -230,7 +232,8 @@ return (
         <BiErrorCircle size={40} />
       )}
     </div>
-
+    </div> 
+    </div>
   </div>
 </a>
 )

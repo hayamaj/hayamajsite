@@ -178,13 +178,10 @@ export default function Home() {
           <div className="flex mx-16 justify-end">
       <NowPlaying />
     </div>
-<div className={` flex flex-col justify-center items-center h-[500px] z-100 transition-opacity duration-500`} >
-                        {/*  
-    <video autoPlay playsInline muted onEnded={handleVideoEnd} className="w-1/2 h-1/2 object-cover object-right-bottom">
-                      <source src="/introvid.mov"/>
 
-                      </video>
-                        */}
+    
+<div className={` flex flex-col justify-center items-center h-[500px] z-100 transition-opacity duration-500`} >
+                        
                       </div>
 
 
@@ -192,6 +189,8 @@ export default function Home() {
                       <div className={`flex ${noereg.className} lg:text-4xl text-3xl lg:max-w-6xl max-w-7xl z-100 absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2  before:absolute mx-auto text-left before:inset-0 before:animate-typewriter after:absolute after:inset-0 after:w-[0.125em] after:animate-caret [text-wrap:balance] bg-clip-text text-bl mt-4`}>
                       &#8212; {displayText}
     </div>
+    
+
 
     <div className="flex flex-row items-center justify-center -mt-4">
     <Link href="/about" className={`${dilight.className} border rounded-full px-4 py-2 border-black text-black transition-colors duration-300 ${animationCompleted ? 'bg-black text-white border-black hover:bg-transparent hover:text-black' : 'bg-transparent hover:bg-black hover:text-bg'}`}>About</Link>
