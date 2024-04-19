@@ -335,8 +335,7 @@ During move-out periods, our streets get cluttered with perfectly
                     />
                 </div>
 <h2 className={`${dilight.className} mt-4 text-bl text-left justify-content max-w-5xl`}>
-We are scheduled to launch Dibs! on app stores by late April. Following the release, our strategy involves extensive user testing and continual updates driven by feedback from the BU community.
- </h2>
+Dibs! is gearing up for its official launch on app stores by late May, and I couldn't be more excited. This project is an embodiment of everything I am passionate about & skilled in — from crafting code & designs to leveraging technology to address real-world challenges, foster sustainability, and create impactful solutions for users. </h2>
 
 
 </section>
