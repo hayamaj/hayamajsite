@@ -190,7 +190,7 @@ export default function Home() {
                              Passionate about Product Development and Management, I excel in collaborative environments where innovative ideas are materialized into impactful solutions. 
                              <br />
                             <br />
-                            Equipped with a Bachelor's degree in Computer Science & experience spanning Software Engineering, AI Integration, Project Management & Design, I bring a versatile skill set to the table.
+                            Equipped with a Bachelor's degree in Computer Science & experience spanning Software Engineering, AI Integration, Product Management & Design, I bring a versatile skill set to the table.
                             <br />
                             <br />
                             I'm excited to expand my knowledge & skill-set post grad &#8212; from crafting code & designs to leveraging technology to address real-world challenges & create impactful solutions for users.
