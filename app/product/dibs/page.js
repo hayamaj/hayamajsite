@@ -162,10 +162,8 @@ export default function Dibs() {
                     <h2 className={`${direg.className} mt-16 text-5xl text-bl text-left mb-1`}>My Role</h2>
 <h2 className={`${dilight.className} mt-4 text-bl text-left justify-content max-w-5xl`}>
 As Product Manager for dibs, 
-I worked with multiple multidisciplinary team to take dibs! from conception to launch. 
-I conducted research, user interviews, managed customer onboarding, oversaw development, 
-and worked closely with the product designer and lead engineer through several product cycles 
-spanning 2 years. 
+I guided the project from its conceptualization to launch, orchestrating cross-functional teams through numerous product cycles. This journey encompassed conducting user research, crafting user stories, designing wireframes on Figma, overseeing development, conducting usability testing, and managing cross-functional teams using tools like Trello. 
+
  </h2>
 
 

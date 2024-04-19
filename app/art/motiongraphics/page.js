@@ -108,6 +108,7 @@ export default function MotionGraphics() {
     const toggleSidebar = () => {
       setIsSidebarOpen(!isSidebarOpen);
     };
+    
     const handleVideoTimeUpdate = () => {
       const videoElement = videoRef.current;
       if (!videoElement) return;
