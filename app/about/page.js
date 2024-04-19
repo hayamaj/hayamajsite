@@ -180,26 +180,20 @@ export default function Home() {
     )}
         <div className={`sm:w-${isDesktop ? '1/2 mx-auto' : 'full'} `}>
       {/*    <h1 className={`${noeital.className} text-xl text-bl mb-4 mt-4 max-w-md`}>Discipline, Collaboration and Creative Thinking.</h1> */}
-                        <h1 className={`${noereg.className} max-w-xl text-md text-bl text-left`}>
-                            Currently a student at Boston University studying Computer Science, set to graduate in May 2024.
+                        <h1 className={`${noereg.className} max-w-md text-md text-bl text-left`}>
+                            Currently a student at Boston University studying Computer Science & Visual Arts, set to graduate in May 2024.
                             <br />
                              <br />
-                            I thought I'd grow up to be an artist. I've always thrived on the creativity and act of bringing ideas to life, but found the solitary nature of the artist's life stifling.
-                            While I was confident in my passion to create, I knew that I excelled most when collaborating with others. 
-                            <br /> 
+                             In essence, I am a highly motivated person, driven by discipline, creativity and an insatiable thirst for learning. 
+                             <br />
                             <br />
-                            Despite its apaprent contradiction to my collaborative aspirations, I majored in Computer Science because I wanted to learn & master the language through which innovative ideas were being brought to life.
-                            I kept working on my art through my minor in Visual Arts.
+                             Passionate about Product Development and Management, I excel in collaborative environments where innovative ideas are materialized into impactful solutions. 
+                             <br />
                             <br />
-                            <br />
-                            Outside of academics at BU, I actively sought out leadership and facilitation roles too.
-                            Whether representing BU as a student facilitator or engaging in clubs like Women in Computer Science & Club Tennis, I pursued opportunities for leadership & teamwork.
-                            Additionally, I applied & got into the Spark! Technology Innovation Fellowship Program, where I led a team in the development of my own mobile application - from ideation to full implementation. 
+                            Equipped with a Bachelor's degree in Computer Science & experience spanning Software Engineering, AI Integration, Project Management & Design, I bring a versatile skill set to the table.
                             <br />
                             <br />
-                            At this point in my life, I've crafted a diverse skill-set &#8212; from leadership roles to acquired engineering, product management, 
-                            and design skills. 
-                            Regardless of where my journey begins, my ultimate goal is to guide and facilitate teams in the creation of transformative solutions.
+                            I'm excited to expand my knowledge & skill-set post grad &#8212; from crafting code & designs to leveraging technology to address real-world challenges & create impactful solutions for users.
                             
                             <br />
                             <br />
