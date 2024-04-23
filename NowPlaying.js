@@ -182,9 +182,6 @@ return (
   // Depending on the value of playerState, the href, album image, and icons are updated
 <a style={{ textDecoration: 'none', color: 'white' }} href={playerState === 'PLAY' || playerState === 'PAUSE' ? nowPlaying.songUrl : ''}>
 <div className="flex flex-row ml-2"> 
-<div className="p-2 my-4 rounded-full justify-start">
-        <img src="/images/profilepic.png" className="profile-pic phone:w-16 phone:h-16"/>
-    </div>
   <div className="flex flex-col">
   <div className={`${direg.className} text-bl text-lg mb-2`}>Currently Listening:</div>
   <div className='nowPlayingCard sm:w-72'>
