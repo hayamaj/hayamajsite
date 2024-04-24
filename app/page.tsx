@@ -197,7 +197,15 @@ export default function Home() {
     &bull; &nbsp;Operating on <strong className={`${direg.className}`}>Drive</strong>, <strong className={`${direg.className}`}>Discipline</strong>, & <strong className={`${direg.className}`}>Creativity</strong>. <br></br>
     &bull; &nbsp;Passionate about merging <strong className={`${direg.className}`}>Tech</strong>, <strong className={`${direg.className}`}>Product</strong> & <strong className={`${direg.className}`}>Design</strong>.
   </div>
+  
 </div>
+<div className="flex flex-row items-center justify-center text-sm">
+    <Link href="/about" className={`${dilight.className} rounded px-4 py-1 border-bl text-bg transition-colors border border-bl bg-black rounded-full`}>About</Link>
+    <span className="mx-2"></span>
+    <Link href="/product" className={`${dilight.className} rounded px-4 py-1 border-bl text-bg transition-colors border border-bl bg-black rounded-full`}>Work</Link>
+    <span className="mx-2"></span>
+    <Link href="/resume" className={`${dilight.className} rounded px-4 py-1 border-bl text-bg transition-colors border border-bl bg-black rounded-full`}>Resume</Link>
+  </div>
 
 
  {/* 
@@ -211,13 +219,7 @@ export default function Home() {
     </div>
   */}
 
-    <div className="flex flex-row items-center justify-center mt-8 text-sm">
-    <Link href="/about" className={`${dilight.className} rounded-full px-4 py-2 border-black text-bg transition-colors border border-bl bg-black rounded-full duration-300 ${animationCompleted ? ' text-black border-black hover:underline' : 'bg-black hover:underline'}`}>About</Link>
-    <span className="mx-2"></span>
-    <Link href="/product" className={`${dilight.className} rounded-full px-4 py-2 border-black text-bg transition-colors border border-bl bg-black rounded-full duration-300 ${animationCompleted ? 'text-black border-black hover:underline' : 'bg-black hover:underline'}`}>Work</Link>
-    <span className="mx-2"></span>
-    <Link href="/resume" className={`${dilight.className} rounded-full px-4 py-2 border-black text-bg transition-colors border border-bl bg-black rounded-full duration-300 ${animationCompleted ? ' text-black border-black hover:underline' : 'bg-black hover:underline'}`}>Resume</Link>
-  </div>
+
 
   <div className="max-w-screen px-1 py-8 flex items-center sm:flex-row flex-col">
     <span className="mx-auto text-center text-gr text-sm">
