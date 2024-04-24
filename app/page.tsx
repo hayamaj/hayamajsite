@@ -9,6 +9,7 @@ import NavBar from './NavBar';
 import Image from 'next/image';
 import RootLayout from './layout';
 import router from "next/router";
+import Name from "@/Name";
 import NowPlaying from "@/NowPlaying";
 
 {     /*fonts*/     }
@@ -175,11 +176,32 @@ export default function Home() {
  
   return (
     <main className={`animate-custom min-h-screen h-screen max-w-screen items-center justify-between`}>
-          <div className="flex mx-16 justify-end">
-      <NowPlaying />
+          <div className="flex mx-16 ml-32 justify-end">
+      {/*<NowPlaying />*/}
+      
     </div>
 
-    
+    <div className="flex flex-row mx-auto justify-center items-center mt-16 max-w-3xl sm:p-4 mx-auto mb-16">
+    <div className="rounded-full w-auto h-auto border-bl border-[1px] bg-transparent object-fit">
+                    <Image
+                      src="/favicon.ico"
+                      width={150}
+                      height={150}
+                      alt="Picture of the author"
+                    />
+                </div>
+    <div className={`${dilight.className} ml-8 mx-2 max-w-xl w-auto text-left justify-center text-lg`}>
+    <strong className={`${direg.className}`}>Haya AlMajali &nbsp; / &nbsp;</strong>
+    <strong className={`${direg.className} text-sm`}>Boston, MA</strong><br></br>
+    &#8212; Studying Computer Science at Boston University. <br></br>
+    &#8212; Operating on Drive, Discipline, & Creativity. <br></br>
+    &#8212; Passionate about merging <strong className={`${direg.className}`}>Tech</strong>, <strong className={`${direg.className}`}>Product</strong> & <strong className={`${direg.className}`}>Design</strong>.
+
+      </div>
+    </div>
+
+
+ {/* 
     <div className="flex flex-col justify-center items-center mt-16 max-w-3xl sm:p-4 mx-auto">
 
 <div className={`mx-auto text-center lg:text-4xl text-3xl lg:max-w-6xl max-w-7xl z-100`}>
@@ -188,22 +210,25 @@ export default function Home() {
     </div>
   </div>
     </div>
+  */}
 
     <div className="flex flex-row items-center justify-center mt-8">
-    <Link href="/about" className={`${dilight.className} border rounded-full px-4 py-2 border-black text-black transition-colors duration-300 ${animationCompleted ? 'bg-black text-white border-black hover:bg-transparent hover:text-black' : 'bg-transparent hover:bg-black hover:text-bg'}`}>About</Link>
+    <Link href="/about" className={`${direg.className} rounded-full px-4 py-2 border-black text-bl transition-colors duration-300 ${animationCompleted ? ' text-black border-black hover:underline' : 'bg-transparent hover:underline'}`}>ABOUT</Link>
     <span className="mx-2"></span>
-    <Link href="/product" className={`${dilight.className} border rounded-full px-4 py-2 border-black text-black transition-colors duration-300 ${animationCompleted ? 'bg-black text-white border-black hover:bg-transparent hover:text-black' : 'bg-transparent hover:bg-black hover:text-bg'}`}>Work</Link>
+    <Link href="/product" className={`${direg.className} rounded-full px-4 py-2 border-black text-bl transition-colors duration-300 ${animationCompleted ? 'text-black border-black hover:underline' : 'bg-transparent hover:underline'}`}>WORK</Link>
     <span className="mx-2"></span>
-    <Link href="/resume" className={`${dilight.className} border rounded-full px-4 py-2 border-black text-black transition-colors duration-300 ${animationCompleted ? 'bg-black text-white border-black hover:bg-transparent hover:text-black' : 'bg-transparent hover:bg-black hover:text-bg'}`}>Resume</Link>
+    <Link href="/resume" className={`${direg.className} rounded-full px-4 py-2 border-black text-bl transition-colors duration-300 ${animationCompleted ? ' text-black border-black hover:underline' : 'bg-transparent hover:underline'}`}>RESUME</Link>
   </div>
 
   <div className="max-w-screen px-1 py-8 flex items-center sm:flex-row flex-col">
     <span className="mx-auto text-center text-gr text-sm">
       <div className="mb-4"></div>
+      {/*
       <div className={`${dilight.className} text-sm text-bl`}>
         <strong className="text-sm italic">"I coded this website from scratch!"</strong><br />
         <strong className="text-sm">&#8212; Haya AlMajali</strong><br />
       </div>
+*/}
         </span>
       </div>
       </main>
