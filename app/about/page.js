@@ -182,7 +182,7 @@ export default function Home() {
     <div className={`sm:w-${isDesktop ? '1/2 mx-auto' : 'full'} max-w-lg min-h-xl text-gr mx-auto text-md text-bl text-left`}>
       <div className={`${direg.className} text-bl text-lg`}>1 &nbsp; &nbsp; &nbsp;DRIVEN & DISCIPLINED</div>
       <p>
-        I like to start off my day with a 5k morning run. This serves as my daily reminder that if I can push through the miles, I'm ready for anything.
+        I like to start off my day with a 5k morning run. This serves as my daily reminder that if I can push through the miles, I'm ready for anything else my day throws my way.
       </p>
       <div className={`${direg.className} text-bl mt-4 text-lg`}>2 &nbsp; &nbsp; &nbsp;PERSISTENT</div>
       <p>
