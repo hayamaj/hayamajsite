@@ -164,7 +164,7 @@ export default function Home() {
     <main className={` bg-bg text-bl flex min-h-screen max-w-screen flex-col justify-center text-bl`}>
 
     <div className="text-center mt-8 mb-8">
-    <h1 className={`${noeital.className} text-4xl text-bl`}>&#8212; About Me &#8212;</h1>
+    <h1 className={`${direg.className} text-xl text-gr`}>ABOUT ME</h1>
         </div>
 
                     
@@ -212,7 +212,7 @@ export default function Home() {
               
 
                 <div className="text-center mt-4 mb-4">
-    <h1 className={`${direg.className} text-4xl text-bl`}>Let's Connect!</h1>
+    <h1 className={`${direg.className} text-xl text-gr`}>LET'S CONNECT!</h1>
         </div>
         <div className="flex flex-row mx-2 justify-center">
         <a href="https://www.linkedin.com/in/hayamaj/" className="flex items-justify my-4 mx-2">

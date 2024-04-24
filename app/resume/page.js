@@ -149,7 +149,7 @@ export default function Resume() {
     <main className={`bg-bg text-bl flex min-h-screen max-w-screen flex-col justify-center text-bl`}>
 
 <div className="text-center mb-8">
-    <h1 className={`${noeital.className} text-4xl text-bl`}>&#8212; My Resume &#8212;</h1>
+    <h1 className={`${direg.className} text-xl text-gr`}>MY RESUME</h1>
         </div>
 <div className="align-center justify-center flex">
         <iframe

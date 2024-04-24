@@ -143,7 +143,7 @@ export default function Product() {
         <section className="max-w-screen-lg mx-auto mt-16 mx-2 ">
 
 
-        <h1 className={`${noeital.className} flex justify-center text-center text-4xl my-2 text-bl `}>&#8212; Personal Projects &#8212;</h1>
+        <h1 className={`${direg.className} flex justify-center text-center text-xl my-2 text-gr `}> PERSONAL PROJECTS</h1>
 
   {/* 
   <div className="text-center my-16 mb-8">
@@ -170,7 +170,7 @@ export default function Product() {
 
         <section className=" mx-auto pb-12">
         <div className="flex flex-col my-4">
-        <h1 className={`${noeital.className} flex justify-center text-center text-4xl my-2 text-bl`}>&#8212; Skills &#8212;</h1>
+        <h1 className={`${direg.className} flex justify-center text-center text-xl my-2 text-gr`}> SKILLS</h1>
 
         <div className="flex flex-wrap mx-auto align-center justify-center mt-8">
                 <div className="flex flex-col items-center mx-4">
@@ -204,7 +204,7 @@ export default function Product() {
 
         <section className=" mx-auto">
         <div className="flex flex-col my-4">
-        <h1 className={`${noeital.className} flex justify-center text-center text-4xl my-2 text-bl`}>&#8212; Software & Tech &#8212;</h1>
+        <h1 className={`${direg.className} flex justify-center text-center text-xl my-2 text-gr`}>SOFTWARE & TECH</h1>
 
         <div className="flex flex-wrap mx-auto align-center justify-center mt-8">
                 <div className="flex flex-col items-center mx-4">
