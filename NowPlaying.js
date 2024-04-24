@@ -16,34 +16,20 @@ const client_secret = "930baaa6047a47b19cf6a0390e9e8499";
 
 {     /*fonts*/     }
 
-const didotdf = localFont({
-  src: [
-    {
-      path: 'fonts/didot.ttf',
-    }
-  ],
-})
 
-const proxnovareg = localFont({
-  src: [
-    {
-      path: 'fonts/pnreg.ttf',
-    }
-  ],
-})
-
-const noeital = localFont({
-  src: [
-    {
-      path: 'fonts/noeital.ttf',
-    }
-  ],
-})
 
 const direg = localFont({
   src: [
     {
       path: 'fonts/direg.otf',
+      weight: '400'
+    }
+  ],
+})
+const dilight = localFont({
+  src: [
+    {
+      path: 'fonts/dilight.otf',
       weight: '400'
     }
   ],
@@ -181,7 +167,7 @@ const pad = (n) =>{
 return (
   // Depending on the value of playerState, the href, album image, and icons are updated
 <a style={{ textDecoration: 'none', color: 'white' }} href={playerState === 'PLAY' || playerState === 'PAUSE' ? nowPlaying.songUrl : ''}>
-<div className="flex flex-row ml-2"> 
+<div className={`${direg.className} flex flex-row ml-2`}> 
 {/*
 <div className="p-2 my-4 rounded-full justify-start">
         <img src="/images/profilepic.png" className="profile-pic phone:w-16 phone:h-16"/>
@@ -210,7 +196,7 @@ return (
         )}
       </div>
       {/* Artist displayed based on playerState */}
-      <div className='nowPlayingArtist'>
+      <div className={`${dilight.className} nowPlayingArtist`}>
         {playerState === 'PLAY' || playerState === 'PAUSE' ? (
           <a href={nowPlaying.artistUrl}>{artist}</a>
         ) : (
@@ -218,7 +204,7 @@ return (
         )}
       </div>
       {/* Song Timer displayed based on playerState */}
-      <div className='nowPlayingTime'>
+      <div className={`${dilight.className} nowPlayingTime text-xs`}>
         {playerState === 'PLAY' || playerState === 'PAUSE' ? `${pad(minutesPlayed)}:${pad(secondsPlayed)} / ${pad(minutesTotal)}:${pad(secondsTotal)}` : ''}
 </div>
     </div>

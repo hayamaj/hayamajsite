@@ -170,39 +170,36 @@ export default function Home() {
                     
 
         <section className="flex flex-col mx-4 sm:mx-12"> {/* Add margin on small screens */}
-        <div className="flex flex-col sm:flex-row mx-auto items-center">
-        {isDesktop && (
-          <div className="lg:ml-36 w-auto sm:w-1/2 sm:pr-4 mb-4 sm:mb-0 mx-4">
-            <video autoPlay loop playsInline muted className="w-auto">
-              <source src="/aboutvid.mov" />
-            </video>
-          </div>
+        <div className="mx-auto max-w-screen">
+  <div className="flex flex-col sm:flex-row items-center">
+    {isDesktop && (
+      <div className=" w-auto sm:w-1/2 sm:pr-4 mb-4 sm:mb-0 mx-4">
+       <video autoPlay loop playsInline muted className="rounded-full w-[450px] h-[450px] object-cover">
+          <source src="/aboutvid.mov" />
+        </video>
+      </div>
     )}
-        <div className={`sm:w-${isDesktop ? '1/2 mx-auto' : 'full'} `}>
-      {/*    <h1 className={`${noeital.className} text-xl text-bl mb-4 mt-4 max-w-md`}>Discipline, Collaboration and Creative Thinking.</h1> */}
-                        <h1 className={`${noereg.className} max-w-md text-md text-bl text-left`}>
-                            Currently a student at Boston University studying Computer Science & Visual Arts, set to graduate in May 2024.
-                            <br />
-                             <br />
-                             In essence, I am a highly motivated person, driven by discipline, creativity and an insatiable thirst for learning. 
-                             <br />
-                            <br />
-                             Passionate about Product Development and Management, I excel in collaborative environments where innovative ideas are materialized into impactful solutions. 
-                             <br />
-                            <br />
-                            Equipped with a Bachelor's degree in Computer Science & experience spanning Software Engineering, AI Integration, Product Management & Design, I bring a versatile skill set to the table.
-                            <br />
-                            <br />
-                            I'm excited to expand my knowledge & skill-set post grad &#8212; from crafting code & designs to leveraging technology to address real-world challenges & create impactful solutions for users.
-                            
-                            <br />
-                            <br />
-                            
-                            
-                         </h1>
-                         <h1 className={`${didot.className} text-right mr-24 mt-4 text-sm`}>H M</h1>
+    <div className={`sm:w-${isDesktop ? '1/2 mx-auto' : 'full'} max-w-lg min-h-xl text-gr mx-auto text-md text-bl text-left`}>
+      <div className={`${direg.className} text-bl text-lg`}>1 &nbsp; &nbsp; &nbsp;DRIVEN & DISCIPLINED</div>
+      <p>
+        I like to start off my day with a 5k morning run. This serves as my daily reminder that if I can push through the miles, I'm ready for anything.
+      </p>
+      <div className={`${direg.className} text-bl mt-4 text-lg`}>2 &nbsp; &nbsp; &nbsp;PERSISTENT</div>
+      <p>
+        My mantra? “Take the shot, ask the question—what's the worst that could happen? A 'no'? We're prepared for that."
+      </p>
+      <div className={`${direg.className} text-bl mt-4 text-lg`}>3 &nbsp; &nbsp; &nbsp;TEAM PLAYER</div>
+      <p>
+        I operate best in collaborative environments - bouncing ideas off others & thinking out louds. In conflicts, I'm big on talking it out until a solution is reached - even if the solution is no solution.
+      </p>
+      <div className={`${direg.className} text-bl mt-4 text-lg`}>4 &nbsp; &nbsp; &nbsp;CREATIVE</div>
+      <p>
+        I carry a little sketchbook with me wherever I go. I like to stay connected to my creative side no matter how busy life gets.
+      </p>
+      <h1 className={`${dilight.className} text-bl text-right mr-24 mt-4`}>H M</h1>
+    </div>
   </div>
-                      </div>
+</div>
 </section>
 
 
