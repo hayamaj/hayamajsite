@@ -175,25 +175,25 @@ export default function Home() {
   
  
   return (
-    <main className={`animate-custom min-h-screen h-screen max-w-screen items-center justify-between`}>
-          <div className="flex mx-16 ml-32 justify-end">
+    <main className={`animate-custom items-center justify-center`}>
+          <div className="flex justify-end">
       {/*<NowPlaying />*/}
       
     </div>
 
-    <div className="flex flex-row mx-auto justify-center items-center mt-16 max-w-3xl sm:p-4 mx-auto mb-16">
-  <div className="rounded-full w-auto h-auto border-bl border-[1px] bg-transparent object-fit hidden sm:block">
+    <div className="flex flex-row mx-auto justify-center items-center mt-4 sm:p-4 mb-16">
+  <div className="rounded-full border-black border-[1px] bg-transparent object-fit hidden sm:block">
     <Image
-      src="/favicon.ico"
-      width={150}
-      height={150}
-      alt="Picture of the author"
+      src="/images/profpic.png"
+      width={130}
+      height={130}
+      alt="me"
     />
   </div>
-  <div className={`${dilight.className} ml-8 mx-2 max-w-xl leading-2 w-auto text-left justify-center text-lg sm:text-base`}>
-    <strong className={`${direg.className}`}>Haya &nbsp; <strong className={`${dilight.className}`}>(hey-ya)</strong></strong><br></br>
+  <div className={`${dilight.className} ml-8 mx-2 leading-2 w-auto text-left justify-center sm:text-base`}>
+    <strong className={`${direg.className} text-xl`}>Haya &nbsp; <strong className={`${dilight.className}`}>(hey-ya)</strong></strong><br></br>
     <strong className={`${direg.className}`}>Boston, MA</strong> <br></br><br></br>
-    &bull; &nbsp;Computer Science at Boston University.<br></br>
+    &bull; &nbsp;Computer Science at <strong className={`${direg.className}`}>Boston University</strong>.<br></br>
     &bull; &nbsp;Operating on <strong className={`${direg.className}`}>Drive</strong>, <strong className={`${direg.className}`}>Discipline</strong>, & <strong className={`${direg.className}`}>Creativity</strong>. <br></br>
     &bull; &nbsp;Passionate about merging <strong className={`${direg.className}`}>Tech</strong>, <strong className={`${direg.className}`}>Product</strong> & <strong className={`${direg.className}`}>Design</strong>.
   </div>
@@ -211,12 +211,12 @@ export default function Home() {
     </div>
   */}
 
-    <div className="flex flex-row items-center justify-center mt-8">
-    <Link href="/about" className={`${direg.className} rounded-full px-4 py-2 border-black text-bl transition-colors underline duration-300 ${animationCompleted ? ' text-black border-black hover:underline' : 'bg-transparent hover:underline'}`}>ABOUT</Link>
+    <div className="flex flex-row items-center justify-center mt-8 text-sm">
+    <Link href="/about" className={`${dilight.className} rounded-full px-4 py-2 border-black text-bg transition-colors border border-bl bg-black rounded-full duration-300 ${animationCompleted ? ' text-black border-black hover:underline' : 'bg-black hover:underline'}`}>About</Link>
     <span className="mx-2"></span>
-    <Link href="/product" className={`${direg.className} rounded-full px-4 py-2 border-black text-bl transition-colors underline duration-300 ${animationCompleted ? 'text-black border-black hover:underline' : 'bg-transparent hover:underline'}`}>WORK</Link>
+    <Link href="/product" className={`${dilight.className} rounded-full px-4 py-2 border-black text-bg transition-colors border border-bl bg-black rounded-full duration-300 ${animationCompleted ? 'text-black border-black hover:underline' : 'bg-black hover:underline'}`}>Work</Link>
     <span className="mx-2"></span>
-    <Link href="/resume" className={`${direg.className} rounded-full px-4 py-2 border-black text-bl transition-colors underline duration-300 ${animationCompleted ? ' text-black border-black hover:underline' : 'bg-transparent hover:underline'}`}>RESUME</Link>
+    <Link href="/resume" className={`${dilight.className} rounded-full px-4 py-2 border-black text-bg transition-colors border border-bl bg-black rounded-full duration-300 ${animationCompleted ? ' text-black border-black hover:underline' : 'bg-black hover:underline'}`}>Resume</Link>
   </div>
 
   <div className="max-w-screen px-1 py-8 flex items-center sm:flex-row flex-col">
