@@ -190,12 +190,12 @@ export default function Home() {
       alt="Picture of the author"
     />
   </div>
-  <div className={`${dilight.className} ml-8 mx-2 max-w-xl w-auto text-left justify-center text-lg sm:text-base`}>
-    <strong className={`${direg.className}`}>Haya AlMajali &nbsp; / &nbsp;</strong>
-    <strong className={`${direg.className} text-sm`}>Boston, MA</strong><br></br>
-    &#8212; Studying Computer Science at Boston University. <br></br>
-    &#8212; Operating on Drive, Discipline, & Creativity. <br></br>
-    &#8212; Passionate about merging <strong className={`${direg.className}`}>Tech</strong>, <strong className={`${direg.className}`}>Product</strong> & <strong className={`${direg.className}`}>Design</strong>.
+  <div className={`${dilight.className} ml-8 mx-2 max-w-xl leading-2 w-auto text-left justify-center text-lg sm:text-base`}>
+    <strong className={`${direg.className}`}>Haya &nbsp; <strong className={`${dilight.className}`}>(hey-ya)</strong></strong><br></br>
+    <strong className={`${direg.className}`}>Boston, MA</strong> <br></br><br></br>
+    &bull; &nbsp;Computer Science at Boston University.<br></br>
+    &bull; &nbsp;Operating on <strong className={`${direg.className}`}>Drive</strong>, <strong className={`${direg.className}`}>Discipline</strong>, & <strong className={`${direg.className}`}>Creativity</strong>. <br></br>
+    &bull; &nbsp;Passionate about merging <strong className={`${direg.className}`}>Tech</strong>, <strong className={`${direg.className}`}>Product</strong> & <strong className={`${direg.className}`}>Design</strong>.
   </div>
 </div>
 
@@ -212,11 +212,11 @@ export default function Home() {
   */}
 
     <div className="flex flex-row items-center justify-center mt-8">
-    <Link href="/about" className={`${direg.className} rounded-full px-4 py-2 border-black text-bl transition-colors duration-300 ${animationCompleted ? ' text-black border-black hover:underline' : 'bg-transparent hover:underline'}`}>ABOUT</Link>
+    <Link href="/about" className={`${direg.className} rounded-full px-4 py-2 border-black text-bl transition-colors underline duration-300 ${animationCompleted ? ' text-black border-black hover:underline' : 'bg-transparent hover:underline'}`}>ABOUT</Link>
     <span className="mx-2"></span>
-    <Link href="/product" className={`${direg.className} rounded-full px-4 py-2 border-black text-bl transition-colors duration-300 ${animationCompleted ? 'text-black border-black hover:underline' : 'bg-transparent hover:underline'}`}>WORK</Link>
+    <Link href="/product" className={`${direg.className} rounded-full px-4 py-2 border-black text-bl transition-colors underline duration-300 ${animationCompleted ? 'text-black border-black hover:underline' : 'bg-transparent hover:underline'}`}>WORK</Link>
     <span className="mx-2"></span>
-    <Link href="/resume" className={`${direg.className} rounded-full px-4 py-2 border-black text-bl transition-colors duration-300 ${animationCompleted ? ' text-black border-black hover:underline' : 'bg-transparent hover:underline'}`}>RESUME</Link>
+    <Link href="/resume" className={`${direg.className} rounded-full px-4 py-2 border-black text-bl transition-colors underline duration-300 ${animationCompleted ? ' text-black border-black hover:underline' : 'bg-transparent hover:underline'}`}>RESUME</Link>
   </div>
 
   <div className="max-w-screen px-1 py-8 flex items-center sm:flex-row flex-col">
