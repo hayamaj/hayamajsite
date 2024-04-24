@@ -182,23 +182,22 @@ export default function Home() {
     </div>
 
     <div className="flex flex-row mx-auto justify-center items-center mt-16 max-w-3xl sm:p-4 mx-auto mb-16">
-    <div className="rounded-full w-auto h-auto border-bl border-[1px] bg-transparent object-fit">
-                    <Image
-                      src="/favicon.ico"
-                      width={150}
-                      height={150}
-                      alt="Picture of the author"
-                    />
-                </div>
-    <div className={`${dilight.className} ml-8 mx-2 max-w-xl w-auto text-left justify-center text-lg`}>
+  <div className="rounded-full w-auto h-auto border-bl border-[1px] bg-transparent object-fit hidden sm:block">
+    <Image
+      src="/favicon.ico"
+      width={150}
+      height={150}
+      alt="Picture of the author"
+    />
+  </div>
+  <div className={`${dilight.className} ml-8 mx-2 max-w-xl w-auto text-left justify-center text-lg sm:text-base`}>
     <strong className={`${direg.className}`}>Haya AlMajali &nbsp; / &nbsp;</strong>
     <strong className={`${direg.className} text-sm`}>Boston, MA</strong><br></br>
     &#8212; Studying Computer Science at Boston University. <br></br>
     &#8212; Operating on Drive, Discipline, & Creativity. <br></br>
     &#8212; Passionate about merging <strong className={`${direg.className}`}>Tech</strong>, <strong className={`${direg.className}`}>Product</strong> & <strong className={`${direg.className}`}>Design</strong>.
-
-      </div>
-    </div>
+  </div>
+</div>
 
 
  {/* 
