@@ -207,6 +207,8 @@ export default function Home() {
     <Link href="/product" className={`${direg.className} hover:bg-transparent hover:text-bl rounded px-4 py-1 border-bl text-bg transition-colors border border-bl bg-black rounded-full`}>work</Link>
     <span className="mx-2"></span>
     <Link href="/resume" className={`${direg.className} hover:bg-transparent hover:text-bl rounded px-4 py-1 border-bl text-bg transition-colors border border-bl bg-black rounded-full`}>resume</Link>
+    <span className="mx-2"></span>
+    <Link href="/art" className={`${direg.className} hover:bg-transparent hover:text-bl rounded px-4 py-1 border-bl text-bg transition-colors border border-bl bg-black rounded-full`}>art</Link>
   </div>
 
 
