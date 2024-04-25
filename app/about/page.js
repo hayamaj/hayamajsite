@@ -168,7 +168,7 @@ export default function Home() {
         </div>               
 
         <section className="flex flex-col mx-4"> {/* Add margin on small screens */}
-  <div className="mx-auto">
+  <div className="mx-auto justify-center">
     <div className="flex flex-col sm:flex-row items-center">
     <div className="rounded-full overflow-hidden mr-8 mb-8 sm:max-h-[450px] sm:max-w-[450px] sm:w-96 sm:h-96 w-36 h-36"> {/* Wrap video in a rounded container */}
         <video autoPlay loop playsInline muted className="rounded-full object-fit">
