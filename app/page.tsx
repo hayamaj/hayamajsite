@@ -202,11 +202,11 @@ export default function Home() {
   
 </div>
 <div className="flex flex-row items-left justify-center text-sm">
-    <Link href="/about" className={`${dilight.className} rounded px-4 py-1 border-bl text-bg transition-colors border border-bl bg-black rounded-full`}>About</Link>
+    <Link href="/about" className={`${direg.className} hover:bg-transparent hover:text-bl rounded px-4 py-1 border-bl text-bg transition-colors border border-bl bg-black rounded-full`}>about</Link>
     <span className="mx-2"></span>
-    <Link href="/product" className={`${dilight.className} rounded px-4 py-1 border-bl text-bg transition-colors border border-bl bg-black rounded-full`}>Work</Link>
+    <Link href="/product" className={`${direg.className} hover:bg-transparent hover:text-bl rounded px-4 py-1 border-bl text-bg transition-colors border border-bl bg-black rounded-full`}>work</Link>
     <span className="mx-2"></span>
-    <Link href="/resume" className={`${dilight.className} rounded px-4 py-1 border-bl text-bg transition-colors border border-bl bg-black rounded-full`}>Resume</Link>
+    <Link href="/resume" className={`${direg.className} hover:bg-transparent hover:text-bl rounded px-4 py-1 border-bl text-bg transition-colors border border-bl bg-black rounded-full`}>resume</Link>
   </div>
 
 
