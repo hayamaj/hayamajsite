@@ -175,22 +175,24 @@ export default function Home() {
   
  
   return (
-    <main className={`animate-custom items-center justify-center`}>
+    <main className={`animate-custom items-center justify-center h-screen`}>
           <div className="flex justify-end">
       {/*<NowPlaying />*/}
       
     </div>
 
-    <div className="flex flex-row mx-auto justify-center items-center mt-4 sm:p-4 mb-16">
-  <div className="rounded-full border-black border-[1px] bg-transparent object-fit hidden sm:block">
+    <div className="flex flex-col sm:flex-row mx-auto justify-center items-center my-16 sm:p-4 mb-12">
+  <div className="rounded-full sm:-mb-8 mb-8 border-black border-[1px] bg-transparent object-fit block">
+    <div className="flex-row">
     <Image
       src="/images/profpic.png"
-      width={130}
-      height={130}
+      width={200}
+      height={200}
       alt="me"
     />
+    </div>
   </div>
-  <div className={`${dilight.className} ml-8 mx-2 leading-2 w-auto text-left justify-center sm:text-base`}>
+  <div className={`${dilight.className} ml-8 mx-2 -mt-2 leading-2 w-auto text-left justify-center sm:text-base`}>
     <strong className={`${direg.className} text-xl`}>Haya &nbsp; <strong className={`${dilight.className}`}>(hey-ya)</strong></strong><br></br>
     <strong className={`${direg.className}`}>Boston, MA</strong> <br></br><br></br>
     &bull; &nbsp;Computer Science at <strong className={`${direg.className}`}>Boston University</strong>.<br></br>
@@ -199,7 +201,7 @@ export default function Home() {
   </div>
   
 </div>
-<div className="flex flex-row items-center justify-center text-sm">
+<div className="flex flex-row items-left justify-center text-sm">
     <Link href="/about" className={`${dilight.className} rounded px-4 py-1 border-bl text-bg transition-colors border border-bl bg-black rounded-full`}>About</Link>
     <span className="mx-2"></span>
     <Link href="/product" className={`${dilight.className} rounded px-4 py-1 border-bl text-bg transition-colors border border-bl bg-black rounded-full`}>Work</Link>

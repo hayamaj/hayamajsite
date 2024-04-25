@@ -3,28 +3,27 @@
 @tailwind utilities;
 
 :root {
-  --foreground-rgb: 0, 0, 0;
-  --background-start-rgb: 214, 219, 220;
-  --background-end-rgb: 255, 255, 255;
-
-      --secondary-glow: conic-gradient(
-        from 10deg at 50% 50%,
-        #eb7494 0deg,
-        #ae77b2 55deg,
-        #97b5da 120deg,
-        #0099ca 160deg,
-        transparent 360deg
-      );
-    
-      --third-glow: conic-gradient(
-        from 90deg at 50% 50%,
-        #ff8b7e 0deg,
-        #e24e6b 160deg,
-        #7ed2da 120deg,
-        #8bdce0 55deg,
-        transparent 360deg
-      );
-
+  --foreground-rgb: 33, 33, 33; /* Dark gray for foreground */
+  --background-start-rgb: 242, 242, 242; /* Light gray for background start */
+  --background-end-rgb: 255, 255, 255; /* White for background end */
+  
+  --secondary-glow: conic-gradient(
+    from 10deg at 50% 50%,
+    #ffc1e3 0deg, /* Light pink */
+    #a0d9e6 55deg, /* Light blue */
+    #e6eb94 120deg, /* Light yellow */
+    #f8d291 160deg, /* Light orange */
+    transparent 360deg
+  );
+  
+  --third-glow: conic-gradient(
+    from 90deg at 50% 50%,
+    #ff9292 0deg, /* Light red */
+    #ffcc8c 160deg, /* Light orange */
+    #92ff92 120deg, /* Light green */
+    #8fd9ff 55deg, /* Light blue */
+    transparent 360deg
+  );
 }
 
 @media (prefers-color-scheme: dark) {

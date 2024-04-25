@@ -169,37 +169,34 @@ export default function Home() {
 
                     
 
-        <section className="flex flex-col mx-4 sm:mx-12"> {/* Add margin on small screens */}
-        <div className="mx-auto max-w-screen">
-  <div className="flex flex-col sm:flex-row items-center">
-    {isDesktop && (
-      <div className=" w-auto sm:w-1/2 sm:pr-4 mb-4 sm:mb-0 mx-4">
-       <video autoPlay loop playsInline muted className="rounded-full w-[450px] h-[450px] object-cover">
+        <section className="flex flex-col mx-4"> {/* Add margin on small screens */}
+  <div className="mx-auto">
+    <div className="flex flex-col sm:flex-row items-center">
+    <div className="rounded-full overflow-hidden mr-8 sm:max-h-[450px] sm:max-w-[450px] sm:w-96 sm:h-96 w-36 h-36 mb-8"> {/* Wrap video in a rounded container */}
+        <video autoPlay loop playsInline muted className="rounded-full object-fit">
           <source src="/aboutvid.mov" />
         </video>
       </div>
-    )}
-    <div className={`sm:w-${isDesktop ? '1/2 mx-auto' : 'full'} max-w-lg min-h-xl text-gr mx-auto text-md text-bl text-left`}>
-      <div className={`${direg.className} text-bl text-lg`}>1 &nbsp; &nbsp; &nbsp;DRIVEN & DISCIPLINED</div>
-      <p>
-        I like to start off my day with a 5k morning run. This serves as my daily reminder that if I can push through the miles, I'm ready for anything else my day throws my way.
-      </p>
-      <div className={`${direg.className} text-bl mt-4 text-lg`}>2 &nbsp; &nbsp; &nbsp;PERSISTENT</div>
-      <p>
-        My mantra? “Take the shot, ask the question—what's the worst that could happen? A 'no'? We're prepared for that."
-      </p>
-      <div className={`${direg.className} text-bl mt-4 text-lg`}>3 &nbsp; &nbsp; &nbsp;TEAM PLAYER</div>
-      <p>
-        I operate best in collaborative environments - bouncing ideas off others & thinking out louds. In conflicts, I'm big on talking it out until a solution is reached - even if the solution is no solution.
-      </p>
-      <div className={`${direg.className} text-bl mt-4 text-lg`}>4 &nbsp; &nbsp; &nbsp;CREATIVE</div>
-      <p>
-        I carry a little sketchbook with me wherever I go. I like to stay connected to my creative side no matter how busy life gets.
-      </p>
-      <h1 className={`${dilight.className} text-bl text-right mr-24 mt-4`}>H M</h1>
+      <div className={`sm:w-${isDesktop ? '1/2 mx-auto' : 'mx-auto'} max-w-lg text-gr mx-auto text-sm text-bl text-left`}>
+        <div className={`${direg.className} text-bl text-lg`}>[ DRIVEN & DISCIPLINED ]</div>
+        <p>
+          I like to start off my day with a 5k run. This serves as my daily reminder that if I can push through the miles, I can push through anything.
+        </p>
+        <div className={`${direg.className} text-bl mt-4 text-lg`}>[ PERSISTENT ]</div>
+        <p>
+          My mantra? “Take the shot, ask the question—what's the worst that could happen? A 'no'? We're prepared for that."
+        </p>
+        <div className={`${direg.className} text-bl mt-4 text-lg`}>[ TEAM PLAYER ]</div>
+        <p>
+          I operate best in collaborative environments - bouncing ideas off others & thinking out louds. In conflicts, I'm big on talking it out until a solution is reached - even if the solution is no solution.
+        </p>
+        <div className={`${direg.className} text-bl mt-4 text-lg`}>[ CREATIVE ]</div>
+        <p>
+          I carry a little sketchbook with me wherever I go. I like to stay connected to my creative side no matter how busy life gets.
+        </p>
+      </div>
     </div>
   </div>
-</div>
 </section>
 
 
@@ -212,26 +209,35 @@ export default function Home() {
               
 
                 <div className="text-center mt-4 mb-4">
-    <h1 className={`${direg.className} text-xl text-gr`}>LET'S CONNECT!</h1>
+    {/*<h1 className={`${direg.className} text-xl text-gr`}>LET'S CONNECT!</h1>*/}
         </div>
         <div className="flex flex-row mx-2 justify-center">
         <a href="https://www.linkedin.com/in/hayamaj/" className="flex items-justify my-4 mx-2">
                 <Image
                       src="/images/linkedin.png"
-                      width={25}
-                      height={25}
+                      width={20}
+                      height={20}
                       alt="Picture of the author"
                     />
         </a>
         <a href="mailto:hayamaj@bu.edu" target="_blank" aria-label="hayamaj@bu.edu" className="flex items-center mx-2">
                 <Image
                       src="/images/email.png"
-                      width={25}
-                      height={25}
+                      width={20}
+                      height={20}
+                      alt="Picture of the author"
+                    />
+        </a>
+        <a href="mailto:hayamaj@bu.edu" target="_blank" aria-label="hayamaj@bu.edu" className="flex items-center mx-2">
+                <Image
+                      src="/images/github.jpeg"
+                      width={20}
+                      height={20}
                       alt="Picture of the author"
                     />
         </a>
         </div>
+        {/*
         <h1 className={`${dimed.className} px-4 py-4 text-md mx-auto text-gr my-4 justify-center text-justify max-w-lg`}>Please don't hesitate to get in touch if you ever want to chat, share feedback, or simply connect! I'm always open to new conversations and will do my best to respond to you as soon as I can. </h1> 
 
         <ContactPage />
@@ -248,6 +254,7 @@ export default function Home() {
           </div>
         </span>
       </div>
+    */}
       </main>
 
   );
