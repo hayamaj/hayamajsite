@@ -161,18 +161,16 @@ export default function Home() {
   }, []);
 
   return (
-    <main className={` bg-bg text-bl flex min-h-screen max-w-screen flex-col justify-center text-bl`}>
+    <main className={` bg-bg text-bl flex h-screen flex-col justify-center text-bl`}>
 
-    <div className="text-center mt-8 mb-8">
+    <div className="text-center">
     {/*<h1 className={`${direg.className} text-xl text-gr`}>ABOUT ME</h1>*/}
-        </div>
-
-                    
+        </div>               
 
         <section className="flex flex-col mx-4"> {/* Add margin on small screens */}
   <div className="mx-auto">
     <div className="flex flex-col sm:flex-row items-center">
-    <div className="rounded-full overflow-hidden mr-8 sm:max-h-[450px] sm:max-w-[450px] sm:w-96 sm:h-96 w-36 h-36 mb-8"> {/* Wrap video in a rounded container */}
+    <div className="rounded-full overflow-hidden mr-8 mb-8 sm:max-h-[450px] sm:max-w-[450px] sm:w-96 sm:h-96 w-36 h-36"> {/* Wrap video in a rounded container */}
         <video autoPlay loop playsInline muted className="rounded-full object-fit">
           <source src="/aboutvid.mov" />
         </video>
@@ -200,15 +198,7 @@ export default function Home() {
 </section>
 
 
-<div className="text-center mt-8 mb-8">
-    <h1 className={`${direg.className} text-4xl text-bl`}></h1>
-        </div>
-
-
-
-              
-
-                <div className="text-center mt-4 mb-4">
+                <div className="text-center mt-16 mb-4">
     {/*<h1 className={`${direg.className} text-xl text-gr`}>LET'S CONNECT!</h1>*/}
         </div>
         <div className="flex flex-row mx-2 justify-center">

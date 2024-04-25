@@ -3,7 +3,8 @@ import Image from "next/image";
 import Link from 'next/link';
 import Navigation from '../Nav'; // Import the Navigation component
 import { useState, useEffect, useRef } from 'react';
-import localFont from 'next/font/local'
+import localFont from 'next/font/local';
+import { CldImage } from 'next-cloudinary';
 {     /*fonts*/     }
 const dilight = localFont({
   src: [
@@ -119,19 +120,69 @@ export default function Art() {
     }
   };
     return (
-      <main className={` flex min-h-screen max-w-screen flex-col items-center justify-between`}>
-      <div className="flex flex-col justify-center items-center h-screen z-100" >
-    <video ref={videoRef} autoPlay="autoplay" playsInLine="playsinline" muted="true" onTimeUpdate={handleVideoTimeUpdate} className="w-full h-full object-cover object-right-bottom">
-                      <source src="/drawingvid.mov" />
-                      </video>
-                      </div>
+      <main className={` bg-bg text-bl flex h-screen flex-col justify-start mt-8 text-bl`}>
+       <section className="flex flex-col"> {/* Add margin on small screens */}
+  <div className="mx-auto justify-start">
+    <div className="flex flex-col sm:flex-row items-center">
+      <div className="overflow-hidden mb-8 sm:max-h-screen sm:max-w-screen w-screen h-[400px]"> {/* Wrap video in a rounded container */}
+        <video autoPlay loop playsInline muted className="object-cover w-screen h-full">
+          <source src="/drawingvid.mov" />
+        </video>
+      </div>
+    </div>
+  </div>
+</section>
 
-                      <div className={` ${didotdf.className} text-center z-100 absolute align-middle top-80 text-3xl md:text-4xl [text-wrap:balance] bg-clip-text text-white `}>
-                        <Link href="/art/painting" className="mx-2 hover:underline decoration-1 underline-offset-2">Painting</Link>&#8212;
-                        <Link href="/art/photo" className="mx-2 hover:underline decoration-1 underline-offset-2">Photography</Link>&#8212;
-                        <Link href="/art/drawing" className="mx-2 hover:underline decoration-1 underline-offset-2">Drawing</Link>&#8212;
-                        <Link href="/art/motiongraphics" className="mx-2 hover:underline decoration-1 underline-offset-2">Motion Graphics</Link>
+<div className="mx-8 my-4">
+<h1 className={`${direg.className} flex justify-center text-center text-xl my-2 text-gr `}> PAINTING</h1>
+
+        <div className="flex flex-row justify-center mt-6 ">
+          <div className="m-1"><CldImage src="https://res.cloudinary.com/dqqim3gc1/image/upload/v1707337201/image-gallery/OP001.jpg" height={400} width={300} crop="auto" alt="Facebook" /></div>
+          <div className="m-1"><CldImage src="https://res.cloudinary.com/dqqim3gc1/image/upload/v1707337200/image-gallery/OP002.jpg" height={400} width={300} crop="auto" alt="Facebook" /></div>
+          <div className="m-1"><CldImage src="https://res.cloudinary.com/dqqim3gc1/image/upload/v1707337200/image-gallery/OP003.jpg" height={400} width={300} crop="auto" alt="Facebook" /></div>
+
+        </div>
+
+        <div className="flex flex-row justify-center ">
+        <div className="m-1"><CldImage src="https://res.cloudinary.com/dqqim3gc1/image/upload/v1707332899/image-gallery/OP004.jpg" height={400} width={300} crop="auto" alt="Facebook" /></div>
+        <div className="m-1"><CldImage src="https://res.cloudinary.com/dqqim3gc1/image/upload/v1707191747/image-gallery/OP006.jpg" height={400} width={300} crop="auto" alt="Facebook" /></div>
+        <div className="m-1"><CldImage src="https://res.cloudinary.com/dqqim3gc1/image/upload/v1707191748/image-gallery/OP004XX.jpg" height={400} width={300} crop="auto" alt="Facebook" /></div>
+        </div>
+
+        <h1 className={`${direg.className} mt-4 flex justify-center text-center text-xl text-gr mb-8 mt-8`}> MOTION GRAPHICS</h1>
+
+        <div className="flex justify-center mt-0 mx-8">
+              <video autoPlay muted loop style={{ width: 'full', height: 'full' }}>
+          <source src="/MG01.mp4" className="" />
+        </video>
+        </div>
+
+        <h1 className={`${direg.className} flex justify-center text-center text-xl my-2 text-gr my-8`}> DRAWING</h1>
+
+
+        <div className="flex flex-row justify-center mt-6">
+        <div className="m-1"><CldImage src="https://res.cloudinary.com/dqqim3gc1/image/upload/v1707191749/image-gallery/IN001.jpg" height={600} width={800} crop="auto" alt="Facebook" /></div>
+        <div className="m-1"><CldImage src="https://res.cloudinary.com/dqqim3gc1/image/upload/v1707191748/image-gallery/PC002.jpg" height={600} width={500} crop="auto" alt="Facebook" /></div>
+        <div className="m-1"><CldImage src="https://res.cloudinary.com/dqqim3gc1/image/upload/v1707191727/image-gallery/2021-6_yqsasb.jpg" height={600} width={500} crop="auto" alt="Facebook" /></div>
+  
           </div>
+
+        <div>
+        <h1 className={`${direg.className} flex justify-center text-center text-xl my-2 text-gr my-8`}> PHOTOGRAPHY</h1>
+
+        <div className="flex justify-center my-16 mt-6 mx-8">
+          <div className="m-1"><CldImage src="https://res.cloudinary.com/dqqim3gc1/image/upload/v1707332436/image-gallery/PH001.jpg" height={400} width={300} crop="auto" alt="Facebook" /></div>
+          <div className="m-1"><CldImage src="https://res.cloudinary.com/dqqim3gc1/image/upload/v1708466366/image-gallery/PH002.jpg" height={400} width={300} crop="auto" alt="Facebook" /></div>
+        </div>
+
+        </div>
+
+      </div>
+
+
+
+
+
 
 
           <div className={` max-w-screen px-1 py-8 flex items-center sm:flex-row flex-col`}>
