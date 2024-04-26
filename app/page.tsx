@@ -192,6 +192,7 @@ export default function Home() {
     />
     </div>
   </div>
+  
   <div className={`${dilight.className} ml-8 mx-2 -mt-2 leading-2 w-auto text-left justify-center sm:text-base`}>
     <strong className={`${direg.className} text-xl`}>Haya &nbsp; <strong className={`${dilight.className}`}>(hey-ya)</strong></strong><br></br>
     <strong className={`${direg.className}`}>Boston, MA</strong> <br></br><br></br>
@@ -208,7 +209,7 @@ export default function Home() {
     <span className="mx-2"></span>
     <Link href="/resume" className={`${direg.className} hover:bg-transparent hover:text-bl rounded px-4 py-1 border-bl text-bg transition-colors border border-bl bg-black rounded-full`}>resume</Link>
     <span className="mx-2"></span>
-    <Link href="/art" className={`${direg.className} hover:bg-transparent hover:text-bl rounded px-4 py-1 border-bl text-bg transition-colors border border-bl bg-black rounded-full`}>art</Link>
+    <Link href="/art" className={`${direg.className} hover:bg-transparent hover:text-bl rounded px-4 py-1 border-bl text-bg transition-colors border border-bl bg-black rounded-full`}>creative work</Link>
   </div>
 
 

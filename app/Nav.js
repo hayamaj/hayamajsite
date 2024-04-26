@@ -142,7 +142,7 @@ export const Navigation = () => {
               <NavLink href="/resume" exact className="nav-item nav-link">My Resume</NavLink>
               <NavLink href="/about" exact className="nav-item nav-link">About + Connect</NavLink>
               <NavLink href="" exact className="nav-item nav-link">|</NavLink>
-              <NavLink href="/art" exact className="nav-item nav-link">Design</NavLink>
+              <NavLink href="/art" exact className="nav-item nav-link">Creative Work</NavLink>
               </div>
             </div>
           </div>
@@ -183,7 +183,7 @@ export const Navigation = () => {
                 <a onClick={() => setIsOpen(false)} className="text-bl hover:text-gr block px-3 py-2 rounded-md text-2xl">About + Connect</a>
               </Link>
               <Link legacyBehavior href="/art" passHref>
-                <a onClick={() => setIsOpen(false)} className="text-bl hover:text-gr block px-3 py-2 rounded-md text-2xl">Design</a>
+                <a onClick={() => setIsOpen(false)} className="text-bl hover:text-gr block px-3 py-2 rounded-md text-2xl">Creative Work</a>
               </Link>
               {/* Add more links as needed */}
             </div>
