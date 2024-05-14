@@ -3,6 +3,8 @@ import type { Metadata } from "next";
 import "./globals.css";
 import localFont from 'next/font/local'
 import Navigation from "./Nav";
+import { AnimatePresence, motion, Spring } from "framer-motion";
+import type { AppProps } from "next/app";
 
 
 
@@ -89,6 +91,9 @@ const metadata: Metadata = {
   title: "Haya AlMajali",
   description: "Haya AlMajali's Portfolio",
 };
+
+
+const transitionColor = "";
 
 
 export default function RootLayout({

@@ -132,11 +132,18 @@ export default function Dibs() {
                 </div>
 
                 <div className="flex justify-center items-center">
+                <h2 className={`${dilight.className} justify-center mt-4 text-xl text-gr items-center mb-1`}><br/>
+                &nbsp;<strong className={`${direg.className} text-3xl text-accent justify-text align-text-left`}>288 HOURS - </strong> on development,<br/>
+                &nbsp;<strong className={`${direg.className} text-3xl text-accent justify-text align-text-left`}> 13 USERS - </strong> tested for beta launch,<br/>
+                <strong className={`${direg.className} text-3xl text-accent justify-text align-text-left`}> 127 INTERVIEWS - </strong> conducted.<br/><br/>
+                </h2>
+                 {/*
                 <h2 className={`${dilight.className} mt-8 text-bl text-center justify-content max-w-lg`}>
                     From the initial prototype to getting ready for launch, I've led Dibs through several product cycles. 
                     It all started on a sunny afternoon during my sophomore year of college, in the middle of move-out season.
                     Seeing all the nice furniture left out on the streets because students couldn't be bothered  to find a better home for them gave me the idea for Dibs
                     &#8212; a sustainable solution, like a digital thrift store tailored for students. </h2>
+                  */}
                     </div>
 
                 <div className="flex flex-row justify-center">
@@ -162,7 +169,7 @@ export default function Dibs() {
                     <h2 className={`${direg.className} mt-16 text-5xl text-bl text-left mb-1`}>My Role</h2>
 <h2 className={`${dilight.className} mt-4 text-bl text-left justify-content max-w-5xl`}>
 As Product Manager for dibs, 
-I guided the project from its conceptualization to launch, orchestrating cross-functional teams through numerous product cycles. This journey encompassed conducting user research, crafting user stories, designing wireframes on Figma, overseeing development, conducting usability testing, and managing cross-functional teams using tools like Trello. 
+I guided the project from its conceptualization to launch, orchestrating cross-functional teams through <strong className={`${direg.className} text-xl text-accent justify-text align-text-left`}> 15+ </strong> product cycles. This journey encompassed conducting user research, crafting user stories, designing wireframes on Figma, overseeing development, conducting usability testing, and managing cross-functional teams using tools like Trello. 
 
  </h2>
 

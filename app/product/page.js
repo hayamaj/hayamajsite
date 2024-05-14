@@ -168,43 +168,10 @@ export default function Product() {
 
         </div>
 
-        <section className=" mx-auto pb-12">
-        <div className="flex flex-col my-4">
-        <h1 className={`${direg.className} flex justify-center text-center text-xl my-2 text-gr`}> SKILLS</h1>
-
-        <div className="flex flex-wrap mx-auto align-center justify-center mt-8 text-bg">
-                <div className="flex flex-col items-center mx-4">
-        
-            <h1 className={`${direg.className} mb-4 bg-black rounded-full py-1 px-4 text-center text-lg mt-2`}>communication</h1>
-            <h1 className={`${dilight.className} text-sm max-w-md justify-text`}></h1>
-            </div>
-            <div className="flex flex-col items-center mx-4 ">
-        
-            <h1 className={`${direg.className} mb-4 bg-black rounded-full py-1 px-4  text-center text-lg mt-2`}>time-management</h1>
-            <h1 className={`${dilight.className} max-w-md justify-text text-sm`}></h1>
-            </div>
-            <div className="flex flex-col items-center mx-4 ">
-        
-            <h1 className={`${direg.className} mb-4 bg-black rounded-full py-1 px-4  text-center text-lg mt-2`}>leadership</h1>
-            <h1 className={`${dilight.className} max-w-md justify-text text-sm`}></h1>
-            </div>
-            <div className="flex flex-col items-center mx-4 ">
-        
-            <h1 className={`${direg.className} mb-4 bg-black rounded-full py-1 px-4  text-center text-lg mt-2`}>collaboration</h1>
-            <h1 className={`${dilight.className} max-w-md justify-text text-sm`}></h1>
-            </div>
-            
-                </div>
-
-                </div>
-       
-
-                </section>
-
 
         <section className=" mx-auto">
         <div className="flex flex-col my-4">
-        <h1 className={`${direg.className} flex justify-center text-center text-xl my-2 text-gr`}>SOFTWARE & TECH</h1>
+        <h1 className={`${direg.className} flex justify-center text-center text-xl my-2 text-gr`}>THE TECH I USE EVERYDAY</h1>
 
         <div className="flex flex-wrap mx-auto align-center justify-center mt-8 text-bg">
                 <div className="flex flex-col items-left mx-4">
@@ -231,6 +198,39 @@ export default function Product() {
         
             <h1 className={`${direg.className} mb-4 bg-black rounded-full py-1 px-4  text-center text-md mt-2`}>slack / atlassian / google suites</h1>
             <h1 className={`${dilight.className} max-w-sm justify-text text-sm text-black`}>Used for my project management positions to communicate with teams, set up meetings & faciliate development.</h1>
+            </div>
+            
+                </div>
+
+                </div>
+       
+
+                </section>
+
+                <section className=" mx-auto pb-12">
+        <div className="flex flex-col my-4">
+        <h1 className={`${direg.className} flex mt-12 justify-center text-center text-xl my-2 text-gr`}>MY SOFT SKILLS</h1>
+
+        <div className="flex flex-wrap mx-auto align-center justify-center mt-8 text-bg">
+                <div className="flex flex-col items-center mx-4">
+        
+            <h1 className={`${direg.className} mb-4 bg-black rounded-full py-1 px-4 text-center text-lg mt-2`}>communication</h1>
+            <h1 className={`${dilight.className} text-sm max-w-md justify-text`}></h1>
+            </div>
+            <div className="flex flex-col items-center mx-4 ">
+        
+            <h1 className={`${direg.className} mb-4 bg-black rounded-full py-1 px-4  text-center text-lg mt-2`}>time-management</h1>
+            <h1 className={`${dilight.className} max-w-md justify-text text-sm`}></h1>
+            </div>
+            <div className="flex flex-col items-center mx-4 ">
+        
+            <h1 className={`${direg.className} mb-4 bg-black rounded-full py-1 px-4  text-center text-lg mt-2`}>leadership</h1>
+            <h1 className={`${dilight.className} max-w-md justify-text text-sm`}></h1>
+            </div>
+            <div className="flex flex-col items-center mx-4 ">
+        
+            <h1 className={`${direg.className} mb-4 bg-black rounded-full py-1 px-4  text-center text-lg mt-2`}>collaboration</h1>
+            <h1 className={`${dilight.className} max-w-md justify-text text-sm`}></h1>
             </div>
             
                 </div>
