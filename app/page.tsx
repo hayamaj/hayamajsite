@@ -176,10 +176,9 @@ export default function Home() {
     <br />
     <strong className={`${direg.className} mt-2 text-bl`}>New York, New York.</strong>
     <br /><br />
-    I'm Haya, a new CS graduate from BU & software developer based in New York.
-    <br />
-    I specialize in <strong className={`${direg.className}`}>JavaScript</strong>, <strong className={`${direg.className}`}>TypeScript</strong>, <strong className={`${direg.className}`}>React</strong>, and <strong className={`${direg.className}`}>Next.js</strong>. 
-    I'm a quick learner with <br></br>a creative eye and a passion for merging Tech, Product & Design.
+    I'm Haya, and I just graduated from Boston University <strong className={`italic text-gr`}>(woohoo!)</strong>. <br />I'm a software developer based in New York, specializing in
+    <strong className={`${direg.className}`}> JavaScript</strong>,     <br /><strong className={`${direg.className}`}>TypeScript</strong>, <strong className={`${direg.className}`}>React</strong>, and <strong className={`${direg.className}`}>Next.js</strong>. 
+    I'm a quick learner with a creative eye <br /> and a passion for merging Tech, Product & Design.
     <br />
     <p className={`${dilight.className} mt-6`}>Reach Me:</p>
     <p>&bull; &nbsp;<a href="mailto:hayamaj02@gmail.com" className="underline">Email</a></p>
