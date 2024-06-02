@@ -138,10 +138,7 @@ export const Navigation = () => {
             <div className="ml-auto">
               <div className={` ${direg.className} flex space-x-8 text-gr`}>
               <NavLink href="/" exact className="nav-item nav-link"></NavLink>
-              <NavLink href="/product" exact className="nav-item nav-link">Work</NavLink>
-              <NavLink href="/resume" exact className="nav-item nav-link">My Resume</NavLink>
-              <NavLink href="/about" exact className="nav-item nav-link">About + Connect</NavLink>
-              <NavLink href="" exact className="nav-item nav-link">|</NavLink>
+              <NavLink href="/about" exact className="nav-item nav-link">About</NavLink>
               <NavLink href="/art" exact className="nav-item nav-link">Creative Work</NavLink>
               </div>
             </div>
@@ -173,14 +170,8 @@ export const Navigation = () => {
         {(ref) => (
           <div className={` ${direg.className} md:hidden fixed bg-bg w-screen h-full z-50 items-center justify-center`} id="mobile-menu">
             <div ref={ref} className="px-2 pt-2 pb-3 space-y-8 my-24 sm:px-3 justify-center text-center">
-              <Link legacyBehavior href="/product" passHref>
-                <a onClick={() => setIsOpen(false)} className="text-bl hover:text-gr block px-3 py-2 rounded-md text-2xl">Work</a>
-              </Link>
-              <Link legacyBehavior href="/resume" passHref>
-                <a onClick={() => setIsOpen(false)} className="text-bl hover:text-gr block px-3 py-2 rounded-md text-2xl">My Resume</a>
-              </Link>
               <Link legacyBehavior href="/about" passHref>
-                <a onClick={() => setIsOpen(false)} className="text-bl hover:text-gr block px-3 py-2 rounded-md text-2xl">About + Connect</a>
+                <a onClick={() => setIsOpen(false)} className="text-bl hover:text-gr block px-3 py-2 rounded-md text-2xl">About</a>
               </Link>
               <Link legacyBehavior href="/art" passHref>
                 <a onClick={() => setIsOpen(false)} className="text-bl hover:text-gr block px-3 py-2 rounded-md text-2xl">Creative Work</a>

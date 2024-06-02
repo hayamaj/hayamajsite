@@ -169,43 +169,43 @@ export default function Product() {
         </div>
 
 
-        <section className=" mx-auto">
-        <div className="flex flex-col my-4">
-        <h1 className={`${direg.className} flex justify-center text-center text-xl my-2 text-gr`}>THE TECH I USE EVERYDAY</h1>
-
-        <div className="flex flex-wrap mx-auto align-center justify-center mt-8 text-bg">
-                <div className="flex flex-col items-left mx-4">
-        
-            <h1 className={`${direg.className} mb-4 bg-black rounded-full py-1 px-4 text-center text-md mt-2`}>jira / trello</h1>
-            <h1 className={`${dilight.className} text-sm max-w-sm justify-text text-black`}>Used Jira & Trello for several project management positions, creating tickets, and adding in plugins. Additionally, to lead the development of my own product.</h1>
-            </div>
-            <div className="flex flex-col items-left mx-4 ">
-        
-            <h1 className={`${direg.className} mb-4 bg-black rounded-full py-1 px-4  text-center text-md mt-2`}>openai</h1>
-            <h1 className={`${dilight.className} max-w-sm justify-text text-sm text-black`}>Used during my internship at Dakota Systems, where I assessed & implemented open-source AI technologies like GPT-4 to improve organizational, technical & business processes.</h1>
-            </div>
-            <div className="flex flex-col items-left mx-4 ">
-        
-            <h1 className={`${direg.className} mb-4 bg-black rounded-full py-1 px-4  text-center text-md mt-2`}>next.js + tailwindcss</h1>
-            <h1 className={`${dilight.className} max-w-sm justify-text text-sm text-black`}>Self-taught during building my personal website. I hard-coded this website!</h1>
-            </div>
-            <div className="flex flex-col items-left mx-4 ">
-        
-            <h1 className={`${direg.className} mb-4 bg-black rounded-full py-1 px-4  text-center text-md mt-2`}>creative cloud apps</h1>
-            <h1 className={`${dilight.className} max-w-sm justify-text text-sm text-black mb-2`}>Used Adobe Apps extensively for classes ranging from Software Development to Motion Graphics. This includes Adobe Photoshop, Illustrator, Premiere Pro & After Effects.</h1>
-            </div>
-            <div className="flex flex-col items-left mx-4 ">
-        
-            <h1 className={`${direg.className} mb-4 bg-black rounded-full py-1 px-4  text-center text-md mt-2`}>slack / atlassian / google suites</h1>
-            <h1 className={`${dilight.className} max-w-sm justify-text text-sm text-black`}>Used for my project management positions to communicate with teams, set up meetings & faciliate development.</h1>
-            </div>
-            
-                </div>
-
-                </div>
-       
-
-                </section>
+        <section className="max-w-4xl mx-auto my-8 p-4">
+  <div className="text-center mb-8">
+    <h1 className={`${direg.className} text-2xl text-gr`}>THE TECH I USE EVERYDAY</h1>
+  </div>
+  <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
+    <div className="bg-white shadow-md rounded-lg p-6">
+      <h1 className={`${direg.className} mb-4 bg-black text-white rounded-full py-1 px-4 text-center text-md`}>jira / trello</h1>
+      <p className={`${dilight.className} text-sm text-black`}>
+        Used Jira & Trello for several project management positions, creating tickets, and adding in plugins. Additionally, to lead the development of my own product.
+      </p>
+    </div>
+    <div className="bg-white shadow-md rounded-lg p-6">
+      <h1 className={`${direg.className} mb-4 bg-black text-white rounded-full py-1 px-4 text-center text-md`}>openai</h1>
+      <p className={`${dilight.className} text-sm text-black`}>
+        Used during my internship at Dakota Systems, where I assessed & implemented open-source AI technologies like GPT-4 to improve organizational, technical & business processes.
+      </p>
+    </div>
+    <div className="bg-white shadow-md rounded-lg p-6">
+      <h1 className={`${direg.className} mb-4 bg-black text-white rounded-full py-1 px-4 text-center text-md`}>next.js + tailwindcss</h1>
+      <p className={`${dilight.className} text-sm text-black`}>
+        Self-taught during building my personal website. I hard-coded this website!
+      </p>
+    </div>
+    <div className="bg-white shadow-md rounded-lg p-6">
+      <h1 className={`${direg.className} mb-4 bg-black text-white rounded-full py-1 px-4 text-center text-md`}>creative cloud apps</h1>
+      <p className={`${dilight.className} text-sm text-black`}>
+        Used Adobe Apps extensively for classes ranging from Software Development to Motion Graphics. This includes Adobe Photoshop, Illustrator, Premiere Pro & After Effects.
+      </p>
+    </div>
+    <div className="bg-white shadow-md rounded-lg p-6">
+      <h1 className={`${direg.className} mb-4 bg-black text-white rounded-full py-1 px-4 text-center text-md`}>slack / atlassian / google suites</h1>
+      <p className={`${dilight.className} text-sm text-black`}>
+        Used for my project management positions to communicate with teams, set up meetings & facilitate development.
+      </p>
+    </div>
+  </div>
+</section>
 
                 <section className=" mx-auto pb-12">
         <div className="flex flex-col my-4">
