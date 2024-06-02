@@ -153,7 +153,7 @@ export default function Home() {
 
     <main className={` items-center justify-center h-screen`}>
       {/* Section 1 - Intro */}
-      <section id="section1" className="flex flex-col sm:flex-row mx-auto justify-center items-start my-16 sm:p-4 mb-12">
+      <section id="section1" className="flex flex-col sm:flex-row mx-auto justify-center items-start my-6 sm:p-4 mb-12">
   <div className="rounded-full phone:ml-8 phone:mb-2 border-transparent border-[1px] bg-transparent overflow-hidden w-32 h-32">
     <div className="flex">
       <Image
