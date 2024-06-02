@@ -191,7 +191,7 @@ export default function Home() {
   download="AlMajali-Resume.pdf"
   className="text-bl flex text-left"
 >
-  &bull; &nbsp; <strong className="underline">AlMajali-Resume</strong>
+  &bull; &nbsp; <strong className={`${dilight.className} underline`}>AlMajali-Resume</strong>
 </a>
 
 <p className={`${dilight.className} mt-6`}>My Values:</p>
