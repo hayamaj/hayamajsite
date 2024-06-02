@@ -153,8 +153,8 @@ export default function Home() {
 
     <main className={` items-center justify-center h-screen`}>
       {/* Section 1 - Intro */}
-      <section id="section1" className="flex flex-col sm:flex-row mx-auto justify-center items-start my-6 sm:p-4 mb-12">
-  <div className="rounded-full phone:ml-8 phone:mb-2 border-transparent border-[1px] bg-transparent overflow-hidden w-32 h-32">
+      <section id="section1" className="phone:mx-2 flex flex-col sm:flex-row mx-auto justify-center items-start my-6 sm:p-4 mb-12">
+  <div className="rounded-full phone:ml-8 phone:mb-4 border-transparent border-[1px] bg-transparent overflow-hidden w-32 h-32">
     <div className="flex">
       <Image
         src="/images/me.JPG"
@@ -166,7 +166,7 @@ export default function Home() {
     </div>
   </div>
 
-  <div className={`${dilight.className} ml-8 mx-2 leading-2 w-auto text-left justify-center sm:text-base`}>
+  <div className={`${dilight.className} ml-8 max-w-md mx-2 leading-2 w-auto text-justify justify-center sm:text-base`}>
     <div className="inline-flex items-center text-justify">
       <strong className={`${direg.className} text-4xl`}>Haya&nbsp;<strong className={`${dilight.className}`}>(hey-ya)</strong>&nbsp;</strong>
       <a href="https://open.spotify.com/track/2PpruBYCo4H7WOBJ7Q2EwM?si=55ec7143e6af4f44" target="_blank" rel="noopener noreferrer">
@@ -176,10 +176,11 @@ export default function Home() {
     <br />
     <strong className={`${direg.className} mt-2 text-bl`}>New York, New York.</strong>
     <br /><br />
-    I'm Haya, and I just graduated from Boston University <strong className={`italic text-gr`}>(woohoo!)</strong>. <br />I'm a software developer based in New York, specializing in
-    <strong className={`${direg.className}`}> JavaScript</strong>,     <br /><strong className={`${direg.className}`}>TypeScript</strong>, <strong className={`${direg.className}`}>React</strong>, and <strong className={`${direg.className}`}>Next.js</strong>. 
-    I'm a quick learner with a creative eye <br /> and a passion for merging Tech, Product & Design.
-    <br />
+    I'm Haya, and I just graduated from Boston University <strong className={`italic text-xs`}>(woohoo!)</strong>. 
+    I'm a software developer based in New York, specializing in
+    <strong className={`${direg.className}`}> JavaScript</strong>,&nbsp; <strong className={`${direg.className}`}>TypeScript</strong>, &nbsp;<strong className={`${direg.className}`}>React</strong>, and <strong className={`${direg.className}`}>Next.js</strong>. 
+    I'm a quick learner with a creative eye and a passion for merging Tech, Product & Design.
+
     <p className={`${dilight.className} mt-6`}>Reach Me:</p>
     <p>&bull; &nbsp;<a href="mailto:hayamaj02@gmail.com" className="underline">Email</a></p>
 
