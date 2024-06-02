@@ -201,7 +201,7 @@ export default function Home() {
   <div className={`${dilight.className} ml-8 mx-2 -mt-2 leading-2 w-auto text-left justify-center sm:text-base`}>
     <strong className={`${direg.className} text-4xl`}>Haya &nbsp; <strong className={`${dilight.className}`}>(hey-ya)</strong></strong><br></br>
     {/*<strong className={`${dilight.className} ml-36 mt-2 italic`}>*like the song</strong> <br></br><br></br>  */}
-    <strong className={`${direg.className} ml-36 mt-2 italic`}>New York, New York.</strong> <br></br><br></br>  
+    <strong className={`${direg.className} mt-2 italic`}>New York, New York.</strong> <br></br><br></br>  
    
     &bull; &nbsp;Recent CS Grad from <strong className={`${direg.className}`}>Boston University</strong>.<br></br>
     &bull; &nbsp;Operating on <strong className={`${direg.className}`}>Drive</strong>, <strong className={`${direg.className}`}>Discipline</strong>, & <strong className={`${direg.className}`}>Creativity</strong>. <br></br>
