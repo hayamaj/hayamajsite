@@ -182,26 +182,36 @@ export default function Home() {
     </div>
 
     <div className="flex flex-col sm:flex-row mx-auto justify-center items-center my-16 sm:p-4 mb-12">
-  <div className="rounded-full sm:-mb-8 mb-8 border-black border-[1px] bg-transparent object-fit block">
-    <div className="flex-row">
+
+    <div className="rounded-full sm:-mb-8 mb-8 border-transparent border-[1px] bg-transparent overflow-hidden w-48 h-48">
+  <div className="flex">
     <Image
-      src="/images/profpic.png"
+      src="/images/me.JPG"
       width={200}
       height={200}
       alt="me"
+      className="object-cover w-full h-full"
     />
-    </div>
   </div>
-  
+
+</div>
+
+
+
   <div className={`${dilight.className} ml-8 mx-2 -mt-2 leading-2 w-auto text-left justify-center sm:text-base`}>
-    <strong className={`${direg.className} text-xl`}>Haya &nbsp; <strong className={`${dilight.className}`}>(hey-ya)</strong></strong><br></br>
-    <strong className={`${direg.className}`}>Boston, MA</strong> <br></br><br></br>
-    &bull; &nbsp;Computer Science at <strong className={`${direg.className}`}>Boston University</strong>.<br></br>
+    <strong className={`${direg.className} text-4xl`}>Haya &nbsp; <strong className={`${dilight.className}`}>(hey-ya)</strong></strong><br></br>
+    {/*<strong className={`${dilight.className} ml-36 mt-2 italic`}>*like the song</strong> <br></br><br></br>  */}
+    <strong className={`${direg.className} ml-36 mt-2 italic`}>New York, New York.</strong> <br></br><br></br>  
+   
+    &bull; &nbsp;Recent CS Grad from <strong className={`${direg.className}`}>Boston University</strong>.<br></br>
     &bull; &nbsp;Operating on <strong className={`${direg.className}`}>Drive</strong>, <strong className={`${direg.className}`}>Discipline</strong>, & <strong className={`${direg.className}`}>Creativity</strong>. <br></br>
     &bull; &nbsp;Passionate about merging <strong className={`${direg.className}`}>Tech</strong>, <strong className={`${direg.className}`}>Product</strong> & <strong className={`${direg.className}`}>Design</strong>.
-  </div>
+
+    </div>
+
   
 </div>
+ {/*
 <div className="flex flex-row items-left justify-center text-sm">
     <Link href="/about" className={`${direg.className} hover:bg-transparent hover:text-bl rounded px-4 py-1 border-bl text-bg transition-colors border border-bl bg-black rounded-full`}>about</Link>
     <span className="mx-2"></span>
@@ -211,7 +221,7 @@ export default function Home() {
     <span className="mx-2"></span>
     <Link href="/art" className={`${direg.className} hover:bg-transparent hover:text-bl rounded px-4 py-1 border-bl text-bg transition-colors border border-bl bg-black rounded-full`}>creative work</Link>
   </div>
-
+  */}
 
  {/* 
     <div className="flex flex-col justify-center items-center mt-16 max-w-3xl sm:p-4 mx-auto">

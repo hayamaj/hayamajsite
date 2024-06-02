@@ -3,27 +3,35 @@
 @tailwind utilities;
 
 :root {
-  --foreground-rgb: 33, 33, 33; /* Dark gray for foreground */
-  --background-start-rgb: 242, 242, 242; /* Light gray for background start */
+  --foreground-rgb: 51, 51, 51; /* Dark gray for foreground */
+  --background-start-rgb: 255, 235, 205; /* Light beige for background start */
   --background-end-rgb: 255, 255, 255; /* White for background end */
   
   --secondary-glow: conic-gradient(
     from 10deg at 50% 50%,
-    #ffc1e3 0deg, /* Light pink */
-    #a0d9e6 55deg, /* Light blue */
-    #e6eb94 120deg, /* Light yellow */
-    #f8d291 160deg, /* Light orange */
+    #ffe4e1 0deg, /* Misty rose */
+    #ffd700 55deg, /* Gold */
+    #faebd7 120deg, /* Antique white */
+    #fffacd 160deg, /* Lemon chiffon */
     transparent 360deg
   );
   
   --third-glow: conic-gradient(
     from 90deg at 50% 50%,
-    #ff9292 0deg, /* Light red */
-    #ffcc8c 160deg, /* Light orange */
-    #92ff92 120deg, /* Light green */
-    #8fd9ff 55deg, /* Light blue */
+    #ff6347 0deg, /* Tomato */
+    #ffd700 55deg, /* Gold */
+    #f0e68c 120deg, /* Khaki */
+    #ffe4e1 160deg, /* Misty rose */
     transparent 360deg
   );
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --foreground-rgb: 255, 255, 255; /* White for foreground */
+    --background-start-rgb: 85, 85, 85; /* Dark gray for background start */
+    --background-end-rgb: 51, 51, 51; /* Darker gray for background end */
+  }
 }
 
 @media (prefers-color-scheme: dark) {
