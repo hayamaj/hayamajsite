@@ -256,7 +256,7 @@ export default function Home() {
   </h1>
   {isProjectsVisible && (
     <div className="mt-4 mx-auto max-w-2xl flex flex-col phone:flex-row justify-start items-center pb-12">
-      <div className="flex items-center justify-center mb-4 phone:mb-0 phone:mr-4">
+      <div className="flex items-center justify-center mb-4 phone:mb-0 phone:mr-2">
         <Image
           src="/images/dibsscreen.png"
           width={150}
