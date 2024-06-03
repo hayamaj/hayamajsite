@@ -178,7 +178,7 @@ export default function Home() {
     <br /><br />
     I'm Haya, and I just graduated from Boston University <strong className={`italic text-xs`}>(woohoo!)</strong>. 
     I'm a software developer based in New York, specializing in
-    <strong className={`${direg.className}`}> JavaScript</strong>,&nbsp; <strong className={`${direg.className}`}>TypeScript</strong>, &nbsp;<strong className={`${direg.className}`}>React</strong>, and <strong className={`${direg.className}`}>Next.js</strong>. 
+    <strong className={`${direg.className}`}> JavaScript</strong>, <strong className={`${direg.className}`}>TypeScript</strong>, <strong className={`${direg.className}`}>React</strong>, and <strong className={`${direg.className}`}>Next.js</strong>. 
     I'm a quick learner with a creative eye and a passion for merging Tech, Product & Design.
 
     <p className={`${dilight.className} mt-6`}>Reach Me:</p>
@@ -222,17 +222,17 @@ export default function Home() {
       <div className="flex flex-col">
         {/* Software Dev */}
         <div className="flex flex-col phone:flex-row mb-4">
-          <h2 className={`${direg.className} text-bl text-md`}>Software Development</h2>
-          <p className={`${dilight.className} text-sm text-black phone:ml-8`}>JavaScript, TypeScript, React, Next.js</p>
+          <h2 className={`${direg.className} text-bl text-md`}>Dev</h2>
+          <p className={`${dilight.className} text-sm text-black phone:ml-14`}>JavaScript, TypeScript, React, Next.js</p>
         </div>
         {/* Product Management */}
         <div className="flex flex-col phone:flex-row mb-4">
-          <h2 className={`${direg.className} text-bl text-md`}>Product Management</h2>
-          <p className={`${dilight.className} text-sm text-black phone:ml-8`}>Jira, Trello, Slack, Atlassian, Google Suites</p>
+          <h2 className={`${direg.className} text-bl text-md`}>Product</h2>
+          <p className={`${dilight.className} text-sm text-black phone:ml-6`}>Jira, Trello, Slack, Atlassian, Google Suites</p>
         </div>
         {/* Design */}
         <div className="flex flex-col phone:flex-row">
-          <h2 className={`${direg.className} text-bl text-md`}>Product Design</h2>
+          <h2 className={`${direg.className} text-bl text-md`}>Design</h2>
           <p className={`${dilight.className} text-sm text-black phone:ml-8`}>
             Creative Cloud Apps (Photoshop, Illustrator, Premiere Pro, After Effects...)
           </p>
