@@ -184,7 +184,7 @@ export default function Home() {
     <p className={`${dilight.className} mt-6`}>Reach Me:</p>
     <p>&bull; &nbsp;<a href="mailto:hayamaj02@gmail.com" className="underline">Email</a></p>
 
-    <p>&bull; &nbsp; <a href="https://www.linkedin.com/in/hayamaj" className="underline">LinkedIn</a></p>
+    <p>&bull; &nbsp;<a href="https://www.linkedin.com/in/hayamaj" className="underline">LinkedIn</a></p>
     <p>&bull; &nbsp;<a href="https://github.com/hayamaj" className="underline">Github</a></p>
     <p className={`${dilight.className} mt-4`}>Download My Resume:</p>
     <a
