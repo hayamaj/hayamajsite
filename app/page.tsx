@@ -166,7 +166,7 @@ export default function Home() {
     </div>
   </div>
 
-  <div className={`${dilight.className} ml-8 max-w-md leading-2 w-auto text-justify justify-center sm:text-base`}>
+  <div className={`${dilight.className} mx-4 max-w-md leading-2 w-auto text-justify justify-center sm:text-base`}>
     <div className="inline-flex items-center text-justify">
       <strong className={`${direg.className} text-4xl`}>Haya&nbsp;<strong className={`${dilight.className}`}>(hey-ya)</strong>&nbsp;</strong>
       <a href="https://open.spotify.com/track/2PpruBYCo4H7WOBJ7Q2EwM?si=55ec7143e6af4f44" target="_blank" rel="noopener noreferrer">
