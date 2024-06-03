@@ -153,7 +153,7 @@ export default function Home() {
 
     <main className={` items-center justify-center h-screen`}>
       {/* Section 1 - Intro */}
-      <section id="section1" className="phone:mx-2 flex flex-col sm:flex-row mx-auto justify-center items-start my-6 sm:p-4 mb-12">
+      <section id="section1" className=" flex flex-col sm:flex-row mx-auto justify-center items-start my-6 sm:p-4 mb-12">
   <div className="rounded-full phone:ml-8 phone:mb-4 border-transparent border-[1px] bg-transparent overflow-hidden w-32 h-32">
     <div className="flex">
       <Image
@@ -166,7 +166,7 @@ export default function Home() {
     </div>
   </div>
 
-  <div className={`${dilight.className} ml-8 max-w-md mx-2 leading-2 w-auto text-justify justify-center sm:text-base`}>
+  <div className={`${dilight.className} ml-8 max-w-md leading-2 w-auto text-justify justify-center sm:text-base`}>
     <div className="inline-flex items-center text-justify">
       <strong className={`${direg.className} text-4xl`}>Haya&nbsp;<strong className={`${dilight.className}`}>(hey-ya)</strong>&nbsp;</strong>
       <a href="https://open.spotify.com/track/2PpruBYCo4H7WOBJ7Q2EwM?si=55ec7143e6af4f44" target="_blank" rel="noopener noreferrer">
