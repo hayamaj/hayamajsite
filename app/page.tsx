@@ -154,7 +154,7 @@ export default function Home() {
     <main className={` items-center justify-center h-screen`}>
       {/* Section 1 - Intro */}
       <section id="section1" className=" flex flex-col sm:flex-row mx-auto justify-center items-start my-6 sm:p-4 mb-12">
-  <div className="rounded-full phone:ml-8 phone:mb-4 border-transparent border-[1px] bg-transparent overflow-hidden w-32 h-32">
+  <div className="rounded-full phone:ml-4 phone:mb-4 border-transparent border-[1px] bg-transparent overflow-hidden w-32 h-32">
     <div className="flex">
       <Image
         src="/images/me.JPG"
@@ -256,7 +256,7 @@ export default function Home() {
   </h1>
   {isProjectsVisible && (
     <div className="mt-4 mx-auto max-w-2xl flex flex-col phone:flex-row justify-start items-center pb-12">
-      <div className="flex items-center justify-center mb-4 phone:mb-0 phone:mr-2">
+      <div className="flex items-center justify-center mb-4 phone:mb-0 phone:mr-4">
         <Image
           src="/images/dibsscreen.png"
           width={150}
