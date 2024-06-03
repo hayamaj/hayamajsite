@@ -205,7 +205,7 @@ export default function Home() {
 </section>
 
 
-<section id="section3" className="px-8 bg-transparent mb-4">
+<section id="section3" className="mx-4 bg-transparent mb-4">
   <h1
     className={`${direg.className} lg:ml-96 flex justify-center phone:justify-start text-center text-xl text-black cursor-pointer`}
     onClick={toggleTechStackVisibility}
@@ -242,7 +242,7 @@ export default function Home() {
   )}
 </section>
 
-<section id="section2" className="px-8 bg-transparent">
+<section id="section2" className="mx-4 bg-transparent">
   <h1
     className={`${direg.className} lg:ml-96 flex justify-center phone:justify-start text-center text-xl text-black cursor-pointer`}
     onClick={toggleProjectsVisibility}
